@@ -1,5 +1,5 @@
-const CACHE='nce3-v2';
-const ASSETS=['./','./index.html','./lesson42.json','./manifest.webmanifest','./icon-192.png','./icon-512.png'];
+const CACHE='nce3-v4';
+const ASSETS=['./','./index.html','./lessons.json','./lesson42.json','./manifest.webmanifest','./icon-192.png','./icon-512.png'];
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS))));
 self.addEventListener('activate',e=>e.waitUntil(
   caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k))))

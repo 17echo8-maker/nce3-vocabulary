@@ -33,10 +33,42 @@ th,td{padding:11px 10px;border-bottom:1px solid var(--line);text-align:left;vert
 .empty{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:28px;text-align:center;color:var(--muted)}
 .sectionTitle{font-weight:700;margin:18px 2px 8px}
 @media(max-width:720px){.app{padding:10px 9px 84px}header{border-radius:14px}.desktopOnly{display:none}table,tbody,tr,td{display:block;width:100%}thead{display:none}tr{padding:10px 12px;border-bottom:1px solid var(--line)}td{border:0;padding:3px 0}.word{font-size:19px}.ipa{white-space:normal}.meaningText{font-size:15px}.bigword{font-size:32px}}
+
+.homeHeader{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;margin-bottom:14px}
+.homeHeader h1{font-size:26px;margin:0 0 6px}.homeIntro{color:var(--muted);font-size:14px}
+.lessonList{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}
+.lessonItem{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:17px;cursor:pointer;transition:.15s}
+.lessonItem:hover{transform:translateY(-1px);box-shadow:0 4px 18px rgba(0,0,0,.05)}
+.lessonNo{font-size:13px;color:var(--green);font-weight:700}.lessonTitle{font-size:19px;font-weight:750;margin:4px 0}
+.lessonZh{color:var(--muted);font-size:14px}.lessonMeta{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.lessonMeta span{font-size:12px;background:var(--green2);border-radius:999px;padding:5px 8px}
+.lessonTopbar{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px;flex-wrap:wrap}
+.backBtn{font-weight:700}.lessonNav{display:flex;gap:8px}
+#homeView.hidden,#lessonView.hidden{display:none!important}
+@media(max-width:720px){.lessonList{grid-template-columns:1fr}.homeHeader{border-radius:14px}.lessonItem{padding:15px}}
+
 </style>
 </head>
+
 <body>
+<div id="homeView" class="app">
+  <div class="homeHeader">
+    <h1>新概念英语3 · 单词学习</h1>
+    <div class="homeIntro">选择课时进入词表、背词、默写和错词复习。</div>
+  </div>
+  <div id="lessonList" class="lessonList"></div>
+</div>
+
+<div id="lessonView" class="hidden">
 <div class="app">
+  <div class="lessonTopbar">
+    <button id="backHome" class="backBtn">← 课时列表</button>
+    <div class="lessonNav">
+      <button id="prevLesson">← 上一课</button>
+      <button id="nextLesson">下一课 →</button>
+    </div>
+  </div>
+
 <header>
   <h1 id="title">新概念英语3 · 单词学习</h1>
   <div class="sub" id="subtitle"></div>
@@ -107,21 +139,98 @@ th,td{padding:11px 10px;border-bottom:1px solid var(--line);text-align:left;vert
 </section>
 </div>
 
-<nav>
+<nav id="lessonBottomNav">
   <button data-panel="list" class="active">词表</button>
   <button data-panel="learn">背词</button>
   <button data-panel="dictation">默写</button>
   <button data-panel="wrong">错词</button>
 </nav>
+</div>
 
 <script>
-const STORAGE_KEY='nce3-l42-progress-v1';
-let lesson=null, progress=JSON.parse(localStorage.getItem(STORAGE_KEY)||'{}');
+let catalog=[], lesson=null, currentCatalogIndex=-1, progress={};
 let learnQueue=[], learnIndex=0, dictQueue=[], dictIndex=0;
 const $=id=>document.getElementById(id);
-function save(){localStorage.setItem(STORAGE_KEY,JSON.stringify(progress));updateStats()}
+
+function storageKey(){ return lesson ? `nce3-l${lesson.lesson}-progress-v1` : ''; }
+function loadProgress(){
+  progress = lesson ? JSON.parse(localStorage.getItem(storageKey())||'{}') : {};
+}
+function save(){ if(lesson)localStorage.setItem(storageKey(),JSON.stringify(progress)); updateStats(); renderHome(); }
 function rec(w){if(!progress[w])progress[w]={grade:'',wrong:0};return progress[w]}
 function weakWords(){return lesson.words.filter(x=>['fuzzy','unknown'].includes(rec(x.word).grade)||rec(x.word).wrong>0)}
+
+function lessonStats(meta){
+  const p=JSON.parse(localStorage.getItem(`nce3-l${meta.lesson}-progress-v1`)||'{}');
+  let weak=0, wrong=0;
+  Object.values(p).forEach(r=>{
+    if(['fuzzy','unknown'].includes(r.grade)||(r.wrong||0)>0) weak++;
+    if((r.wrong||0)>0) wrong++;
+  });
+  return {weak,wrong};
+}
+
+async function loadCatalog(){
+  catalog=await fetch('lessons.json').then(r=>r.json());
+  catalog.sort((a,b)=>Number(a.lesson)-Number(b.lesson));
+  renderHome();
+  const params=new URLSearchParams(location.search);
+  const requested=Number(params.get('lesson'));
+  if(requested && catalog.some(x=>x.lesson===requested)) openLesson(requested,false);
+}
+
+function renderHome(){
+  $('lessonList').innerHTML=catalog.map(m=>{
+    const s=lessonStats(m);
+    return `<div class="lessonItem" onclick="openLesson(${m.lesson})">
+      <div class="lessonNo">LESSON ${m.lesson}</div>
+      <div class="lessonTitle">${m.title}</div>
+      <div class="lessonZh">${m.titleZh||''}</div>
+      <div class="lessonMeta">
+        <span>${m.wordCount||0} 词</span>
+        <span>薄弱 ${s.weak}</span>
+        <span>错词 ${s.wrong}</span>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+async function openLesson(num,push=true){
+  currentCatalogIndex=catalog.findIndex(x=>x.lesson===num);
+  if(currentCatalogIndex<0)return;
+  const meta=catalog[currentCatalogIndex];
+  lesson=await fetch(meta.file).then(r=>r.json());
+  loadProgress();
+  $('homeView').classList.add('hidden');
+  $('lessonView').classList.remove('hidden');
+  $('title').textContent=`Lesson ${lesson.lesson} · ${lesson.title}`;
+  $('subtitle').textContent=`${lesson.titleZh} · 新概念英语3`;
+  $('prevLesson').disabled=currentCatalogIndex===0;
+  $('nextLesson').disabled=currentCatalogIndex===catalog.length-1;
+  renderList();updateStats();startLearn(lesson.words);startDict(lesson.words);
+  showPanel('list');
+  if(push) history.pushState({lesson:num},'',`?lesson=${num}`);
+  window.scrollTo({top:0,behavior:'instant'});
+}
+
+function goHome(push=true){
+  $('lessonView').classList.add('hidden');
+  $('homeView').classList.remove('hidden');
+  lesson=null;currentCatalogIndex=-1;renderHome();
+  if(push) history.pushState({},'',location.pathname);
+  window.scrollTo({top:0,behavior:'instant'});
+}
+
+window.addEventListener('popstate',()=>{
+  const params=new URLSearchParams(location.search);
+  const n=Number(params.get('lesson'));
+  if(n)openLesson(n,false);else goHome(false);
+});
+
+$('backHome').onclick=()=>goHome();
+$('prevLesson').onclick=()=>{if(currentCatalogIndex>0)openLesson(catalog[currentCatalogIndex-1].lesson)};
+$('nextLesson').onclick=()=>{if(currentCatalogIndex<catalog.length-1)openLesson(catalog[currentCatalogIndex+1].lesson)};
+
 function updateStats(){
   const weak=lesson?weakWords().length:0;
   const wrong=lesson?lesson.words.filter(x=>rec(x.word).wrong>0).length:0;
@@ -129,12 +238,7 @@ function updateStats(){
   $('weakPill').textContent=`薄弱 ${weak}`;
   $('wrongPill').textContent=`错词 ${wrong}`;
 }
-async function load(){
-  lesson=await fetch('lesson42.json').then(r=>r.json());
-  $('title').textContent=`Lesson ${lesson.lesson} · ${lesson.title}`;
-  $('subtitle').textContent=`${lesson.titleZh} · 新概念英语3`;
-  renderList();updateStats();startLearn(lesson.words);startDict(lesson.words);
-}
+
 function speak(item, lang='en-GB'){
   if(item.audio){
     const a=new Audio(item.audio); a.play(); return;
@@ -145,26 +249,26 @@ function speak(item, lang='en-GB'){
   u.lang=lang;u.rate=.82;
   speechSynthesis.speak(u);
 }
+
 function renderList(){
   let rows=lesson.words.map(x=>`<tr>
     <td><button class="speaker" onclick='speak(${JSON.stringify(x)})'>🔊</button><span class="word">${x.word}</span>${x.lesson_form?`<div class="note">课文：${x.lesson_form}</div>`:''}</td>
     <td class="ipa">${x.ipa}</td><td>${x.pos}</td><td><span class="meaningText">${x.meaning}</span></td>
   </tr>`).join('');
-  let people=lesson.people.map(x=>`<tr><td><button class="speaker" onclick='speak(${JSON.stringify(x)},${JSON.stringify(x.lang||"en-GB")})'>🔊</button><span class="word">${x.name}</span></td><td>${x.ipa}</td></tr>`).join('');
-  let places=lesson.places.map(x=>`<tr><td><button class="speaker" onclick='speak(${JSON.stringify(x)},${JSON.stringify(x.lang||"en-GB")})'>🔊</button><span class="word">${x.name}</span></td><td>${x.ipa}</td><td><span class="meaningText">${x.zh}</span></td></tr>`).join('');
+  let people=(lesson.people||[]).map(x=>`<tr><td><button class="speaker" onclick='speak(${JSON.stringify(x)},${JSON.stringify(x.lang||"en-GB")})'>🔊</button><span class="word">${x.name}</span></td><td>${x.ipa}</td></tr>`).join('');
+  let places=(lesson.places||[]).map(x=>`<tr><td><button class="speaker" onclick='speak(${JSON.stringify(x)},${JSON.stringify(x.lang||"en-GB")})'>🔊</button><span class="word">${x.name}</span></td><td>${x.ipa}</td><td><span class="meaningText">${x.zh}</span></td></tr>`).join('');
   $('listWrap').innerHTML=`<table id="wordTable"><thead><tr><th>单词</th><th>音标</th><th>词性</th><th>本课释义</th></tr></thead><tbody>${rows}</tbody></table>
-  <div class="sectionTitle">People · 人名</div><table><tbody>${people}</tbody></table>
-  <div class="sectionTitle">Places · 地名</div><table><tbody>${places}</tbody></table>`;
+  ${people?`<div class="sectionTitle">People · 人名</div><table><tbody>${people}</tbody></table>`:''}
+  ${places?`<div class="sectionTitle">Places · 地名</div><table><tbody>${places}</tbody></table>`:''}`;
 }
+
 $('toggleMeaning').onclick=()=>{
   const w=$('listWrap');w.classList.toggle('hideMeaning');
   $('toggleMeaning').textContent=w.classList.contains('hideMeaning')?'显示中文释义':'隐藏中文释义';
 };
 $('showAll').onclick=()=>{$('listWrap').classList.remove('hideMeaning');$('toggleMeaning').textContent='隐藏中文释义'};
 
-function startLearn(arr){
-  learnQueue=[...arr];learnIndex=0;showLearn();
-}
+function startLearn(arr){learnQueue=[...arr];learnIndex=0;showLearn()}
 function showLearn(){
   if(!learnQueue.length){
     $('learnWord').textContent='暂无薄弱词';$('learnIpa').textContent='';$('learnMeaning').textContent='';$('learnForm').textContent='';
@@ -177,8 +281,7 @@ function showLearn(){
   $('learnMeaning').classList.add('hidden');$('gradeButtons').classList.add('hidden');$('reveal').classList.remove('hidden');
   $('learnProgress').textContent=`${learnIndex+1} / ${learnQueue.length}`;
   $('learnSpeak').onclick=()=>speak(x);
-  $('prevLearn').disabled=learnIndex===0;
-  $('nextLearn').disabled=learnIndex===learnQueue.length-1;
+  $('prevLearn').disabled=learnIndex===0;$('nextLearn').disabled=learnIndex===learnQueue.length-1;
 }
 $('reveal').onclick=()=>{$('learnMeaning').classList.remove('hidden');$('gradeButtons').classList.remove('hidden');$('reveal').classList.add('hidden')};
 document.querySelectorAll('#gradeButtons button').forEach(b=>b.onclick=()=>{
@@ -197,9 +300,9 @@ function showDict(){
     $('prevDict').disabled=true;$('nextDict').disabled=true;return
   }
   dictIndex=Math.max(0,Math.min(dictIndex,dictQueue.length-1));
-  const x=dictQueue[dictIndex];$('dictMeaning').textContent=x.meaning;$('dictPos').textContent=x.pos;$('dictProgress').textContent=`${dictIndex+1} / ${dictQueue.length}`;
-  $('prevDict').disabled=dictIndex===0;
-  $('nextDict').disabled=dictIndex===dictQueue.length-1;
+  const x=dictQueue[dictIndex];
+  $('dictMeaning').textContent=x.meaning;$('dictPos').textContent=x.pos;$('dictProgress').textContent=`${dictIndex+1} / ${dictQueue.length}`;
+  $('prevDict').disabled=dictIndex===0;$('nextDict').disabled=dictIndex===dictQueue.length-1;
   setTimeout(()=>$('dictInput').focus(),50);
 }
 function checkDict(){
@@ -209,8 +312,7 @@ function checkDict(){
   if(ans===x.word.toLowerCase()){
     $('dictResult').textContent='✓ 正确';$('dictResult').className='result correct';
   }else{
-    rec(x.word).wrong=(rec(x.word).wrong||0)+1;
-    rec(x.word).grade=rec(x.word).grade||'fuzzy';
+    rec(x.word).wrong=(rec(x.word).wrong||0)+1;rec(x.word).grade=rec(x.word).grade||'fuzzy';
     $('dictResult').textContent=`✗ 正确答案：${x.word}`;$('dictResult').className='result wrong';save();
   }
   $('dictInput').disabled=true;$('checkDict').classList.add('hidden');
@@ -219,7 +321,8 @@ $('checkDict').onclick=checkDict;
 $('dictInput').addEventListener('keydown',e=>{if(e.key==='Enter')checkDict()});
 $('prevDict').onclick=()=>{if(dictIndex>0){dictIndex--;showDict()}};
 $('nextDict').onclick=()=>{if(dictIndex<dictQueue.length-1){dictIndex++;showDict()}};
-$('dictAll').onclick=()=>startDict(lesson.words);$('dictWeak').onclick=()=>startDict(weakWords());
+$('dictAll').onclick=()=>startDict(lesson.words);
+$('dictWeak').onclick=()=>startDict(weakWords());
 
 function renderWrong(){
   const xs=lesson.words.filter(x=>rec(x.word).wrong>0);
@@ -228,12 +331,15 @@ function renderWrong(){
 }
 $('clearWrong').onclick=()=>{if(confirm('确定清空本课错词记录？')){Object.keys(progress).forEach(k=>progress[k].wrong=0);save();renderWrong()}};
 
-document.querySelectorAll('nav button').forEach(b=>b.onclick=()=>{
-  document.querySelectorAll('nav button').forEach(x=>x.classList.remove('active'));b.classList.add('active');
-  document.querySelectorAll('.panel').forEach(x=>x.classList.remove('active'));$(b.dataset.panel).classList.add('active');
-  if(b.dataset.panel==='wrong')renderWrong();
-});
+function showPanel(name){
+  document.querySelectorAll('#lessonBottomNav button').forEach(x=>x.classList.toggle('active',x.dataset.panel===name));
+  document.querySelectorAll('#lessonView .panel').forEach(x=>x.classList.toggle('active',x.id===name));
+  if(name==='wrong')renderWrong();
+}
+document.querySelectorAll('#lessonBottomNav button').forEach(b=>b.onclick=()=>showPanel(b.dataset.panel));
+
 if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js'));
-load();
+loadCatalog();
 </script>
+
 </body></html>
