@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#355c4a">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icon-192.png">
+<title>新概念英语3 · 单词学习</title>
+<style>
+:root{--bg:#f5f7f5;--card:#fff;--text:#1f2923;--muted:#6d786f;--line:#dde4df;--green:#355c4a;--green2:#e9f1ec;--bad:#8a3d3d;--ok:#2e6b49}
+*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",Arial,sans-serif}
+.app{max-width:980px;margin:auto;padding:16px 14px 88px}
+header{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px;margin-bottom:14px}
+h1{font-size:24px;margin:0 0 5px}.sub{color:var(--muted);font-size:14px}.stats{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.pill{background:var(--green2);padding:6px 10px;border-radius:999px;font-size:13px}
+nav{position:fixed;left:0;right:0;bottom:0;background:rgba(255,255,255,.96);border-top:1px solid var(--line);display:flex;justify-content:center;z-index:20;padding-bottom:env(safe-area-inset-bottom)}
+nav button{flex:1;max-width:220px;border:0;background:transparent;padding:13px 6px;font-size:14px;color:#405046}nav button.active{color:var(--green);font-weight:700;background:var(--green2)}
+.panel{display:none}.panel.active{display:block}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+button,.btn{border:1px solid var(--line);background:white;border-radius:10px;padding:9px 12px;font-size:14px;cursor:pointer}
+button.primary{background:var(--green);color:#fff;border-color:var(--green)} button.danger{color:var(--bad)}
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+th,td{padding:11px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{font-size:12px;color:var(--muted);background:#fafbfa}
+.word{font-weight:700;font-size:17px}.ipa{white-space:nowrap}.note{font-size:12px;color:var(--muted);margin-top:3px}.hideMeaning .meaningText{filter:blur(7px);user-select:none}
+.speaker{border:0;background:transparent;padding:0 6px 0 0;font-size:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;text-align:center;min-height:320px;display:flex;flex-direction:column;justify-content:center}
+.bigword{font-size:36px;font-weight:750;margin:8px 0}.bigipa{font-size:18px;color:var(--muted)}.bigmeaning{font-size:24px;margin-top:22px}.hidden{display:none!important}
+.actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:18px}
+.actions button{min-width:105px}
+.progress{font-size:13px;color:var(--muted);margin:8px 0 12px;text-align:center}
+.dictbox{font-size:22px;padding:12px 14px;border:1px solid var(--line);border-radius:12px;width:min(360px,90%);text-align:center}
+.result{margin-top:14px;font-weight:700}.correct{color:var(--ok)}.wrong{color:var(--bad)}
+.empty{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:28px;text-align:center;color:var(--muted)}
+.sectionTitle{font-weight:700;margin:18px 2px 8px}
+@media(max-width:720px){.app{padding:10px 9px 84px}header{border-radius:14px}.desktopOnly{display:none}table,tbody,tr,td{display:block;width:100%}thead{display:none}tr{padding:10px 12px;border-bottom:1px solid var(--line)}td{border:0;padding:3px 0}.word{font-size:19px}.ipa{white-space:normal}.meaningText{font-size:15px}.bigword{font-size:32px}}
+</style>
+</head>
+<body>
+<div class="app">
+<header>
+  <h1 id="title">新概念英语3 · 单词学习</h1>
+  <div class="sub" id="subtitle"></div>
+  <div class="stats">
+    <span class="pill" id="countPill"></span>
+    <span class="pill" id="weakPill"></span>
+    <span class="pill" id="wrongPill"></span>
+  </div>
+</header>
+
+<section id="list" class="panel active">
+  <div class="toolbar">
+    <button id="toggleMeaning" class="primary">隐藏中文释义</button>
+    <button id="showAll">显示全部</button>
+  </div>
+  <div id="listWrap"></div>
+</section>
+
+<section id="learn" class="panel">
+  <div class="toolbar">
+    <button id="startAll" class="primary">全部单词</button>
+    <button id="startWeak">只背薄弱词</button>
+  </div>
+  <div id="learnProgress" class="progress"></div>
+  <div class="card" id="learnCard">
+    <div><button class="speaker" id="learnSpeak">🔊</button></div>
+    <div class="bigword" id="learnWord"></div>
+    <div class="bigipa" id="learnIpa"></div>
+    <div class="bigmeaning hidden" id="learnMeaning"></div>
+    <div class="note" id="learnForm"></div>
+    <div class="actions">
+      <button id="reveal" class="primary">显示释义</button>
+    </div>
+    <div class="actions hidden" id="gradeButtons">
+      <button data-grade="know">认识</button>
+      <button data-grade="fuzzy">模糊</button>
+      <button data-grade="unknown">不认识</button>
+    </div>
+  </div>
+</section>
+
+<section id="dictation" class="panel">
+  <div class="toolbar">
+    <button id="dictAll" class="primary">全部单词</button>
+    <button id="dictWeak">只默写薄弱词</button>
+  </div>
+  <div id="dictProgress" class="progress"></div>
+  <div class="card">
+    <div class="bigmeaning" id="dictMeaning"></div>
+    <div class="note" id="dictPos"></div>
+    <div class="actions"><input id="dictInput" class="dictbox" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="输入英文原型"></div>
+    <div class="actions"><button id="checkDict" class="primary">检查</button><button id="nextDict" class="hidden">下一词</button></div>
+    <div id="dictResult" class="result"></div>
+  </div>
+</section>
+
+<section id="wrong" class="panel">
+  <div class="toolbar"><button id="clearWrong" class="danger">清空错词记录</button></div>
+  <div id="wrongWrap"></div>
+</section>
+</div>
+
+<nav>
+  <button data-panel="list" class="active">词表</button>
+  <button data-panel="learn">背词</button>
+  <button data-panel="dictation">默写</button>
+  <button data-panel="wrong">错词</button>
+</nav>
+
+<script>
+const STORAGE_KEY='nce3-l42-progress-v1';
+let lesson=null, progress=JSON.parse(localStorage.getItem(STORAGE_KEY)||'{}');
+let learnQueue=[], learnIndex=0, dictQueue=[], dictIndex=0;
+const $=id=>document.getElementById(id);
+function save(){localStorage.setItem(STORAGE_KEY,JSON.stringify(progress));updateStats()}
+function rec(w){if(!progress[w])progress[w]={grade:'',wrong:0};return progress[w]}
+function weakWords(){return lesson.words.filter(x=>['fuzzy','unknown'].includes(rec(x.word).grade)||rec(x.word).wrong>0)}
+function updateStats(){
+  const weak=lesson?weakWords().length:0;
+  const wrong=lesson?lesson.words.filter(x=>rec(x.word).wrong>0).length:0;
+  $('countPill').textContent=lesson?`本课 ${lesson.words.length} 词`:'';
+  $('weakPill').textContent=`薄弱 ${weak}`;
+  $('wrongPill').textContent=`错词 ${wrong}`;
+}
+async function load(){
+  lesson=await fetch('lesson42.json').then(r=>r.json());
+  $('title').textContent=`Lesson ${lesson.lesson} · ${lesson.title}`;
+  $('subtitle').textContent=`${lesson.titleZh} · 新概念英语3`;
+  renderList();updateStats();startLearn(lesson.words);startDict(lesson.words);
+}
+function speak(item, lang='en-GB'){
+  if(item.audio){
+    const a=new Audio(item.audio); a.play(); return;
+  }
+  if(!('speechSynthesis' in window)){alert('当前浏览器不支持语音朗读');return}
+  speechSynthesis.cancel();
+  const u=new SpeechSynthesisUtterance(item.word||item.name);
+  u.lang=lang;u.rate=.82;
+  speechSynthesis.speak(u);
+}
+function renderList(){
+  let rows=lesson.words.map(x=>`<tr>
+    <td><button class="speaker" onclick='speak(${JSON.stringify(x)})'>🔊</button><span class="word">${x.word}</span>${x.lesson_form?`<div class="note">课文：${x.lesson_form}</div>`:''}</td>
+    <td class="ipa">${x.ipa}</td><td>${x.pos}</td><td><span class="meaningText">${x.meaning}</span></td>
+  </tr>`).join('');
+  let people=lesson.people.map(x=>`<tr><td><button class="speaker" onclick='speak(${JSON.stringify(x)},${JSON.stringify(x.lang||"en-GB")})'>🔊</button><span class="word">${x.name}</span></td><td>${x.ipa}</td></tr>`).join('');
+  let places=lesson.places.map(x=>`<tr><td><button class="speaker" onclick='speak(${JSON.stringify(x)},${JSON.stringify(x.lang||"en-GB")})'>🔊</button><span class="word">${x.name}</span></td><td>${x.ipa}</td><td><span class="meaningText">${x.zh}</span></td></tr>`).join('');
+  $('listWrap').innerHTML=`<table id="wordTable"><thead><tr><th>单词</th><th>音标</th><th>词性</th><th>本课释义</th></tr></thead><tbody>${rows}</tbody></table>
+  <div class="sectionTitle">People · 人名</div><table><tbody>${people}</tbody></table>
+  <div class="sectionTitle">Places · 地名</div><table><tbody>${places}</tbody></table>`;
+}
+$('toggleMeaning').onclick=()=>{
+  const w=$('listWrap');w.classList.toggle('hideMeaning');
+  $('toggleMeaning').textContent=w.classList.contains('hideMeaning')?'显示中文释义':'隐藏中文释义';
+};
+$('showAll').onclick=()=>{$('listWrap').classList.remove('hideMeaning');$('toggleMeaning').textContent='隐藏中文释义'};
+
+function startLearn(arr){
+  learnQueue=[...arr];learnIndex=0;showLearn();
+}
+function showLearn(){
+  if(!learnQueue.length){$('learnCard').innerHTML='<div class="empty">暂无薄弱词。</div>';return}
+  if(learnIndex>=learnQueue.length)learnIndex=0;
+  const x=learnQueue[learnIndex];
+  $('learnWord').textContent=x.word;$('learnIpa').textContent=x.ipa;$('learnMeaning').textContent=`${x.pos} ${x.meaning}`;$('learnForm').textContent=x.lesson_form?`课文：${x.lesson_form}`:'';
+  $('learnMeaning').classList.add('hidden');$('gradeButtons').classList.add('hidden');$('reveal').classList.remove('hidden');
+  $('learnProgress').textContent=`${learnIndex+1} / ${learnQueue.length}`;
+  $('learnSpeak').onclick=()=>speak(x);
+}
+$('reveal').onclick=()=>{$('learnMeaning').classList.remove('hidden');$('gradeButtons').classList.remove('hidden');$('reveal').classList.add('hidden')};
+document.querySelectorAll('#gradeButtons button').forEach(b=>b.onclick=()=>{
+  const x=learnQueue[learnIndex];rec(x.word).grade=b.dataset.grade;save();learnIndex++;showLearn();
+});
+$('startAll').onclick=()=>startLearn(lesson.words);
+$('startWeak').onclick=()=>startLearn(weakWords());
+
+function startDict(arr){dictQueue=[...arr];dictIndex=0;showDict()}
+function showDict(){
+  $('dictResult').textContent='';$('dictResult').className='result';$('dictInput').value='';$('dictInput').disabled=false;$('checkDict').classList.remove('hidden');$('nextDict').classList.add('hidden');
+  if(!dictQueue.length){$('dictMeaning').textContent='暂无薄弱词';$('dictPos').textContent='';$('dictProgress').textContent='';return}
+  if(dictIndex>=dictQueue.length)dictIndex=0;
+  const x=dictQueue[dictIndex];$('dictMeaning').textContent=x.meaning;$('dictPos').textContent=x.pos;$('dictProgress').textContent=`${dictIndex+1} / ${dictQueue.length}`;
+  setTimeout(()=>$('dictInput').focus(),50);
+}
+function checkDict(){
+  if(!dictQueue.length)return;
+  const x=dictQueue[dictIndex], ans=$('dictInput').value.trim().toLowerCase();
+  if(!ans)return;
+  if(ans===x.word.toLowerCase()){
+    $('dictResult').textContent='✓ 正确';$('dictResult').className='result correct';
+  }else{
+    rec(x.word).wrong=(rec(x.word).wrong||0)+1;
+    rec(x.word).grade=rec(x.word).grade||'fuzzy';
+    $('dictResult').textContent=`✗ 正确答案：${x.word}`;$('dictResult').className='result wrong';save();
+  }
+  $('dictInput').disabled=true;$('checkDict').classList.add('hidden');$('nextDict').classList.remove('hidden');
+}
+$('checkDict').onclick=checkDict;
+$('dictInput').addEventListener('keydown',e=>{if(e.key==='Enter')checkDict()});
+$('nextDict').onclick=()=>{dictIndex++;showDict()};
+$('dictAll').onclick=()=>startDict(lesson.words);$('dictWeak').onclick=()=>startDict(weakWords());
+
+function renderWrong(){
+  const xs=lesson.words.filter(x=>rec(x.word).wrong>0);
+  if(!xs.length){$('wrongWrap').innerHTML='<div class="empty">目前没有错词。</div>';return}
+  $('wrongWrap').innerHTML=`<table><thead><tr><th>单词</th><th>音标</th><th>词性</th><th>释义</th><th>错误次数</th></tr></thead><tbody>${xs.map(x=>`<tr><td><button class="speaker" onclick='speak(${JSON.stringify(x)})'>🔊</button><span class="word">${x.word}</span></td><td>${x.ipa}</td><td>${x.pos}</td><td>${x.meaning}</td><td>${rec(x.word).wrong}</td></tr>`).join('')}</tbody></table>`
+}
+$('clearWrong').onclick=()=>{if(confirm('确定清空本课错词记录？')){Object.keys(progress).forEach(k=>progress[k].wrong=0);save();renderWrong()}};
+
+document.querySelectorAll('nav button').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('nav button').forEach(x=>x.classList.remove('active'));b.classList.add('active');
+  document.querySelectorAll('.panel').forEach(x=>x.classList.remove('active'));$(b.dataset.panel).classList.add('active');
+  if(b.dataset.panel==='wrong')renderWrong();
+});
+if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js'));
+load();
+</script>
+</body></html>

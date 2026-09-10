@@ -1,0 +1,423 @@
+{
+  "lesson": 42,
+  "title": "Modern cavemen",
+  "titleZh": "现代洞穴人",
+  "words": [
+    {
+      "word": "exploration",
+      "ipa": "/ˌekspləˈreɪʃn/",
+      "pos": "n.",
+      "meaning": "探索；探险",
+      "lesson_form": ""
+    },
+    {
+      "word": "pot-holing",
+      "ipa": "/ˈpɒt həʊlɪŋ/",
+      "pos": "n.",
+      "meaning": "洞穴探险",
+      "lesson_form": ""
+    },
+    {
+      "word": "relatively",
+      "ipa": "/ˈrelətɪvli/",
+      "pos": "adv.",
+      "meaning": "相对地；比较而言",
+      "lesson_form": ""
+    },
+    {
+      "word": "desire",
+      "ipa": "/dɪˈzaɪə(r)/",
+      "pos": "n.",
+      "meaning": "愿望；欲望",
+      "lesson_form": ""
+    },
+    {
+      "word": "solitude",
+      "ipa": "/ˈsɒlətjuːd/",
+      "pos": "n.",
+      "meaning": "独处；孤独",
+      "lesson_form": ""
+    },
+    {
+      "word": "lure",
+      "ipa": "/lʊə(r)/",
+      "pos": "v.",
+      "meaning": "吸引；诱使",
+      "lesson_form": "lures（三单）"
+    },
+    {
+      "word": "depth",
+      "ipa": "/depθ/",
+      "pos": "n.",
+      "meaning": "深处",
+      "lesson_form": "depths（复数）"
+    },
+    {
+      "word": "satisfactory",
+      "ipa": "/ˌsætɪsˈfæktəri/",
+      "pos": "adj.",
+      "meaning": "令人满意的；合理的",
+      "lesson_form": ""
+    },
+    {
+      "word": "explanation",
+      "ipa": "/ˌekspləˈneɪʃn/",
+      "pos": "n.",
+      "meaning": "解释",
+      "lesson_form": ""
+    },
+    {
+      "word": "motive",
+      "ipa": "/ˈməʊtɪv/",
+      "pos": "n.",
+      "meaning": "动机",
+      "lesson_form": "motives（复数）"
+    },
+    {
+      "word": "peculiar",
+      "ipa": "/pɪˈkjuːliə(r)/",
+      "pos": "adj.",
+      "meaning": "特有的；独特的",
+      "lesson_form": ""
+    },
+    {
+      "word": "fascination",
+      "ipa": "/ˌfæsɪˈneɪʃn/",
+      "pos": "n.",
+      "meaning": "强烈的吸引力；魅力",
+      "lesson_form": ""
+    },
+    {
+      "word": "arouse",
+      "ipa": "/əˈraʊz/",
+      "pos": "v.",
+      "meaning": "唤起；激起",
+      "lesson_form": ""
+    },
+    {
+      "word": "instinct",
+      "ipa": "/ˈɪnstɪŋkt/",
+      "pos": "n.",
+      "meaning": "本能",
+      "lesson_form": "instincts（复数）"
+    },
+    {
+      "word": "rambler",
+      "ipa": "/ˈræmblə(r)/",
+      "pos": "n.",
+      "meaning": "漫步者；徒步者",
+      "lesson_form": ""
+    },
+    {
+      "word": "undertaking",
+      "ipa": "/ˌʌndəˈteɪkɪŋ/",
+      "pos": "n.",
+      "meaning": "任务；工作",
+      "lesson_form": "undertakings（复数）"
+    },
+    {
+      "word": "precise",
+      "ipa": "/prɪˈsaɪs/",
+      "pos": "adj.",
+      "meaning": "精确的；周密的",
+      "lesson_form": ""
+    },
+    {
+      "word": "foresight",
+      "ipa": "/ˈfɔːsaɪt/",
+      "pos": "n.",
+      "meaning": "预见；远见",
+      "lesson_form": ""
+    },
+    {
+      "word": "military",
+      "ipa": "/ˈmɪlətri/",
+      "pos": "adj.",
+      "meaning": "军事的",
+      "lesson_form": ""
+    },
+    {
+      "word": "rig",
+      "ipa": "/rɪɡ/",
+      "pos": "v.",
+      "meaning": "装配；架设",
+      "lesson_form": "rig up（架设）"
+    },
+    {
+      "word": "ladder",
+      "ipa": "/ˈlædə(r)/",
+      "pos": "n.",
+      "meaning": "梯子",
+      "lesson_form": "ladders（复数）"
+    },
+    {
+      "word": "establish",
+      "ipa": "/ɪˈstæblɪʃ/",
+      "pos": "v.",
+      "meaning": "建立；设立",
+      "lesson_form": ""
+    },
+    {
+      "word": "descent",
+      "ipa": "/dɪˈsent/",
+      "pos": "n.",
+      "meaning": "下行；下降",
+      "lesson_form": ""
+    },
+    {
+      "word": "precaution",
+      "ipa": "/prɪˈkɔːʃn/",
+      "pos": "n.",
+      "meaning": "预防措施",
+      "lesson_form": "Precautions（复数）"
+    },
+    {
+      "word": "foretell",
+      "ipa": "/fɔːˈtel/",
+      "pos": "v.",
+      "meaning": "预知；预料",
+      "lesson_form": ""
+    },
+    {
+      "word": "confront",
+      "ipa": "/kənˈfrʌnt/",
+      "pos": "v.",
+      "meaning": "面临；面对",
+      "lesson_form": ""
+    },
+    {
+      "word": "immense",
+      "ipa": "/ɪˈmens/",
+      "pos": "adj.",
+      "meaning": "巨大的",
+      "lesson_form": ""
+    },
+    {
+      "word": "chasm",
+      "ipa": "/ˈkæzəm/",
+      "pos": "n.",
+      "meaning": "深坑；裂口；深渊",
+      "lesson_form": ""
+    },
+    {
+      "word": "tunnel",
+      "ipa": "/ˈtʌnl/",
+      "pos": "v.",
+      "meaning": "开凿出通道；穿过",
+      "lesson_form": "tunnelled（过去分词）"
+    },
+    {
+      "word": "flaw",
+      "ipa": "/flɔː/",
+      "pos": "n.",
+      "meaning": "裂缝；缺口",
+      "lesson_form": ""
+    },
+    {
+      "word": "plateau",
+      "ipa": "/ˈplætəʊ/",
+      "pos": "n.",
+      "meaning": "高原；高地",
+      "lesson_form": ""
+    },
+    {
+      "word": "noticeable",
+      "ipa": "/ˈnəʊtɪsəbl/",
+      "pos": "adj.",
+      "meaning": "明显的；容易注意到的",
+      "lesson_form": ""
+    },
+    {
+      "word": "distinguished",
+      "ipa": "/dɪˈstɪŋɡwɪʃt/",
+      "pos": "adj.",
+      "meaning": "著名的；杰出的",
+      "lesson_form": ""
+    },
+    {
+      "word": "corridor",
+      "ipa": "/ˈkɒrɪdɔː(r)/",
+      "pos": "n.",
+      "meaning": "通道；走廊",
+      "lesson_form": ""
+    },
+    {
+      "word": "edge",
+      "ipa": "/edʒ/",
+      "pos": "v.",
+      "meaning": "小心地、慢慢地移动",
+      "lesson_form": "edge their way"
+    },
+    {
+      "word": "wade",
+      "ipa": "/weɪd/",
+      "pos": "v.",
+      "meaning": "涉水而行",
+      "lesson_form": "wading（现在分词）"
+    },
+    {
+      "word": "shallow",
+      "ipa": "/ˈʃæləʊ/",
+      "pos": "adj.",
+      "meaning": "浅的",
+      "lesson_form": ""
+    },
+    {
+      "word": "plunge",
+      "ipa": "/plʌndʒ/",
+      "pos": "v.",
+      "meaning": "跳入；投入",
+      "lesson_form": "plunged（过去式）"
+    },
+    {
+      "word": "inflatable",
+      "ipa": "/ɪnˈfleɪtəbl/",
+      "pos": "adj.",
+      "meaning": "可充气的",
+      "lesson_form": ""
+    },
+    {
+      "word": "dinghy",
+      "ipa": "/ˈdɪŋɡi/",
+      "pos": "n.",
+      "meaning": "小艇；橡皮艇",
+      "lesson_form": ""
+    },
+    {
+      "word": "insistent",
+      "ipa": "/ɪnˈsɪstənt/",
+      "pos": "adj.",
+      "meaning": "持续不断的",
+      "lesson_form": ""
+    },
+    {
+      "word": "waterspout",
+      "ipa": "/ˈwɔːtəspaʊt/",
+      "pos": "n.",
+      "meaning": "水柱；喷出的水流",
+      "lesson_form": ""
+    },
+    {
+      "word": "cleft",
+      "ipa": "/kleft/",
+      "pos": "n.",
+      "meaning": "裂缝；裂口",
+      "lesson_form": ""
+    },
+    {
+      "word": "enormous",
+      "ipa": "/ɪˈnɔːməs/",
+      "pos": "adj.",
+      "meaning": "巨大的",
+      "lesson_form": ""
+    },
+    {
+      "word": "cavern",
+      "ipa": "/ˈkævən/",
+      "pos": "n.",
+      "meaning": "大洞穴；洞窟",
+      "lesson_form": ""
+    },
+    {
+      "word": "arc",
+      "ipa": "/ɑːk/",
+      "pos": "n.",
+      "meaning": "电弧",
+      "lesson_form": "arc lights（弧光灯）"
+    },
+    {
+      "word": "stalagmite",
+      "ipa": "/ˈstæləɡmaɪt/",
+      "pos": "n.",
+      "meaning": "石笋",
+      "lesson_form": "stalagmites（复数）"
+    },
+    {
+      "word": "stalactite",
+      "ipa": "/ˈstæləktaɪt/",
+      "pos": "n.",
+      "meaning": "钟乳石",
+      "lesson_form": "stalactites（复数）"
+    },
+    {
+      "word": "suspend",
+      "ipa": "/səˈspend/",
+      "pos": "v.",
+      "meaning": "悬挂；吊着",
+      "lesson_form": "suspended（过去分词）"
+    },
+    {
+      "word": "limestone",
+      "ipa": "/ˈlaɪmstəʊn/",
+      "pos": "n.",
+      "meaning": "石灰岩",
+      "lesson_form": ""
+    },
+    {
+      "word": "glisten",
+      "ipa": "/ˈɡlɪsn/",
+      "pos": "v.",
+      "meaning": "闪光；闪亮",
+      "lesson_form": "glistened（过去式）"
+    },
+    {
+      "word": "eerie",
+      "ipa": "/ˈɪəri/",
+      "pos": "adj.",
+      "meaning": "怪异而令人不安的",
+      "lesson_form": ""
+    },
+    {
+      "word": "continuously",
+      "ipa": "/kənˈtɪnjuəsli/",
+      "pos": "adv.",
+      "meaning": "连续不断地",
+      "lesson_form": ""
+    },
+    {
+      "word": "dome",
+      "ipa": "/dəʊm/",
+      "pos": "n.",
+      "meaning": "穹顶；圆顶状顶部",
+      "lesson_form": ""
+    }
+  ],
+  "people": [
+    {
+      "name": "Berger",
+      "ipa": "/bɛʁˈʒe/",
+      "lang": "fr-FR",
+      "audio": ""
+    }
+  ],
+  "places": [
+    {
+      "name": "Gouffre Berger",
+      "ipa": "/ɡufʁ bɛʁˈʒe/",
+      "zh": "贝尔热洞穴",
+      "lang": "fr-FR",
+      "audio": ""
+    },
+    {
+      "name": "Grenoble",
+      "ipa": "/ɡʁəˈnɔbl/",
+      "zh": "格勒诺布尔",
+      "lang": "fr-FR",
+      "audio": ""
+    },
+    {
+      "name": "Dauphiné Alps",
+      "ipa": "/do.fi.ne alps/",
+      "zh": "多菲内阿尔卑斯山脉",
+      "lang": "fr-FR",
+      "audio": ""
+    },
+    {
+      "name": "Everest",
+      "ipa": "/ˈevərɪst/",
+      "zh": "珠穆朗玛峰",
+      "lang": "en-GB",
+      "audio": ""
+    }
+  ]
+}
