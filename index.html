@@ -26,7 +26,7 @@ th,td{padding:11px 10px;border-bottom:1px solid var(--line);text-align:left;vert
 .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;text-align:center;min-height:320px;display:flex;flex-direction:column;justify-content:center}
 .bigword{font-size:36px;font-weight:750;margin:8px 0}.bigipa{font-size:18px;color:var(--muted)}.bigmeaning{font-size:24px;margin-top:22px}.hidden{display:none!important}
 .actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:18px}
-.actions button{min-width:105px}
+.actions button{min-width:105px}.navActions{margin-top:22px}.navActions button:disabled{opacity:.38;cursor:not-allowed}
 .progress{font-size:13px;color:var(--muted);margin:8px 0 12px;text-align:center}
 .dictbox{font-size:22px;padding:12px 14px;border:1px solid var(--line);border-radius:12px;width:min(360px,90%);text-align:center}
 .result{margin-top:14px;font-weight:700}.correct{color:var(--ok)}.wrong{color:var(--bad)}
@@ -75,6 +75,10 @@ th,td{padding:11px 10px;border-bottom:1px solid var(--line);text-align:left;vert
       <button data-grade="fuzzy">模糊</button>
       <button data-grade="unknown">不认识</button>
     </div>
+    <div class="actions navActions">
+      <button id="prevLearn">← 上一个</button>
+      <button id="nextLearn">下一个 →</button>
+    </div>
   </div>
 </section>
 
@@ -88,8 +92,12 @@ th,td{padding:11px 10px;border-bottom:1px solid var(--line);text-align:left;vert
     <div class="bigmeaning" id="dictMeaning"></div>
     <div class="note" id="dictPos"></div>
     <div class="actions"><input id="dictInput" class="dictbox" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="输入英文原型"></div>
-    <div class="actions"><button id="checkDict" class="primary">检查</button><button id="nextDict" class="hidden">下一词</button></div>
+    <div class="actions"><button id="checkDict" class="primary">检查</button></div>
     <div id="dictResult" class="result"></div>
+    <div class="actions navActions">
+      <button id="prevDict">← 上一个</button>
+      <button id="nextDict">下一个 →</button>
+    </div>
   </div>
 </section>
 
@@ -158,27 +166,40 @@ function startLearn(arr){
   learnQueue=[...arr];learnIndex=0;showLearn();
 }
 function showLearn(){
-  if(!learnQueue.length){$('learnCard').innerHTML='<div class="empty">暂无薄弱词。</div>';return}
-  if(learnIndex>=learnQueue.length)learnIndex=0;
+  if(!learnQueue.length){
+    $('learnWord').textContent='暂无薄弱词';$('learnIpa').textContent='';$('learnMeaning').textContent='';$('learnForm').textContent='';
+    $('learnProgress').textContent='';$('reveal').classList.add('hidden');$('gradeButtons').classList.add('hidden');
+    $('prevLearn').disabled=true;$('nextLearn').disabled=true;return
+  }
+  learnIndex=Math.max(0,Math.min(learnIndex,learnQueue.length-1));
   const x=learnQueue[learnIndex];
   $('learnWord').textContent=x.word;$('learnIpa').textContent=x.ipa;$('learnMeaning').textContent=`${x.pos} ${x.meaning}`;$('learnForm').textContent=x.lesson_form?`课文：${x.lesson_form}`:'';
   $('learnMeaning').classList.add('hidden');$('gradeButtons').classList.add('hidden');$('reveal').classList.remove('hidden');
   $('learnProgress').textContent=`${learnIndex+1} / ${learnQueue.length}`;
   $('learnSpeak').onclick=()=>speak(x);
+  $('prevLearn').disabled=learnIndex===0;
+  $('nextLearn').disabled=learnIndex===learnQueue.length-1;
 }
 $('reveal').onclick=()=>{$('learnMeaning').classList.remove('hidden');$('gradeButtons').classList.remove('hidden');$('reveal').classList.add('hidden')};
 document.querySelectorAll('#gradeButtons button').forEach(b=>b.onclick=()=>{
-  const x=learnQueue[learnIndex];rec(x.word).grade=b.dataset.grade;save();learnIndex++;showLearn();
+  const x=learnQueue[learnIndex];rec(x.word).grade=b.dataset.grade;save();if(learnIndex<learnQueue.length-1)learnIndex++;showLearn();
 });
 $('startAll').onclick=()=>startLearn(lesson.words);
 $('startWeak').onclick=()=>startLearn(weakWords());
+$('prevLearn').onclick=()=>{if(learnIndex>0){learnIndex--;showLearn()}};
+$('nextLearn').onclick=()=>{if(learnIndex<learnQueue.length-1){learnIndex++;showLearn()}};
 
 function startDict(arr){dictQueue=[...arr];dictIndex=0;showDict()}
 function showDict(){
-  $('dictResult').textContent='';$('dictResult').className='result';$('dictInput').value='';$('dictInput').disabled=false;$('checkDict').classList.remove('hidden');$('nextDict').classList.add('hidden');
-  if(!dictQueue.length){$('dictMeaning').textContent='暂无薄弱词';$('dictPos').textContent='';$('dictProgress').textContent='';return}
-  if(dictIndex>=dictQueue.length)dictIndex=0;
+  $('dictResult').textContent='';$('dictResult').className='result';$('dictInput').value='';$('dictInput').disabled=false;$('checkDict').classList.remove('hidden');
+  if(!dictQueue.length){
+    $('dictMeaning').textContent='暂无薄弱词';$('dictPos').textContent='';$('dictProgress').textContent='';
+    $('prevDict').disabled=true;$('nextDict').disabled=true;return
+  }
+  dictIndex=Math.max(0,Math.min(dictIndex,dictQueue.length-1));
   const x=dictQueue[dictIndex];$('dictMeaning').textContent=x.meaning;$('dictPos').textContent=x.pos;$('dictProgress').textContent=`${dictIndex+1} / ${dictQueue.length}`;
+  $('prevDict').disabled=dictIndex===0;
+  $('nextDict').disabled=dictIndex===dictQueue.length-1;
   setTimeout(()=>$('dictInput').focus(),50);
 }
 function checkDict(){
@@ -192,11 +213,12 @@ function checkDict(){
     rec(x.word).grade=rec(x.word).grade||'fuzzy';
     $('dictResult').textContent=`✗ 正确答案：${x.word}`;$('dictResult').className='result wrong';save();
   }
-  $('dictInput').disabled=true;$('checkDict').classList.add('hidden');$('nextDict').classList.remove('hidden');
+  $('dictInput').disabled=true;$('checkDict').classList.add('hidden');
 }
 $('checkDict').onclick=checkDict;
 $('dictInput').addEventListener('keydown',e=>{if(e.key==='Enter')checkDict()});
-$('nextDict').onclick=()=>{dictIndex++;showDict()};
+$('prevDict').onclick=()=>{if(dictIndex>0){dictIndex--;showDict()}};
+$('nextDict').onclick=()=>{if(dictIndex<dictQueue.length-1){dictIndex++;showDict()}};
 $('dictAll').onclick=()=>startDict(lesson.words);$('dictWeak').onclick=()=>startDict(weakWords());
 
 function renderWrong(){
