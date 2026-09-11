@@ -14,7 +14,7 @@
 header{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px;margin-bottom:14px}
 h1{font-size:24px;margin:0 0 5px}.sub{color:var(--muted);font-size:14px}.stats{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.pill{background:var(--green2);padding:6px 10px;border-radius:999px;font-size:13px}
 nav{position:fixed;left:0;right:0;bottom:0;background:rgba(255,255,255,.96);border-top:1px solid var(--line);display:flex;justify-content:center;z-index:20;padding-bottom:env(safe-area-inset-bottom)}
-nav button{flex:1;max-width:220px;border:0;background:transparent;padding:13px 6px;font-size:14px;color:#405046}nav button.active{color:var(--green);font-weight:700;background:var(--green2)}
+nav button{flex:1;max-width:190px;border:0;background:transparent;padding:13px 4px;font-size:14px;color:#405046}nav button.active{color:var(--green);font-weight:700;background:var(--green2)}
 .panel{display:none}.panel.active{display:block}
 .toolbar{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
 .audioPlayer{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:13px 14px;margin:10px 0 14px}
@@ -106,7 +106,6 @@ th,td{padding:11px 10px;border-bottom:1px solid var(--line);text-align:left;vert
   <div class="toolbar">
     <button id="toggleMeaning" class="primary">隐藏中文释义</button>
     <button id="showAll">显示全部</button>
-    <button id="openPlayer" class="openPlayer">▶ 打开顺序播放</button>
   </div>
 
   <div id="listWrap"></div>
@@ -192,6 +191,7 @@ th,td{padding:11px 10px;border-bottom:1px solid var(--line);text-align:left;vert
 <nav id="lessonBottomNav">
   <button data-panel="list" class="active">词表</button>
   <button data-panel="learn">背词</button>
+  <button data-action="player">播放</button>
   <button data-panel="dictation">默写</button>
   <button data-panel="wrong">错词</button>
 </nav>
@@ -341,14 +341,6 @@ function closePlayerModal(){
   $('playerModal').classList.add('hidden');
   $('playerModal').setAttribute('aria-hidden','true');
 }
-$('openPlayer').onclick=()=>{
-  if(!lesson || !lesson.words.length)return;
-  openPlayerModal();
-  if(!audioPlaying && !audioPaused){
-    audioIndex=0;
-    updateAudioUI(true);
-  }
-};
 $('playerClose').onclick=closePlayerModal;
 $('playerModal').addEventListener('click',e=>{
   if(e.target===$('playerModal')) closePlayerModal();
@@ -581,7 +573,18 @@ function showPanel(name){
   document.querySelectorAll('#lessonView .panel').forEach(x=>x.classList.toggle('active',x.id===name));
   if(name==='wrong')renderWrong();
 }
-document.querySelectorAll('#lessonBottomNav button').forEach(b=>b.onclick=()=>showPanel(b.dataset.panel));
+document.querySelectorAll('#lessonBottomNav button').forEach(b=>b.onclick=()=>{
+  if(b.dataset.action==='player'){
+    if(!lesson || !lesson.words.length)return;
+    openPlayerModal();
+    if(!audioPlaying && !audioPaused){
+      audioIndex=0;
+      updateAudioUI(true);
+    }
+    return;
+  }
+  showPanel(b.dataset.panel);
+});
 
 if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js'));
 loadCatalog();
