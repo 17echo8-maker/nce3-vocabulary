@@ -17,6 +17,13 @@ nav{position:fixed;left:0;right:0;bottom:0;background:rgba(255,255,255,.96);bord
 nav button{flex:1;max-width:220px;border:0;background:transparent;padding:13px 6px;font-size:14px;color:#405046}nav button.active{color:var(--green);font-weight:700;background:var(--green2)}
 .panel{display:none}.panel.active{display:block}
 .toolbar{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+.audioPlayer{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:13px 14px;margin:10px 0 14px}
+.audioNow{font-size:14px;color:var(--muted);margin-bottom:9px}
+.audioNow strong{font-size:20px;color:var(--text);margin-left:5px}
+.audioControls{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.audioControls button{min-width:86px}
+.audioCount{font-size:13px;color:var(--muted);margin-left:auto}
+tr.playingRow{background:var(--green2)}
 button,.btn{border:1px solid var(--line);background:white;border-radius:10px;padding:9px 12px;font-size:14px;cursor:pointer}
 button.primary{background:var(--green);color:#fff;border-color:var(--green)} button.danger{color:var(--bad)}
 table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
@@ -32,7 +39,7 @@ th,td{padding:11px 10px;border-bottom:1px solid var(--line);text-align:left;vert
 .result{margin-top:14px;font-weight:700}.correct{color:var(--ok)}.wrong{color:var(--bad)}
 .empty{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:28px;text-align:center;color:var(--muted)}
 .sectionTitle{font-weight:700;margin:18px 2px 8px}
-@media(max-width:720px){.app{padding:10px 9px 84px}header{border-radius:14px}.desktopOnly{display:none}table,tbody,tr,td{display:block;width:100%}thead{display:none}tr{padding:10px 12px;border-bottom:1px solid var(--line)}td{border:0;padding:3px 0}.word{font-size:23px}.ipa{white-space:normal}.meaningText{font-size:15px}.bigword{font-size:32px}}
+@media(max-width:720px){.audioCount{width:100%;margin-left:0}.audioControls button{flex:1;min-width:0}.app{padding:10px 9px 84px}header{border-radius:14px}.desktopOnly{display:none}table,tbody,tr,td{display:block;width:100%}thead{display:none}tr{padding:10px 12px;border-bottom:1px solid var(--line)}td{border:0;padding:3px 0}.word{font-size:23px}.ipa{white-space:normal}.meaningText{font-size:15px}.bigword{font-size:32px}}
 
 .homeHeader{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;margin-bottom:14px}
 .homeHeader h1{font-size:26px;margin:0 0 6px}.homeIntro{color:var(--muted);font-size:14px}
@@ -45,7 +52,7 @@ th,td{padding:11px 10px;border-bottom:1px solid var(--line);text-align:left;vert
 .lessonTopbar{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px;flex-wrap:wrap}
 .backBtn{font-weight:700}.lessonNav{display:flex;gap:8px}
 #homeView.hidden,#lessonView.hidden{display:none!important}
-@media(max-width:720px){.lessonList{grid-template-columns:1fr}.homeHeader{border-radius:14px}.lessonItem{padding:15px}}
+@media(max-width:720px){.audioCount{width:100%;margin-left:0}.audioControls button{flex:1;min-width:0}.lessonList{grid-template-columns:1fr}.homeHeader{border-radius:14px}.lessonItem{padding:15px}}
 
 </style>
 </head>
@@ -84,6 +91,18 @@ th,td{padding:11px 10px;border-bottom:1px solid var(--line);text-align:left;vert
     <button id="toggleMeaning" class="primary">隐藏中文释义</button>
     <button id="showAll">显示全部</button>
   </div>
+
+  <div class="audioPlayer">
+    <div class="audioNow">顺序播放：<strong id="audioCurrent">尚未开始</strong></div>
+    <div class="audioControls">
+      <button id="audioPrev">← 上一个</button>
+      <button id="audioPlay" class="primary">▶ 开始播放</button>
+      <button id="audioPause">⏸ 暂停</button>
+      <button id="audioNext">下一个 →</button>
+      <span id="audioCount" class="audioCount">0 / 0</span>
+    </div>
+  </div>
+
   <div id="listWrap"></div>
 </section>
 
@@ -150,6 +169,7 @@ th,td{padding:11px 10px;border-bottom:1px solid var(--line);text-align:left;vert
 <script>
 let catalog=[], lesson=null, currentCatalogIndex=-1, progress={};
 let learnQueue=[], learnIndex=0, dictQueue=[], dictIndex=0;
+let audioIndex=0, audioPlaying=false, audioPaused=false, currentAudio=null;
 const $=id=>document.getElementById(id);
 
 function storageKey(){ return lesson ? `nce3-l${lesson.lesson}-progress-v1` : ''; }
@@ -211,6 +231,7 @@ function renderHome(){
 }
 
 async function openLesson(num,push=true){
+  stopAudioPlayback();
   currentCatalogIndex=catalog.findIndex(x=>x.lesson===num);
   if(currentCatalogIndex<0)return;
   const meta=catalog[currentCatalogIndex];
@@ -222,13 +243,14 @@ async function openLesson(num,push=true){
   $('subtitle').textContent=`${lesson.titleZh} · 新概念英语3`;
   $('prevLesson').disabled=currentCatalogIndex===0;
   $('nextLesson').disabled=currentCatalogIndex===catalog.length-1;
-  renderList();updateStats();startLearn(lesson.words);startDict(lesson.words);
+  renderList();updateStats();startLearn(lesson.words);startDict(lesson.words);resetAudioPlayer();
   showPanel('list');
   if(push) history.pushState({lesson:num},'',`?lesson=${num}`);
   window.scrollTo({top:0,behavior:'instant'});
 }
 
 function goHome(push=true){
+  stopAudioPlayback();
   $('lessonView').classList.add('hidden');
   $('homeView').classList.remove('hidden');
   lesson=null;currentCatalogIndex=-1;renderHome();
@@ -266,7 +288,7 @@ function speak(item, lang='en-GB'){
 }
 
 function renderList(){
-  let rows=lesson.words.map(x=>`<tr>
+  let rows=lesson.words.map((x,i)=>`<tr data-word-index="${i}">
     <td><button class="speaker" onclick='speak(${JSON.stringify(x)})'>🔊</button><span class="word">${x.word}</span>${x.lesson_form?`<div class="note">课文：${x.lesson_form}</div>`:''}</td>
     <td class="ipa">${x.ipa}</td><td>${x.pos}</td><td><span class="meaningText">${x.meaning}</span></td>
   </tr>`).join('');
@@ -276,6 +298,153 @@ function renderList(){
   ${people?`<div class="sectionTitle">People · 人名</div><table><tbody>${people}</tbody></table>`:''}
   ${places?`<div class="sectionTitle">Places · 地名</div><table><tbody>${places}</tbody></table>`:''}`;
 }
+
+
+function resetAudioPlayer(){
+  stopAudioPlayback();
+  audioIndex=0;
+  audioPaused=false;
+  updateAudioUI(false);
+}
+
+function stopAudioPlayback(){
+  audioPlaying=false;
+  audioPaused=false;
+  if(currentAudio){
+    try{ currentAudio.pause(); currentAudio.currentTime=0; }catch(e){}
+    currentAudio=null;
+  }
+  if('speechSynthesis' in window) speechSynthesis.cancel();
+  clearPlayingRow();
+}
+
+function clearPlayingRow(){
+  document.querySelectorAll('#wordTable tr.playingRow').forEach(r=>r.classList.remove('playingRow'));
+}
+
+function highlightAudioRow(){
+  clearPlayingRow();
+  const row=document.querySelector(`#wordTable tr[data-word-index="${audioIndex}"]`);
+  if(row){
+    row.classList.add('playingRow');
+    row.scrollIntoView({behavior:'smooth',block:'center'});
+  }
+}
+
+function updateAudioUI(active=true){
+  if(!lesson || !lesson.words.length){
+    $('audioCurrent').textContent='暂无单词';
+    $('audioCount').textContent='0 / 0';
+    return;
+  }
+  audioIndex=Math.max(0,Math.min(audioIndex,lesson.words.length-1));
+  const x=lesson.words[audioIndex];
+  $('audioCurrent').textContent=active?x.word:'尚未开始';
+  $('audioCount').textContent=active?`${audioIndex+1} / ${lesson.words.length}`:`0 / ${lesson.words.length}`;
+  $('audioPlay').textContent=audioPaused?'▶ 继续':'▶ 开始播放';
+  $('audioPrev').disabled=audioIndex===0;
+  $('audioNext').disabled=audioIndex===lesson.words.length-1;
+}
+
+function playAudioWord(index,continueSequence=true){
+  if(!lesson || !lesson.words.length)return;
+  audioIndex=Math.max(0,Math.min(index,lesson.words.length-1));
+  audioPlaying=true;
+  audioPaused=false;
+  const x=lesson.words[audioIndex];
+  updateAudioUI(true);
+  highlightAudioRow();
+
+  if(currentAudio){
+    try{currentAudio.pause()}catch(e){}
+    currentAudio=null;
+  }
+  if('speechSynthesis' in window) speechSynthesis.cancel();
+
+  const goNext=()=>{
+    if(!audioPlaying || audioPaused)return;
+    if(continueSequence && audioIndex<lesson.words.length-1){
+      setTimeout(()=>playAudioWord(audioIndex+1,true),450);
+    }else if(audioIndex>=lesson.words.length-1){
+      audioPlaying=false;
+      $('audioPlay').textContent='▶ 重新播放';
+    }
+  };
+
+  if(x.audio){
+    const a=new Audio(x.audio);
+    currentAudio=a;
+    a.onended=goNext;
+    a.onerror=()=>playSpeechWord(x,goNext);
+    a.play().catch(()=>playSpeechWord(x,goNext));
+  }else{
+    playSpeechWord(x,goNext);
+  }
+}
+
+function playSpeechWord(x,onEnd){
+  if(!('speechSynthesis' in window)){
+    alert('当前浏览器不支持语音朗读');
+    audioPlaying=false;
+    return;
+  }
+  const u=new SpeechSynthesisUtterance(x.word);
+  u.lang='en-GB';
+  u.rate=.82;
+  u.onend=onEnd;
+  u.onerror=()=>{audioPlaying=false};
+  speechSynthesis.speak(u);
+}
+
+function pauseAudio(){
+  if(!audioPlaying || audioPaused)return;
+  audioPaused=true;
+  if(currentAudio){
+    try{currentAudio.pause()}catch(e){}
+  }else if('speechSynthesis' in window){
+    speechSynthesis.pause();
+  }
+  $('audioPlay').textContent='▶ 继续';
+}
+
+function resumeAudio(){
+  if(!audioPaused)return;
+  audioPaused=false;
+  audioPlaying=true;
+  if(currentAudio){
+    currentAudio.play().catch(()=>{});
+  }else if('speechSynthesis' in window){
+    speechSynthesis.resume();
+  }
+  $('audioPlay').textContent='▶ 播放中';
+}
+
+$('audioPlay').onclick=()=>{
+  if(audioPaused){resumeAudio();return}
+  if(!audioPlaying){
+    if(audioIndex>=lesson.words.length-1 && $('audioPlay').textContent.includes('重新')) audioIndex=0;
+    playAudioWord(audioIndex,true);
+  }
+};
+
+$('audioPause').onclick=pauseAudio;
+
+$('audioPrev').onclick=()=>{
+  const wasPlaying=audioPlaying || audioPaused;
+  stopAudioPlayback();
+  audioIndex=Math.max(0,audioIndex-1);
+  if(wasPlaying) playAudioWord(audioIndex,true);
+  else {updateAudioUI(true);highlightAudioRow();}
+};
+
+$('audioNext').onclick=()=>{
+  const wasPlaying=audioPlaying || audioPaused;
+  stopAudioPlayback();
+  audioIndex=Math.min(lesson.words.length-1,audioIndex+1);
+  if(wasPlaying) playAudioWord(audioIndex,true);
+  else {updateAudioUI(true);highlightAudioRow();}
+};
+
 
 $('toggleMeaning').onclick=()=>{
   const w=$('listWrap');w.classList.toggle('hideMeaning');

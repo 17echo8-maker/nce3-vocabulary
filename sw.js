@@ -1,4 +1,4 @@
-const CACHE='nce3-v6';
+const CACHE='nce3-v7';
 const ASSETS=['./','./index.html','./lessons.json','./lesson42.json','./manifest.webmanifest','./icon-192.png','./icon-512.png'];
 
 self.addEventListener('install',e=>{
@@ -16,7 +16,6 @@ self.addEventListener('activate',e=>{
 
 self.addEventListener('fetch',e=>{
   const url=new URL(e.request.url);
-
   if(url.pathname.endsWith('/lessons.json')){
     e.respondWith(
       fetch(e.request,{cache:'no-store'})
@@ -29,7 +28,6 @@ self.addEventListener('fetch',e=>{
     );
     return;
   }
-
   e.respondWith(
     fetch(e.request)
       .then(r=>{
