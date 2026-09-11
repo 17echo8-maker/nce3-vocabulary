@@ -226,15 +226,24 @@ function lessonStats(meta){
 }
 
 async function loadCatalog(){
-  const fallbackCatalog=[{
-    lesson:42,
-    title:'Modern cavemen',
-    titleZh:'现代洞穴人',
-    file:'lesson42.json',
-    wordCount:54
-  }];
+  const fallbackCatalog=[
+    {
+      lesson:42,
+      title:'Modern cavemen',
+      titleZh:'现代洞穴人',
+      file:'lesson42.json',
+      wordCount:54
+    },
+    {
+      lesson:44,
+      title:'Speed and comfort',
+      titleZh:'又快捷又舒适',
+      file:'lesson44.json',
+      wordCount:44
+    }
+  ];
   try{
-    const r=await fetch('lessons.json?v=5',{cache:'no-store'});
+    const r=await fetch('lessons.json?v=14',{cache:'no-store'});
     if(!r.ok) throw new Error('lessons.json 加载失败');
     catalog=await r.json();
     if(!Array.isArray(catalog)||!catalog.length) catalog=fallbackCatalog;

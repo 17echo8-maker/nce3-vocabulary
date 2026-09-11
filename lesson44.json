@@ -1,0 +1,317 @@
+{
+  "lesson": 44,
+  "title": "Speed and comfort",
+  "titleZh": "又快捷又舒适",
+  "words": [
+    {
+      "word": "frequently",
+      "ipa": "/ˈfriːkwəntli/",
+      "pos": "adv.",
+      "meaning": "经常地",
+      "lesson_form": ""
+    },
+    {
+      "word": "positively",
+      "ipa": "/ˈpɒzətɪvli/",
+      "pos": "adv.",
+      "meaning": "真正地；确实地",
+      "lesson_form": ""
+    },
+    {
+      "word": "compartment",
+      "ipa": "/kəmˈpɑːtmənt/",
+      "pos": "n.",
+      "meaning": "（火车的）隔间；车厢",
+      "lesson_form": "compartments（复数）"
+    },
+    {
+      "word": "cramped",
+      "ipa": "/kræmpt/",
+      "pos": "adj.",
+      "meaning": "狭窄的；拥挤的",
+      "lesson_form": ""
+    },
+    {
+      "word": "stuffy",
+      "ipa": "/ˈstʌfi/",
+      "pos": "adj.",
+      "meaning": "闷热的；不通气的",
+      "lesson_form": ""
+    },
+    {
+      "word": "partial",
+      "ipa": "/ˈpɑːʃl/",
+      "pos": "adj.",
+      "meaning": "部分的；不完全的",
+      "lesson_form": ""
+    },
+    {
+      "word": "monotonous",
+      "ipa": "/məˈnɒtənəs/",
+      "pos": "adj.",
+      "meaning": "单调的；乏味的",
+      "lesson_form": ""
+    },
+    {
+      "word": "lull",
+      "ipa": "/lʌl/",
+      "pos": "v.",
+      "meaning": "使放松；使昏昏欲睡",
+      "lesson_form": "lulls（三单）"
+    },
+    {
+      "word": "snatch",
+      "ipa": "/snætʃ/",
+      "pos": "n.",
+      "meaning": "短暂的一阵（睡眠）",
+      "lesson_form": "snatches（复数）"
+    },
+    {
+      "word": "rarely",
+      "ipa": "/ˈreəli/",
+      "pos": "adv.",
+      "meaning": "很少；难得",
+      "lesson_form": ""
+    },
+    {
+      "word": "fumble",
+      "ipa": "/ˈfʌmbl/",
+      "pos": "v.",
+      "meaning": "笨手笨脚地摸索",
+      "lesson_form": "fumbling（现在分词）"
+    },
+    {
+      "word": "inspection",
+      "ipa": "/ɪnˈspekʃn/",
+      "pos": "n.",
+      "meaning": "检查；查验",
+      "lesson_form": ""
+    },
+    {
+      "word": "inevitably",
+      "ipa": "/ɪnˈevɪtəbli/",
+      "pos": "adv.",
+      "meaning": "不可避免地；必然地",
+      "lesson_form": ""
+    },
+    {
+      "word": "destination",
+      "ipa": "/ˌdestɪˈneɪʃn/",
+      "pos": "n.",
+      "meaning": "目的地",
+      "lesson_form": ""
+    },
+    {
+      "word": "exhausted",
+      "ipa": "/ɪɡˈzɔːstɪd/",
+      "pos": "adj.",
+      "meaning": "精疲力竭的",
+      "lesson_form": ""
+    },
+    {
+      "word": "comparison",
+      "ipa": "/kəmˈpærɪsn/",
+      "pos": "n.",
+      "meaning": "比较；对照",
+      "lesson_form": "by comparison（相比之下）"
+    },
+    {
+      "word": "ferry",
+      "ipa": "/ˈferi/",
+      "pos": "n.",
+      "meaning": "渡船；摆渡船",
+      "lesson_form": ""
+    },
+    {
+      "word": "cruise",
+      "ipa": "/kruːz/",
+      "pos": "n.",
+      "meaning": "乘船游览；巡航旅行",
+      "lesson_form": "cruises（复数）"
+    },
+    {
+      "word": "variety",
+      "ipa": "/vəˈraɪəti/",
+      "pos": "n.",
+      "meaning": "多样；种类",
+      "lesson_form": ""
+    },
+    {
+      "word": "civilized",
+      "ipa": "/ˈsɪvəlaɪzd/",
+      "pos": "adj.",
+      "meaning": "文明的；舒适便利的",
+      "lesson_form": ""
+    },
+    {
+      "word": "spacious",
+      "ipa": "/ˈspeɪʃəs/",
+      "pos": "adj.",
+      "meaning": "宽敞的",
+      "lesson_form": ""
+    },
+    {
+      "word": "deck",
+      "ipa": "/dek/",
+      "pos": "n.",
+      "meaning": "（船的）甲板",
+      "lesson_form": "decks（复数）"
+    },
+    {
+      "word": "assuming",
+      "ipa": "/əˈsjuːmɪŋ/",
+      "pos": "conj.",
+      "meaning": "假定；如果",
+      "lesson_form": ""
+    },
+    {
+      "word": "ideal",
+      "ipa": "/aɪˈdɪəl/",
+      "pos": "adj.",
+      "meaning": "理想的",
+      "lesson_form": ""
+    },
+    {
+      "word": "relatively",
+      "ipa": "/ˈrelətɪvli/",
+      "pos": "adv.",
+      "meaning": "相对地；比较而言",
+      "lesson_form": ""
+    },
+    {
+      "word": "sacrifice",
+      "ipa": "/ˈsækrɪfaɪs/",
+      "pos": "v.",
+      "meaning": "牺牲；舍弃",
+      "lesson_form": ""
+    },
+    {
+      "word": "reputation",
+      "ipa": "/ˌrepjuˈteɪʃn/",
+      "pos": "n.",
+      "meaning": "名声；声誉",
+      "lesson_form": ""
+    },
+    {
+      "word": "intimidate",
+      "ipa": "/ɪnˈtɪmɪdeɪt/",
+      "pos": "v.",
+      "meaning": "使害怕；使畏惧",
+      "lesson_form": "intimidated（过去分词）"
+    },
+    {
+      "word": "disadvantage",
+      "ipa": "/ˌdɪsədˈvɑːntɪdʒ/",
+      "pos": "n.",
+      "meaning": "不利条件；缺点",
+      "lesson_form": ""
+    },
+    {
+      "word": "exhilarating",
+      "ipa": "/ɪɡˈzɪləreɪtɪŋ/",
+      "pos": "adj.",
+      "meaning": "令人兴奋的；令人振奋的",
+      "lesson_form": ""
+    },
+    {
+      "word": "devise",
+      "ipa": "/dɪˈvaɪz/",
+      "pos": "v.",
+      "meaning": "想出；设计",
+      "lesson_form": ""
+    },
+    {
+      "word": "rapidly",
+      "ipa": "/ˈræpɪdli/",
+      "pos": "adv.",
+      "meaning": "迅速地；快速地",
+      "lesson_form": ""
+    },
+    {
+      "word": "escapist",
+      "ipa": "/ɪˈskeɪpɪst/",
+      "pos": "n.",
+      "meaning": "逃避现实的人",
+      "lesson_form": ""
+    },
+    {
+      "word": "sip",
+      "ipa": "/sɪp/",
+      "pos": "v.",
+      "meaning": "小口喝；啜饮",
+      "lesson_form": ""
+    },
+    {
+      "word": "champagne",
+      "ipa": "/ʃæmˈpeɪn/",
+      "pos": "n.",
+      "meaning": "香槟酒",
+      "lesson_form": ""
+    },
+    {
+      "word": "refinement",
+      "ipa": "/rɪˈfaɪnmənt/",
+      "pos": "n.",
+      "meaning": "精致的享受；精美设施",
+      "lesson_form": "refinements（复数）"
+    },
+    {
+      "word": "occupied",
+      "ipa": "/ˈɒkjupaɪd/",
+      "pos": "adj.",
+      "meaning": "忙着的；有事可做的",
+      "lesson_form": ""
+    },
+    {
+      "word": "breathtaking",
+      "ipa": "/ˈbreθteɪkɪŋ/",
+      "pos": "adj.",
+      "meaning": "激动人心的；令人惊叹的",
+      "lesson_form": ""
+    },
+    {
+      "word": "soar",
+      "ipa": "/sɔː(r)/",
+      "pos": "v.",
+      "meaning": "高飞；翱翔",
+      "lesson_form": ""
+    },
+    {
+      "word": "effortlessly",
+      "ipa": "/ˈefətləsli/",
+      "pos": "adv.",
+      "meaning": "毫不费力地；轻松地",
+      "lesson_form": ""
+    },
+    {
+      "word": "extraordinary",
+      "ipa": "/ɪkˈstrɔːdnri/",
+      "pos": "adj.",
+      "meaning": "非凡的；异常的",
+      "lesson_form": ""
+    },
+    {
+      "word": "brilliantly",
+      "ipa": "/ˈbrɪliəntli/",
+      "pos": "adv.",
+      "meaning": "灿烂地；明亮地",
+      "lesson_form": ""
+    },
+    {
+      "word": "uncrumpled",
+      "ipa": "/ʌnˈkrʌmpld/",
+      "pos": "adj.",
+      "meaning": "没有弄皱的；衣着整洁的",
+      "lesson_form": ""
+    },
+    {
+      "word": "arduous",
+      "ipa": "/ˈɑːdjuəs/",
+      "pos": "adj.",
+      "meaning": "艰苦的；费力的",
+      "lesson_form": ""
+    }
+  ],
+  "people": [],
+  "places": []
+}
