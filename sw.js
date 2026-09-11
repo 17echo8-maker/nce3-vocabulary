@@ -1,10 +1,11 @@
-const CACHE='nce3-v12';
+const CACHE='nce3-v5';
 const ASSETS=['./','./index.html','./lessons.json','./lesson42.json','./manifest.webmanifest','./icon-192.png','./icon-512.png'];
 
 self.addEventListener('install',e=>{
   self.skipWaiting();
   e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)));
 });
+
 self.addEventListener('activate',e=>{
   e.waitUntil(
     caches.keys()
@@ -12,8 +13,11 @@ self.addEventListener('activate',e=>{
       .then(()=>self.clients.claim())
   );
 });
+
 self.addEventListener('fetch',e=>{
   const url=new URL(e.request.url);
+
+  // lessons.json 优先取网络，失败时再用缓存，避免首页刷新后拿到旧目录
   if(url.pathname.endsWith('/lessons.json')){
     e.respondWith(
       fetch(e.request,{cache:'no-store'})
@@ -26,6 +30,7 @@ self.addEventListener('fetch',e=>{
     );
     return;
   }
+
   e.respondWith(
     fetch(e.request)
       .then(r=>{

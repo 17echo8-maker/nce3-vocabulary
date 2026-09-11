@@ -14,37 +14,14 @@
 header{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px;margin-bottom:14px}
 h1{font-size:24px;margin:0 0 5px}.sub{color:var(--muted);font-size:14px}.stats{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.pill{background:var(--green2);padding:6px 10px;border-radius:999px;font-size:13px}
 nav{position:fixed;left:0;right:0;bottom:0;background:rgba(255,255,255,.96);border-top:1px solid var(--line);display:flex;justify-content:center;z-index:20;padding-bottom:env(safe-area-inset-bottom)}
-nav button{flex:1;max-width:190px;border:0;background:transparent;padding:13px 4px;font-size:14px;color:#405046}nav button.active{color:var(--green);font-weight:700;background:var(--green2)}
+nav button{flex:1;max-width:220px;border:0;background:transparent;padding:13px 6px;font-size:14px;color:#405046}nav button.active{color:var(--green);font-weight:700;background:var(--green2)}
 .panel{display:none}.panel.active{display:block}
 .toolbar{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
-.audioPlayer{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:13px 14px;margin:10px 0 14px}
-.audioNow{font-size:14px;color:var(--muted);margin-bottom:9px}
-.audioNow strong{font-size:20px;color:var(--text);margin-left:5px}
-.audioControls{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
-.audioControls button{min-width:86px}
-.audioCount{font-size:13px;color:var(--muted);margin-left:auto}
-.playerModal{position:fixed;inset:0;background:rgba(18,24,20,.58);display:flex;align-items:center;justify-content:center;padding:18px;z-index:50}
-.playerModal.hidden{display:none!important}
-.playerWindow{width:min(720px,96vw);min-height:min(620px,88vh);background:var(--card);border-radius:24px;border:1px solid var(--line);box-shadow:0 18px 60px rgba(0,0,0,.2);display:flex;flex-direction:column;overflow:hidden}
-.playerHeader{display:flex;align-items:center;justify-content:space-between;padding:14px 16px;border-bottom:1px solid var(--line)}
-.playerHeaderTitle{font-weight:700;color:var(--muted)}
-.playerClose{font-size:22px;line-height:1;width:40px;height:40px;padding:0;border-radius:50%}
-.playerMain{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:34px 24px}
-.playerWord{font-size:52px;font-weight:800;line-height:1.1;word-break:break-word}
-.playerIpa{font-size:23px;color:var(--muted);margin-top:14px}
-.playerPos{font-size:18px;font-style:italic;color:#4d554f;margin-top:14px}
-.playerMeaning{font-size:30px;font-weight:650;margin-top:22px}
-.playerForm{font-size:15px;color:var(--muted);margin-top:12px}
-.playerFooter{border-top:1px solid var(--line);padding:14px 16px 18px;background:#fafbfa}
-.playerFooter .audioControls{justify-content:center}
-.playerFooter .audioCount{margin-left:0}
-.openPlayer{font-weight:700}
-tr.playingRow{background:var(--green2)}
 button,.btn{border:1px solid var(--line);background:white;border-radius:10px;padding:9px 12px;font-size:14px;cursor:pointer}
 button.primary{background:var(--green);color:#fff;border-color:var(--green)} button.danger{color:var(--bad)}
 table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
 th,td{padding:11px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{font-size:12px;color:var(--muted);background:#fafbfa}
-.word{font-weight:700;font-size:20px}.ipa{white-space:nowrap}.note{font-size:12px;color:var(--muted);margin-top:3px}.hideMeaning .meaningText{filter:blur(7px);user-select:none}
+.word{font-weight:700;font-size:17px}.ipa{white-space:nowrap}.note{font-size:12px;color:var(--muted);margin-top:3px}.hideMeaning .meaningText{filter:blur(7px);user-select:none}
 .speaker{border:0;background:transparent;padding:0 6px 0 0;font-size:18px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;text-align:center;min-height:320px;display:flex;flex-direction:column;justify-content:center}
 .bigword{font-size:36px;font-weight:750;margin:8px 0}.bigipa{font-size:18px;color:var(--muted)}.bigmeaning{font-size:24px;margin-top:22px}.hidden{display:none!important}
@@ -55,7 +32,7 @@ th,td{padding:11px 10px;border-bottom:1px solid var(--line);text-align:left;vert
 .result{margin-top:14px;font-weight:700}.correct{color:var(--ok)}.wrong{color:var(--bad)}
 .empty{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:28px;text-align:center;color:var(--muted)}
 .sectionTitle{font-weight:700;margin:18px 2px 8px}
-@media(max-width:720px){.audioCount{width:100%;margin-left:0}.audioControls button{flex:1;min-width:0}.playerModal{padding:0}.playerWindow{width:100vw;min-height:100vh;border-radius:0;border:0}.playerWord{font-size:42px}.playerMeaning{font-size:25px}.playerMain{padding:28px 18px}.app{padding:10px 9px 84px}header{border-radius:14px}.desktopOnly{display:none}table,tbody,tr,td{display:block;width:100%}thead{display:none}tr{padding:10px 12px;border-bottom:1px solid var(--line)}td{border:0;padding:3px 0}.word{font-size:23px}.ipa{white-space:normal}.meaningText{font-size:15px}.bigword{font-size:32px}}
+@media(max-width:720px){.app{padding:10px 9px 84px}header{border-radius:14px}.desktopOnly{display:none}table,tbody,tr,td{display:block;width:100%}thead{display:none}tr{padding:10px 12px;border-bottom:1px solid var(--line)}td{border:0;padding:3px 0}.word{font-size:19px}.ipa{white-space:normal}.meaningText{font-size:15px}.bigword{font-size:32px}}
 
 .homeHeader{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;margin-bottom:14px}
 .homeHeader h1{font-size:26px;margin:0 0 6px}.homeIntro{color:var(--muted);font-size:14px}
@@ -68,7 +45,7 @@ th,td{padding:11px 10px;border-bottom:1px solid var(--line);text-align:left;vert
 .lessonTopbar{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px;flex-wrap:wrap}
 .backBtn{font-weight:700}.lessonNav{display:flex;gap:8px}
 #homeView.hidden,#lessonView.hidden{display:none!important}
-@media(max-width:720px){.audioCount{width:100%;margin-left:0}.audioControls button{flex:1;min-width:0}.playerModal{padding:0}.playerWindow{width:100vw;min-height:100vh;border-radius:0;border:0}.playerWord{font-size:42px}.playerMeaning{font-size:25px}.playerMain{padding:28px 18px}.lessonList{grid-template-columns:1fr}.homeHeader{border-radius:14px}.lessonItem{padding:15px}}
+@media(max-width:720px){.lessonList{grid-template-columns:1fr}.homeHeader{border-radius:14px}.lessonItem{padding:15px}}
 
 </style>
 </head>
@@ -107,7 +84,6 @@ th,td{padding:11px 10px;border-bottom:1px solid var(--line);text-align:left;vert
     <button id="toggleMeaning" class="primary">隐藏中文释义</button>
     <button id="showAll">显示全部</button>
   </div>
-
   <div id="listWrap"></div>
 </section>
 
@@ -147,9 +123,6 @@ th,td{padding:11px 10px;border-bottom:1px solid var(--line);text-align:left;vert
   <div class="card">
     <div class="bigmeaning" id="dictMeaning"></div>
     <div class="note" id="dictPos"></div>
-    <div class="actions">
-      <button id="dictSpeak">🔊 听语音</button>
-    </div>
     <div class="actions"><input id="dictInput" class="dictbox" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="输入英文原型"></div>
     <div class="actions"><button id="checkDict" class="primary">检查</button></div>
     <div id="dictResult" class="result"></div>
@@ -166,36 +139,9 @@ th,td{padding:11px 10px;border-bottom:1px solid var(--line);text-align:left;vert
 </section>
 </div>
 
-<div id="playerModal" class="playerModal hidden" aria-hidden="true">
-  <div class="playerWindow">
-    <div class="playerHeader">
-      <div class="playerHeaderTitle">顺序播放</div>
-      <button id="playerClose" class="playerClose" aria-label="关闭">×</button>
-    </div>
-    <div class="playerMain">
-      <div class="playerWord" id="playerWord">—</div>
-      <div class="playerIpa" id="playerIpa"></div>
-      <div class="playerPos" id="playerPos"></div>
-      <div class="playerMeaning" id="playerMeaning"></div>
-      <div class="playerForm" id="playerForm"></div>
-    </div>
-    <div class="playerFooter">
-      <div class="audioControls">
-        <button id="audioPrev">← 上一个</button>
-        <button id="audioReplay">↻ 重听</button>
-        <button id="audioPlay" class="primary">▶ 自动播放</button>
-        <button id="audioPause">⏸ 暂停</button>
-        <button id="audioNext">下一个 →</button>
-        <span id="audioCount" class="audioCount">0 / 0</span>
-      </div>
-    </div>
-  </div>
-</div>
-
 <nav id="lessonBottomNav">
   <button data-panel="list" class="active">词表</button>
   <button data-panel="learn">背词</button>
-  <button data-action="player">播放</button>
   <button data-panel="dictation">默写</button>
   <button data-panel="wrong">错词</button>
 </nav>
@@ -204,7 +150,6 @@ th,td{padding:11px 10px;border-bottom:1px solid var(--line);text-align:left;vert
 <script>
 let catalog=[], lesson=null, currentCatalogIndex=-1, progress={};
 let learnQueue=[], learnIndex=0, dictQueue=[], dictIndex=0;
-let audioIndex=0, autoPlaying=false, currentAudio=null, currentUtterance=null;
 const $=id=>document.getElementById(id);
 
 function storageKey(){ return lesson ? `nce3-l${lesson.lesson}-progress-v1` : ''; }
@@ -266,7 +211,6 @@ function renderHome(){
 }
 
 async function openLesson(num,push=true){
-  stopPlayback();
   currentCatalogIndex=catalog.findIndex(x=>x.lesson===num);
   if(currentCatalogIndex<0)return;
   const meta=catalog[currentCatalogIndex];
@@ -278,14 +222,13 @@ async function openLesson(num,push=true){
   $('subtitle').textContent=`${lesson.titleZh} · 新概念英语3`;
   $('prevLesson').disabled=currentCatalogIndex===0;
   $('nextLesson').disabled=currentCatalogIndex===catalog.length-1;
-  renderList();updateStats();startLearn(lesson.words);startDict(lesson.words);resetAudioPlayer();
+  renderList();updateStats();startLearn(lesson.words);startDict(lesson.words);
   showPanel('list');
   if(push) history.pushState({lesson:num},'',`?lesson=${num}`);
   window.scrollTo({top:0,behavior:'instant'});
 }
 
 function goHome(push=true){
-  stopPlayback();
   $('lessonView').classList.add('hidden');
   $('homeView').classList.remove('hidden');
   lesson=null;currentCatalogIndex=-1;renderHome();
@@ -323,7 +266,7 @@ function speak(item, lang='en-GB'){
 }
 
 function renderList(){
-  let rows=lesson.words.map((x,i)=>`<tr data-word-index="${i}">
+  let rows=lesson.words.map(x=>`<tr>
     <td><button class="speaker" onclick='speak(${JSON.stringify(x)})'>🔊</button><span class="word">${x.word}</span>${x.lesson_form?`<div class="note">课文：${x.lesson_form}</div>`:''}</td>
     <td class="ipa">${x.ipa}</td><td>${x.pos}</td><td><span class="meaningText">${x.meaning}</span></td>
   </tr>`).join('');
@@ -333,179 +276,6 @@ function renderList(){
   ${people?`<div class="sectionTitle">People · 人名</div><table><tbody>${people}</tbody></table>`:''}
   ${places?`<div class="sectionTitle">Places · 地名</div><table><tbody>${places}</tbody></table>`:''}`;
 }
-
-
-function openPlayerModal(){
-  $('playerModal').classList.remove('hidden');
-  $('playerModal').setAttribute('aria-hidden','false');
-  updateAudioUI();
-}
-function closePlayerModal(){
-  stopPlayback();
-  $('playerModal').classList.add('hidden');
-  $('playerModal').setAttribute('aria-hidden','true');
-}
-$('playerClose').onclick=closePlayerModal;
-$('playerModal').addEventListener('click',e=>{
-  if(e.target===$('playerModal')) closePlayerModal();
-});
-
-function resetAudioPlayer(){
-  stopPlayback();
-  audioIndex=0;
-  updateAudioUI();
-}
-
-function cancelCurrentVoice(){
-  if(currentAudio){
-    try{currentAudio.pause(); currentAudio.currentTime=0}catch(e){}
-    currentAudio=null;
-  }
-  if('speechSynthesis' in window){
-    speechSynthesis.cancel();
-  }
-  currentUtterance=null;
-}
-
-function stopPlayback(){
-  autoPlaying=false;
-  cancelCurrentVoice();
-  clearPlayingRow();
-  if($('audioPlay')) $('audioPlay').textContent='▶ 自动播放';
-}
-
-function clearPlayingRow(){
-  document.querySelectorAll('#wordTable tr.playingRow').forEach(r=>r.classList.remove('playingRow'));
-}
-
-function highlightAudioRow(){
-  clearPlayingRow();
-  const row=document.querySelector(`#wordTable tr[data-word-index="${audioIndex}"]`);
-  if(row){
-    row.classList.add('playingRow');
-    // 悬浮窗口打开时不强制滚动底层词表，避免视觉跳动
-  }
-}
-
-function updateAudioUI(){
-  if(!lesson || !lesson.words.length){
-    $('playerWord').textContent='暂无单词';
-    $('playerIpa').textContent='';
-    $('playerPos').textContent='';
-    $('playerMeaning').textContent='';
-    $('playerForm').textContent='';
-    $('audioCount').textContent='0 / 0';
-    return;
-  }
-  audioIndex=Math.max(0,Math.min(audioIndex,lesson.words.length-1));
-  const x=lesson.words[audioIndex];
-  $('playerWord').textContent=x.word;
-  $('playerIpa').textContent=x.ipa||'';
-  $('playerPos').textContent=x.pos||'';
-  $('playerMeaning').textContent=x.meaning||'';
-  $('playerForm').textContent=x.lesson_form?`课文：${x.lesson_form}`:'';
-  $('audioCount').textContent=`${audioIndex+1} / ${lesson.words.length}`;
-  $('audioPlay').textContent=autoPlaying?'■ 自动播放中':'▶ 自动播放';
-  $('audioPrev').disabled=audioIndex===0;
-  $('audioNext').disabled=audioIndex===lesson.words.length-1;
-  highlightAudioRow();
-}
-
-function playOne(index,onDone=null){
-  if(!lesson || !lesson.words.length)return;
-  cancelCurrentVoice();
-
-  audioIndex=Math.max(0,Math.min(index,lesson.words.length-1));
-  updateAudioUI();
-  const x=lesson.words[audioIndex];
-
-  const finish=()=>{
-    currentAudio=null;
-    currentUtterance=null;
-    if(typeof onDone==='function') onDone();
-  };
-
-  if(x.audio){
-    const a=new Audio(x.audio);
-    currentAudio=a;
-    a.onended=finish;
-    a.onerror=()=>playSpeechOnce(x,finish);
-    a.play().catch(()=>playSpeechOnce(x,finish));
-  }else{
-    playSpeechOnce(x,finish);
-  }
-}
-
-function playSpeechOnce(x,onDone){
-  if(!('speechSynthesis' in window)){
-    alert('当前浏览器不支持语音朗读');
-    autoPlaying=false;
-    updateAudioUI();
-    return;
-  }
-  const u=new SpeechSynthesisUtterance(x.word);
-  currentUtterance=u;
-  u.lang='en-GB';
-  u.rate=.82;
-  u.onend=onDone;
-  u.onerror=()=>{
-    currentUtterance=null;
-    if(typeof onDone==='function') onDone();
-  };
-  speechSynthesis.speak(u);
-}
-
-function playAutoFromCurrent(){
-  if(!lesson || !lesson.words.length)return;
-  openPlayerModal();
-  autoPlaying=true;
-  updateAudioUI();
-
-  playOne(audioIndex,()=>{
-    if(!autoPlaying)return;
-    // 播放完最后一个后，自动回到第一个，持续循环。
-    audioIndex = (audioIndex + 1) % lesson.words.length;
-    updateAudioUI();
-    setTimeout(()=>{
-      if(autoPlaying) playAutoFromCurrent();
-    },1000);
-  });
-}
-
-function pauseAuto(){
-  autoPlaying=false;
-  cancelCurrentVoice();
-  updateAudioUI();
-}
-
-$('audioPlay').onclick=()=>{
-  if(autoPlaying)return;
-  playAutoFromCurrent();
-};
-
-$('audioPause').onclick=pauseAuto;
-
-$('audioReplay').onclick=()=>{
-  // 重听永远只播放当前词一次，并停止自动序列。
-  autoPlaying=false;
-  playOne(audioIndex);
-};
-
-$('audioPrev').onclick=()=>{
-  // 上一个：跳转后只播放一次。之后可点“自动播放”从该词继续。
-  autoPlaying=false;
-  cancelCurrentVoice();
-  if(audioIndex>0) audioIndex--;
-  playOne(audioIndex);
-};
-
-$('audioNext').onclick=()=>{
-  // 下一个：跳转后只播放一次。之后可点“自动播放”从该词继续。
-  autoPlaying=false;
-  cancelCurrentVoice();
-  if(audioIndex<lesson.words.length-1) audioIndex++;
-  playOne(audioIndex);
-};
 
 $('toggleMeaning').onclick=()=>{
   const w=$('listWrap');w.classList.toggle('hideMeaning');
@@ -547,7 +317,6 @@ function showDict(){
   dictIndex=Math.max(0,Math.min(dictIndex,dictQueue.length-1));
   const x=dictQueue[dictIndex];
   $('dictMeaning').textContent=x.meaning;$('dictPos').textContent=x.pos;$('dictProgress').textContent=`${dictIndex+1} / ${dictQueue.length}`;
-  $('dictSpeak').onclick=()=>speak(x);
   $('prevDict').disabled=dictIndex===0;$('nextDict').disabled=dictIndex===dictQueue.length-1;
   setTimeout(()=>$('dictInput').focus(),50);
 }
@@ -582,15 +351,7 @@ function showPanel(name){
   document.querySelectorAll('#lessonView .panel').forEach(x=>x.classList.toggle('active',x.id===name));
   if(name==='wrong')renderWrong();
 }
-document.querySelectorAll('#lessonBottomNav button').forEach(b=>b.onclick=()=>{
-  if(b.dataset.action==='player'){
-    if(!lesson || !lesson.words.length)return;
-    openPlayerModal();
-    updateAudioUI();
-    return;
-  }
-  showPanel(b.dataset.panel);
-});
+document.querySelectorAll('#lessonBottomNav button').forEach(b=>b.onclick=()=>showPanel(b.dataset.panel));
 
 if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js'));
 loadCatalog();
