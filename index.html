@@ -179,7 +179,8 @@ th,td{padding:11px 10px;border-bottom:1px solid var(--line);text-align:left;vert
     <div class="playerFooter">
       <div class="audioControls">
         <button id="audioPrev">← 上一个</button>
-        <button id="audioPlay" class="primary">▶ 开始播放</button>
+        <button id="audioReplay">↻ 重听</button>
+        <button id="audioPlay" class="primary">▶ 自动播放</button>
         <button id="audioPause">⏸ 暂停</button>
         <button id="audioNext">下一个 →</button>
         <span id="audioCount" class="audioCount">0 / 0</span>
@@ -200,7 +201,7 @@ th,td{padding:11px 10px;border-bottom:1px solid var(--line);text-align:left;vert
 <script>
 let catalog=[], lesson=null, currentCatalogIndex=-1, progress={};
 let learnQueue=[], learnIndex=0, dictQueue=[], dictIndex=0;
-let audioIndex=0, audioPlaying=false, audioPaused=false, currentAudio=null;
+let audioIndex=0, autoPlaying=false, currentAudio=null, currentUtterance=null;
 const $=id=>document.getElementById(id);
 
 function storageKey(){ return lesson ? `nce3-l${lesson.lesson}-progress-v1` : ''; }
@@ -262,7 +263,7 @@ function renderHome(){
 }
 
 async function openLesson(num,push=true){
-  stopAudioPlayback();
+  stopPlayback();
   currentCatalogIndex=catalog.findIndex(x=>x.lesson===num);
   if(currentCatalogIndex<0)return;
   const meta=catalog[currentCatalogIndex];
@@ -281,7 +282,7 @@ async function openLesson(num,push=true){
 }
 
 function goHome(push=true){
-  stopAudioPlayback();
+  stopPlayback();
   $('lessonView').classList.add('hidden');
   $('homeView').classList.remove('hidden');
   lesson=null;currentCatalogIndex=-1;renderHome();
@@ -334,10 +335,10 @@ function renderList(){
 function openPlayerModal(){
   $('playerModal').classList.remove('hidden');
   $('playerModal').setAttribute('aria-hidden','false');
-  updateAudioUI(true);
+  updateAudioUI();
 }
 function closePlayerModal(){
-  stopAudioPlayback();
+  stopPlayback();
   $('playerModal').classList.add('hidden');
   $('playerModal').setAttribute('aria-hidden','true');
 }
@@ -347,22 +348,27 @@ $('playerModal').addEventListener('click',e=>{
 });
 
 function resetAudioPlayer(){
-  stopAudioPlayback();
+  stopPlayback();
   audioIndex=0;
-  audioPaused=false;
-  updateAudioUI(false);
+  updateAudioUI();
 }
 
-function stopAudioPlayback(){
-  audioPlaying=false;
-  audioPaused=false;
+function cancelCurrentVoice(){
   if(currentAudio){
-    try{ currentAudio.pause(); currentAudio.currentTime=0; }catch(e){}
+    try{currentAudio.pause(); currentAudio.currentTime=0}catch(e){}
     currentAudio=null;
   }
-  if('speechSynthesis' in window) speechSynthesis.cancel();
+  if('speechSynthesis' in window){
+    speechSynthesis.cancel();
+  }
+  currentUtterance=null;
+}
+
+function stopPlayback(){
+  autoPlaying=false;
+  cancelCurrentVoice();
   clearPlayingRow();
-  if($('audioPlay')) $('audioPlay').textContent='▶ 开始播放';
+  if($('audioPlay')) $('audioPlay').textContent='▶ 自动播放';
 }
 
 function clearPlayingRow(){
@@ -374,14 +380,17 @@ function highlightAudioRow(){
   const row=document.querySelector(`#wordTable tr[data-word-index="${audioIndex}"]`);
   if(row){
     row.classList.add('playingRow');
-    row.scrollIntoView({behavior:'smooth',block:'center'});
+    // 悬浮窗口打开时不强制滚动底层词表，避免视觉跳动
   }
 }
 
-function updateAudioUI(active=true){
+function updateAudioUI(){
   if(!lesson || !lesson.words.length){
     $('playerWord').textContent='暂无单词';
-    $('playerIpa').textContent='';$('playerPos').textContent='';$('playerMeaning').textContent='';$('playerForm').textContent='';
+    $('playerIpa').textContent='';
+    $('playerPos').textContent='';
+    $('playerMeaning').textContent='';
+    $('playerForm').textContent='';
     $('audioCount').textContent='0 / 0';
     return;
   }
@@ -393,111 +402,107 @@ function updateAudioUI(active=true){
   $('playerMeaning').textContent=x.meaning||'';
   $('playerForm').textContent=x.lesson_form?`课文：${x.lesson_form}`:'';
   $('audioCount').textContent=`${audioIndex+1} / ${lesson.words.length}`;
-  $('audioPlay').textContent=audioPaused?'▶ 继续':(audioPlaying?'▶ 播放中':'▶ 开始播放');
+  $('audioPlay').textContent=autoPlaying?'■ 自动播放中':'▶ 自动播放';
   $('audioPrev').disabled=audioIndex===0;
   $('audioNext').disabled=audioIndex===lesson.words.length-1;
+  highlightAudioRow();
 }
 
-function playAudioWord(index,continueSequence=true){
+function playOne(index,onDone=null){
   if(!lesson || !lesson.words.length)return;
-  openPlayerModal();
+  cancelCurrentVoice();
+
   audioIndex=Math.max(0,Math.min(index,lesson.words.length-1));
-  audioPlaying=true;
-  audioPaused=false;
+  updateAudioUI();
   const x=lesson.words[audioIndex];
-  updateAudioUI(true);
-  highlightAudioRow();
 
-  if(currentAudio){
-    try{currentAudio.pause()}catch(e){}
+  const finish=()=>{
     currentAudio=null;
-  }
-  if('speechSynthesis' in window) speechSynthesis.cancel();
-
-  const goNext=()=>{
-    if(!audioPlaying || audioPaused)return;
-    if(continueSequence && audioIndex<lesson.words.length-1){
-      setTimeout(()=>playAudioWord(audioIndex+1,true),450);
-    }else if(audioIndex>=lesson.words.length-1){
-      audioPlaying=false;
-      $('audioPlay').textContent='▶ 重新播放';
-    }
+    currentUtterance=null;
+    if(typeof onDone==='function') onDone();
   };
 
   if(x.audio){
     const a=new Audio(x.audio);
     currentAudio=a;
-    a.onended=goNext;
-    a.onerror=()=>playSpeechWord(x,goNext);
-    a.play().catch(()=>playSpeechWord(x,goNext));
+    a.onended=finish;
+    a.onerror=()=>playSpeechOnce(x,finish);
+    a.play().catch(()=>playSpeechOnce(x,finish));
   }else{
-    playSpeechWord(x,goNext);
+    playSpeechOnce(x,finish);
   }
 }
 
-function playSpeechWord(x,onEnd){
+function playSpeechOnce(x,onDone){
   if(!('speechSynthesis' in window)){
     alert('当前浏览器不支持语音朗读');
-    audioPlaying=false;
+    autoPlaying=false;
+    updateAudioUI();
     return;
   }
   const u=new SpeechSynthesisUtterance(x.word);
+  currentUtterance=u;
   u.lang='en-GB';
   u.rate=.82;
-  u.onend=onEnd;
-  u.onerror=()=>{audioPlaying=false};
+  u.onend=onDone;
+  u.onerror=()=>{
+    currentUtterance=null;
+    if(typeof onDone==='function') onDone();
+  };
   speechSynthesis.speak(u);
 }
 
-function pauseAudio(){
-  if(!audioPlaying || audioPaused)return;
-  audioPaused=true;
-  if(currentAudio){
-    try{currentAudio.pause()}catch(e){}
-  }else if('speechSynthesis' in window){
-    speechSynthesis.pause();
-  }
-  $('audioPlay').textContent='▶ 继续';
+function playAutoFromCurrent(){
+  if(!lesson || !lesson.words.length)return;
+  openPlayerModal();
+  autoPlaying=true;
+  updateAudioUI();
+
+  playOne(audioIndex,()=>{
+    if(!autoPlaying)return;
+    // 播放完最后一个后，自动回到第一个，持续循环。
+    audioIndex = (audioIndex + 1) % lesson.words.length;
+    updateAudioUI();
+    setTimeout(()=>{
+      if(autoPlaying) playAutoFromCurrent();
+    },450);
+  });
 }
 
-function resumeAudio(){
-  if(!audioPaused)return;
-  audioPaused=false;
-  audioPlaying=true;
-  if(currentAudio){
-    currentAudio.play().catch(()=>{});
-  }else if('speechSynthesis' in window){
-    speechSynthesis.resume();
-  }
-  $('audioPlay').textContent='▶ 播放中';
+function pauseAuto(){
+  autoPlaying=false;
+  cancelCurrentVoice();
+  updateAudioUI();
 }
 
 $('audioPlay').onclick=()=>{
-  if(audioPaused){resumeAudio();return}
-  if(!audioPlaying){
-    if(audioIndex>=lesson.words.length-1 && $('audioPlay').textContent.includes('重新')) audioIndex=0;
-    playAudioWord(audioIndex,true);
-  }
+  if(autoPlaying)return;
+  playAutoFromCurrent();
 };
 
-$('audioPause').onclick=pauseAudio;
+$('audioPause').onclick=pauseAuto;
+
+$('audioReplay').onclick=()=>{
+  // 重听永远只播放当前词一次，并停止自动序列。
+  autoPlaying=false;
+  playOne(audioIndex);
+};
 
 $('audioPrev').onclick=()=>{
-  const wasPlaying=audioPlaying || audioPaused;
-  stopAudioPlayback();
-  audioIndex=Math.max(0,audioIndex-1);
-  if(wasPlaying) playAudioWord(audioIndex,true);
-  else {updateAudioUI(true);highlightAudioRow();}
+  // 上一个：跳转后只播放一次。之后可点“自动播放”从该词继续。
+  autoPlaying=false;
+  cancelCurrentVoice();
+  if(audioIndex>0) audioIndex--;
+  playOne(audioIndex);
 };
 
 $('audioNext').onclick=()=>{
-  const wasPlaying=audioPlaying || audioPaused;
-  stopAudioPlayback();
-  audioIndex=Math.min(lesson.words.length-1,audioIndex+1);
-  if(wasPlaying) playAudioWord(audioIndex,true);
-  else {updateAudioUI(true);highlightAudioRow();}
+  // 下一个：跳转后只播放一次。之后可点“自动播放”从该词继续。
+  autoPlaying=false;
+  cancelCurrentVoice();
+  if(audioIndex<lesson.words.length-1) audioIndex++;
+  playOne(audioIndex);
 };
-
 
 $('toggleMeaning').onclick=()=>{
   const w=$('listWrap');w.classList.toggle('hideMeaning');
@@ -577,10 +582,7 @@ document.querySelectorAll('#lessonBottomNav button').forEach(b=>b.onclick=()=>{
   if(b.dataset.action==='player'){
     if(!lesson || !lesson.words.length)return;
     openPlayerModal();
-    if(!audioPlaying && !audioPaused){
-      audioIndex=0;
-      updateAudioUI(true);
-    }
+    updateAudioUI();
     return;
   }
   showPanel(b.dataset.panel);
