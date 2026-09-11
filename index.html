@@ -147,6 +147,9 @@ th,td{padding:11px 10px;border-bottom:1px solid var(--line);text-align:left;vert
   <div class="card">
     <div class="bigmeaning" id="dictMeaning"></div>
     <div class="note" id="dictPos"></div>
+    <div class="actions">
+      <button id="dictSpeak">🔊 听语音</button>
+    </div>
     <div class="actions"><input id="dictInput" class="dictbox" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="输入英文原型"></div>
     <div class="actions"><button id="checkDict" class="primary">检查</button></div>
     <div id="dictResult" class="result"></div>
@@ -544,6 +547,7 @@ function showDict(){
   dictIndex=Math.max(0,Math.min(dictIndex,dictQueue.length-1));
   const x=dictQueue[dictIndex];
   $('dictMeaning').textContent=x.meaning;$('dictPos').textContent=x.pos;$('dictProgress').textContent=`${dictIndex+1} / ${dictQueue.length}`;
+  $('dictSpeak').onclick=()=>speak(x);
   $('prevDict').disabled=dictIndex===0;$('nextDict').disabled=dictIndex===dictQueue.length-1;
   setTimeout(()=>$('dictInput').focus(),50);
 }

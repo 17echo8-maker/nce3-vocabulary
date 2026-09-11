@@ -1,4 +1,4 @@
-const CACHE='nce3-v10';
+const CACHE='nce3-v11';
 const ASSETS=['./','./index.html','./lessons.json','./lesson42.json','./manifest.webmanifest','./icon-192.png','./icon-512.png'];
 
 self.addEventListener('install',e=>{
