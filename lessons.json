@@ -7,10 +7,24 @@
     "wordCount": 54
   },
   {
+    "lesson": 43,
+    "title": "Fully insured",
+    "titleZh": "全保险",
+    "file": "lesson43.json",
+    "wordCount": 37
+  },
+  {
     "lesson": 44,
     "title": "Speed and comfort",
     "titleZh": "又快捷又舒适",
     "file": "lesson44.json",
     "wordCount": 44
+  },
+  {
+    "lesson": 45,
+    "title": "The power of the press",
+    "titleZh": "新闻报道的威力",
+    "file": "lesson45.json",
+    "wordCount": 39
   }
 ]
