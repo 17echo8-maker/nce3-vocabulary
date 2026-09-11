@@ -23,6 +23,22 @@ nav button{flex:1;max-width:220px;border:0;background:transparent;padding:13px 6
 .audioControls{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
 .audioControls button{min-width:86px}
 .audioCount{font-size:13px;color:var(--muted);margin-left:auto}
+.playerModal{position:fixed;inset:0;background:rgba(18,24,20,.58);display:flex;align-items:center;justify-content:center;padding:18px;z-index:50}
+.playerModal.hidden{display:none!important}
+.playerWindow{width:min(720px,96vw);min-height:min(620px,88vh);background:var(--card);border-radius:24px;border:1px solid var(--line);box-shadow:0 18px 60px rgba(0,0,0,.2);display:flex;flex-direction:column;overflow:hidden}
+.playerHeader{display:flex;align-items:center;justify-content:space-between;padding:14px 16px;border-bottom:1px solid var(--line)}
+.playerHeaderTitle{font-weight:700;color:var(--muted)}
+.playerClose{font-size:22px;line-height:1;width:40px;height:40px;padding:0;border-radius:50%}
+.playerMain{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:34px 24px}
+.playerWord{font-size:52px;font-weight:800;line-height:1.1;word-break:break-word}
+.playerIpa{font-size:23px;color:var(--muted);margin-top:14px}
+.playerPos{font-size:18px;font-style:italic;color:#4d554f;margin-top:14px}
+.playerMeaning{font-size:30px;font-weight:650;margin-top:22px}
+.playerForm{font-size:15px;color:var(--muted);margin-top:12px}
+.playerFooter{border-top:1px solid var(--line);padding:14px 16px 18px;background:#fafbfa}
+.playerFooter .audioControls{justify-content:center}
+.playerFooter .audioCount{margin-left:0}
+.openPlayer{font-weight:700}
 tr.playingRow{background:var(--green2)}
 button,.btn{border:1px solid var(--line);background:white;border-radius:10px;padding:9px 12px;font-size:14px;cursor:pointer}
 button.primary{background:var(--green);color:#fff;border-color:var(--green)} button.danger{color:var(--bad)}
@@ -39,7 +55,7 @@ th,td{padding:11px 10px;border-bottom:1px solid var(--line);text-align:left;vert
 .result{margin-top:14px;font-weight:700}.correct{color:var(--ok)}.wrong{color:var(--bad)}
 .empty{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:28px;text-align:center;color:var(--muted)}
 .sectionTitle{font-weight:700;margin:18px 2px 8px}
-@media(max-width:720px){.audioCount{width:100%;margin-left:0}.audioControls button{flex:1;min-width:0}.app{padding:10px 9px 84px}header{border-radius:14px}.desktopOnly{display:none}table,tbody,tr,td{display:block;width:100%}thead{display:none}tr{padding:10px 12px;border-bottom:1px solid var(--line)}td{border:0;padding:3px 0}.word{font-size:23px}.ipa{white-space:normal}.meaningText{font-size:15px}.bigword{font-size:32px}}
+@media(max-width:720px){.audioCount{width:100%;margin-left:0}.audioControls button{flex:1;min-width:0}.playerModal{padding:0}.playerWindow{width:100vw;min-height:100vh;border-radius:0;border:0}.playerWord{font-size:42px}.playerMeaning{font-size:25px}.playerMain{padding:28px 18px}.app{padding:10px 9px 84px}header{border-radius:14px}.desktopOnly{display:none}table,tbody,tr,td{display:block;width:100%}thead{display:none}tr{padding:10px 12px;border-bottom:1px solid var(--line)}td{border:0;padding:3px 0}.word{font-size:23px}.ipa{white-space:normal}.meaningText{font-size:15px}.bigword{font-size:32px}}
 
 .homeHeader{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;margin-bottom:14px}
 .homeHeader h1{font-size:26px;margin:0 0 6px}.homeIntro{color:var(--muted);font-size:14px}
@@ -52,7 +68,7 @@ th,td{padding:11px 10px;border-bottom:1px solid var(--line);text-align:left;vert
 .lessonTopbar{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px;flex-wrap:wrap}
 .backBtn{font-weight:700}.lessonNav{display:flex;gap:8px}
 #homeView.hidden,#lessonView.hidden{display:none!important}
-@media(max-width:720px){.audioCount{width:100%;margin-left:0}.audioControls button{flex:1;min-width:0}.lessonList{grid-template-columns:1fr}.homeHeader{border-radius:14px}.lessonItem{padding:15px}}
+@media(max-width:720px){.audioCount{width:100%;margin-left:0}.audioControls button{flex:1;min-width:0}.playerModal{padding:0}.playerWindow{width:100vw;min-height:100vh;border-radius:0;border:0}.playerWord{font-size:42px}.playerMeaning{font-size:25px}.playerMain{padding:28px 18px}.lessonList{grid-template-columns:1fr}.homeHeader{border-radius:14px}.lessonItem{padding:15px}}
 
 </style>
 </head>
@@ -90,17 +106,7 @@ th,td{padding:11px 10px;border-bottom:1px solid var(--line);text-align:left;vert
   <div class="toolbar">
     <button id="toggleMeaning" class="primary">隐藏中文释义</button>
     <button id="showAll">显示全部</button>
-  </div>
-
-  <div class="audioPlayer">
-    <div class="audioNow">顺序播放：<strong id="audioCurrent">尚未开始</strong></div>
-    <div class="audioControls">
-      <button id="audioPrev">← 上一个</button>
-      <button id="audioPlay" class="primary">▶ 开始播放</button>
-      <button id="audioPause">⏸ 暂停</button>
-      <button id="audioNext">下一个 →</button>
-      <span id="audioCount" class="audioCount">0 / 0</span>
-    </div>
+    <button id="openPlayer" class="openPlayer">▶ 打开顺序播放</button>
   </div>
 
   <div id="listWrap"></div>
@@ -156,6 +162,31 @@ th,td{padding:11px 10px;border-bottom:1px solid var(--line);text-align:left;vert
   <div class="toolbar"><button id="clearWrong" class="danger">清空错词记录</button></div>
   <div id="wrongWrap"></div>
 </section>
+</div>
+
+<div id="playerModal" class="playerModal hidden" aria-hidden="true">
+  <div class="playerWindow">
+    <div class="playerHeader">
+      <div class="playerHeaderTitle">顺序播放</div>
+      <button id="playerClose" class="playerClose" aria-label="关闭">×</button>
+    </div>
+    <div class="playerMain">
+      <div class="playerWord" id="playerWord">—</div>
+      <div class="playerIpa" id="playerIpa"></div>
+      <div class="playerPos" id="playerPos"></div>
+      <div class="playerMeaning" id="playerMeaning"></div>
+      <div class="playerForm" id="playerForm"></div>
+    </div>
+    <div class="playerFooter">
+      <div class="audioControls">
+        <button id="audioPrev">← 上一个</button>
+        <button id="audioPlay" class="primary">▶ 开始播放</button>
+        <button id="audioPause">⏸ 暂停</button>
+        <button id="audioNext">下一个 →</button>
+        <span id="audioCount" class="audioCount">0 / 0</span>
+      </div>
+    </div>
+  </div>
 </div>
 
 <nav id="lessonBottomNav">
@@ -300,6 +331,29 @@ function renderList(){
 }
 
 
+function openPlayerModal(){
+  $('playerModal').classList.remove('hidden');
+  $('playerModal').setAttribute('aria-hidden','false');
+  updateAudioUI(true);
+}
+function closePlayerModal(){
+  stopAudioPlayback();
+  $('playerModal').classList.add('hidden');
+  $('playerModal').setAttribute('aria-hidden','true');
+}
+$('openPlayer').onclick=()=>{
+  if(!lesson || !lesson.words.length)return;
+  openPlayerModal();
+  if(!audioPlaying && !audioPaused){
+    audioIndex=0;
+    updateAudioUI(true);
+  }
+};
+$('playerClose').onclick=closePlayerModal;
+$('playerModal').addEventListener('click',e=>{
+  if(e.target===$('playerModal')) closePlayerModal();
+});
+
 function resetAudioPlayer(){
   stopAudioPlayback();
   audioIndex=0;
@@ -316,6 +370,7 @@ function stopAudioPlayback(){
   }
   if('speechSynthesis' in window) speechSynthesis.cancel();
   clearPlayingRow();
+  if($('audioPlay')) $('audioPlay').textContent='▶ 开始播放';
 }
 
 function clearPlayingRow(){
@@ -333,21 +388,27 @@ function highlightAudioRow(){
 
 function updateAudioUI(active=true){
   if(!lesson || !lesson.words.length){
-    $('audioCurrent').textContent='暂无单词';
+    $('playerWord').textContent='暂无单词';
+    $('playerIpa').textContent='';$('playerPos').textContent='';$('playerMeaning').textContent='';$('playerForm').textContent='';
     $('audioCount').textContent='0 / 0';
     return;
   }
   audioIndex=Math.max(0,Math.min(audioIndex,lesson.words.length-1));
   const x=lesson.words[audioIndex];
-  $('audioCurrent').textContent=active?x.word:'尚未开始';
-  $('audioCount').textContent=active?`${audioIndex+1} / ${lesson.words.length}`:`0 / ${lesson.words.length}`;
-  $('audioPlay').textContent=audioPaused?'▶ 继续':'▶ 开始播放';
+  $('playerWord').textContent=x.word;
+  $('playerIpa').textContent=x.ipa||'';
+  $('playerPos').textContent=x.pos||'';
+  $('playerMeaning').textContent=x.meaning||'';
+  $('playerForm').textContent=x.lesson_form?`课文：${x.lesson_form}`:'';
+  $('audioCount').textContent=`${audioIndex+1} / ${lesson.words.length}`;
+  $('audioPlay').textContent=audioPaused?'▶ 继续':(audioPlaying?'▶ 播放中':'▶ 开始播放');
   $('audioPrev').disabled=audioIndex===0;
   $('audioNext').disabled=audioIndex===lesson.words.length-1;
 }
 
 function playAudioWord(index,continueSequence=true){
   if(!lesson || !lesson.words.length)return;
+  openPlayerModal();
   audioIndex=Math.max(0,Math.min(index,lesson.words.length-1));
   audioPlaying=true;
   audioPaused=false;
