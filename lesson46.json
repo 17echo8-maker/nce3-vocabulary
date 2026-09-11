@@ -1,0 +1,401 @@
+{
+  "lesson": 46,
+  "title": "Do it yourself",
+  "titleZh": "自己动手",
+  "words": [
+    {
+      "word": "passion",
+      "ipa": "/ˈpæʃn/",
+      "pos": "n.",
+      "meaning": "热爱；酷爱；热情",
+      "lesson_form": ""
+    },
+    {
+      "word": "increasingly",
+      "ipa": "/ɪnˈkriːsɪŋli/",
+      "pos": "adv.",
+      "meaning": "越来越；日益",
+      "lesson_form": ""
+    },
+    {
+      "word": "specialized",
+      "ipa": "/ˈspeʃəlaɪzd/",
+      "pos": "adj.",
+      "meaning": "专门的；专业的",
+      "lesson_form": ""
+    },
+    {
+      "word": "ignorance",
+      "ipa": "/ˈɪɡnərəns/",
+      "pos": "n.",
+      "meaning": "无知；不了解",
+      "lesson_form": ""
+    },
+    {
+      "word": "newlywed",
+      "ipa": "/ˈnjuːliwed/",
+      "pos": "n.",
+      "meaning": "新婚者；新婚夫妇中的一方",
+      "lesson_form": "newlyweds（复数）"
+    },
+    {
+      "word": "gaily",
+      "ipa": "/ˈɡeɪli/",
+      "pos": "adv.",
+      "meaning": "愉快地；兴高采烈地",
+      "lesson_form": ""
+    },
+    {
+      "word": "embark",
+      "ipa": "/ɪmˈbɑːk/",
+      "pos": "v.",
+      "meaning": "着手；开始从事",
+      "lesson_form": ""
+    },
+    {
+      "word": "decorate",
+      "ipa": "/ˈdekəreɪt/",
+      "pos": "v.",
+      "meaning": "装修；装饰",
+      "lesson_form": "decorating（动名词）"
+    },
+    {
+      "word": "particularly",
+      "ipa": "/pəˈtɪkjələli/",
+      "pos": "adv.",
+      "meaning": "尤其；特别",
+      "lesson_form": ""
+    },
+    {
+      "word": "leisure",
+      "ipa": "/ˈleʒə(r)/",
+      "pos": "n.",
+      "meaning": "空闲；闲暇",
+      "lesson_form": ""
+    },
+    {
+      "word": "fireplace",
+      "ipa": "/ˈfaɪəpleɪs/",
+      "pos": "n.",
+      "meaning": "壁炉",
+      "lesson_form": "fireplaces（复数）"
+    },
+    {
+      "word": "garage",
+      "ipa": "/ˈɡærɑːʒ/",
+      "pos": "n.",
+      "meaning": "车库",
+      "lesson_form": "garages（复数）"
+    },
+    {
+      "word": "keen",
+      "ipa": "/kiːn/",
+      "pos": "adj.",
+      "meaning": "热衷的；热心的",
+      "lesson_form": ""
+    },
+    {
+      "word": "enthusiast",
+      "ipa": "/ɪnˈθjuːziæst/",
+      "pos": "n.",
+      "meaning": "爱好者；热心者",
+      "lesson_form": "enthusiasts（复数）"
+    },
+    {
+      "word": "cater",
+      "ipa": "/ˈkeɪtə(r)/",
+      "pos": "v.",
+      "meaning": "迎合；满足……的需要",
+      "lesson_form": "cater for"
+    },
+    {
+      "word": "craze",
+      "ipa": "/kreɪz/",
+      "pos": "n.",
+      "meaning": "狂热；风靡一时的事物",
+      "lesson_form": ""
+    },
+    {
+      "word": "advisory",
+      "ipa": "/ədˈvaɪzəri/",
+      "pos": "adj.",
+      "meaning": "咨询的；提供建议的",
+      "lesson_form": ""
+    },
+    {
+      "word": "novice",
+      "ipa": "/ˈnɒvɪs/",
+      "pos": "n.",
+      "meaning": "新手；初学者",
+      "lesson_form": "novices（复数）"
+    },
+    {
+      "word": "consumer",
+      "ipa": "/kənˈsjuːmə(r)/",
+      "pos": "n.",
+      "meaning": "消费者；顾客",
+      "lesson_form": "consumers（复数）"
+    },
+    {
+      "word": "bit",
+      "ipa": "/bɪt/",
+      "pos": "n.",
+      "meaning": "小块；小零件",
+      "lesson_form": "bits（复数；bits and pieces）"
+    },
+    {
+      "word": "assemble",
+      "ipa": "/əˈsembl/",
+      "pos": "v.",
+      "meaning": "组装；装配",
+      "lesson_form": ""
+    },
+    {
+      "word": "outlet",
+      "ipa": "/ˈaʊtlet/",
+      "pos": "n.",
+      "meaning": "出路；（精力、情感的）发泄途径",
+      "lesson_form": ""
+    },
+    {
+      "word": "pent-up",
+      "ipa": "/ˌpent ˈʌp/",
+      "pos": "adj.",
+      "meaning": "被压抑的；积压的",
+      "lesson_form": "pent up（课文写法）"
+    },
+    {
+      "word": "tend",
+      "ipa": "/tend/",
+      "pos": "v.",
+      "meaning": "倾向于；往往会",
+      "lesson_form": "tend to"
+    },
+    {
+      "word": "infinitely",
+      "ipa": "/ˈɪnfɪnətli/",
+      "pos": "adv.",
+      "meaning": "极其；非常",
+      "lesson_form": ""
+    },
+    {
+      "word": "resourceful",
+      "ipa": "/rɪˈsɔːsfəl/",
+      "pos": "adj.",
+      "meaning": "足智多谋的；善于应变的",
+      "lesson_form": ""
+    },
+    {
+      "word": "electrician",
+      "ipa": "/ɪˌlekˈtrɪʃn/",
+      "pos": "n.",
+      "meaning": "电工",
+      "lesson_form": "electricians（复数）"
+    },
+    {
+      "word": "carpenter",
+      "ipa": "/ˈkɑːpəntə(r)/",
+      "pos": "n.",
+      "meaning": "木匠；木工",
+      "lesson_form": "carpenters（复数）"
+    },
+    {
+      "word": "plumber",
+      "ipa": "/ˈplʌmə(r)/",
+      "pos": "n.",
+      "meaning": "水管工",
+      "lesson_form": "plumbers（复数）"
+    },
+    {
+      "word": "mechanic",
+      "ipa": "/məˈkænɪk/",
+      "pos": "n.",
+      "meaning": "机械修理工；技工",
+      "lesson_form": "mechanics（复数）"
+    },
+    {
+      "word": "fuse",
+      "ipa": "/fjuːz/",
+      "pos": "v.",
+      "meaning": "（电器）因保险丝熔断而停止工作",
+      "lesson_form": ""
+    },
+    {
+      "word": "rickety",
+      "ipa": "/ˈrɪkəti/",
+      "pos": "adj.",
+      "meaning": "摇晃的；不结实的",
+      "lesson_form": ""
+    },
+    {
+      "word": "clog",
+      "ipa": "/klɒɡ/",
+      "pos": "v.",
+      "meaning": "堵塞；阻塞",
+      "lesson_form": "clogged（过去分词）"
+    },
+    {
+      "word": "vacuum",
+      "ipa": "/ˈvækjuəm/",
+      "pos": "n.",
+      "meaning": "真空；（vacuum cleaner）吸尘器",
+      "lesson_form": "vacuum cleaners"
+    },
+    {
+      "word": "assume",
+      "ipa": "/əˈsjuːm/",
+      "pos": "v.",
+      "meaning": "认为；想当然地认为",
+      "lesson_form": ""
+    },
+    {
+      "word": "somehow",
+      "ipa": "/ˈsʌmhaʊ/",
+      "pos": "adv.",
+      "meaning": "以某种方式；不知怎么地",
+      "lesson_form": ""
+    },
+    {
+      "word": "delusion",
+      "ipa": "/dɪˈluːʒn/",
+      "pos": "n.",
+      "meaning": "错觉；妄想",
+      "lesson_form": ""
+    },
+    {
+      "word": "repeatedly",
+      "ipa": "/rɪˈpiːtɪdli/",
+      "pos": "adv.",
+      "meaning": "反复地；一再地",
+      "lesson_form": ""
+    },
+    {
+      "word": "lawn mower",
+      "ipa": "/ˈlɔːn məʊə(r)/",
+      "pos": "n.",
+      "meaning": "割草机",
+      "lesson_form": "mower（后文再次出现）"
+    },
+    {
+      "word": "previous",
+      "ipa": "/ˈpriːviəs/",
+      "pos": "adj.",
+      "meaning": "以前的；前一个的",
+      "lesson_form": ""
+    },
+    {
+      "word": "haul",
+      "ipa": "/hɔːl/",
+      "pos": "v.",
+      "meaning": "用力拖；拉",
+      "lesson_form": "hauled（过去式）"
+    },
+    {
+      "word": "minor",
+      "ipa": "/ˈmaɪnə(r)/",
+      "pos": "adj.",
+      "meaning": "小的；轻微的",
+      "lesson_form": ""
+    },
+    {
+      "word": "adjustment",
+      "ipa": "/əˈdʒʌstmənt/",
+      "pos": "n.",
+      "meaning": "调整；调节",
+      "lesson_form": ""
+    },
+    {
+      "word": "screw",
+      "ipa": "/skruː/",
+      "pos": "n.",
+      "meaning": "螺丝；螺钉",
+      "lesson_form": ""
+    },
+    {
+      "word": "tighten",
+      "ipa": "/ˈtaɪtn/",
+      "pos": "v.",
+      "meaning": "拧紧；使变紧",
+      "lesson_form": "tightening（动名词）"
+    },
+    {
+      "word": "dismantle",
+      "ipa": "/dɪsˈmæntl/",
+      "pos": "v.",
+      "meaning": "拆卸；拆开",
+      "lesson_form": ""
+    },
+    {
+      "word": "litter",
+      "ipa": "/ˈlɪtə(r)/",
+      "pos": "v.",
+      "meaning": "使凌乱地散布；使遍布",
+      "lesson_form": "littered（过去分词）"
+    },
+    {
+      "word": "chunk",
+      "ipa": "/tʃʌŋk/",
+      "pos": "n.",
+      "meaning": "大块；厚块",
+      "lesson_form": "chunks（复数）"
+    },
+    {
+      "word": "extremely",
+      "ipa": "/ɪkˈstriːmli/",
+      "pos": "adv.",
+      "meaning": "极其；非常",
+      "lesson_form": ""
+    },
+    {
+      "word": "insurmountable",
+      "ipa": "/ˌɪnsəˈmaʊntəbl/",
+      "pos": "adj.",
+      "meaning": "难以克服的；不可逾越的",
+      "lesson_form": ""
+    },
+    {
+      "word": "jigsaw",
+      "ipa": "/ˈdʒɪɡsɔː/",
+      "pos": "n.",
+      "meaning": "拼图玩具；拼图",
+      "lesson_form": "jigsaw puzzle"
+    },
+    {
+      "word": "reassemble",
+      "ipa": "/ˌriːəˈsembl/",
+      "pos": "v.",
+      "meaning": "重新组装；重新装配",
+      "lesson_form": "reassembled（过去分词）"
+    },
+    {
+      "word": "curiously",
+      "ipa": "/ˈkjʊəriəsli/",
+      "pos": "adv.",
+      "meaning": "奇怪地；形状奇特地",
+      "lesson_form": "curiously shaped"
+    },
+    {
+      "word": "nag",
+      "ipa": "/næɡ/",
+      "pos": "v.",
+      "meaning": "唠叨；纠缠着催促",
+      "lesson_form": "nagged（过去式）"
+    },
+    {
+      "word": "jungle",
+      "ipa": "/ˈdʒʌŋɡl/",
+      "pos": "n.",
+      "meaning": "丛林；（此处）杂草丛生之地",
+      "lesson_form": ""
+    },
+    {
+      "word": "rust",
+      "ipa": "/rʌst/",
+      "pos": "v.",
+      "meaning": "生锈",
+      "lesson_form": "rusting（现在分词）"
+    }
+  ],
+  "people": [],
+  "places": []
+}

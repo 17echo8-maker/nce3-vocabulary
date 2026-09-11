@@ -1,0 +1,297 @@
+{
+  "lesson": 45,
+  "title": "The power of the press",
+  "titleZh": "新闻报道的威力",
+  "words": [
+    {
+      "word": "democratic",
+      "ipa": "/ˌdeməˈkrætɪk/",
+      "pos": "adj.",
+      "meaning": "民主的",
+      "lesson_form": ""
+    },
+    {
+      "word": "effort",
+      "ipa": "/ˈefət/",
+      "pos": "n.",
+      "meaning": "努力；企图",
+      "lesson_form": "efforts（复数）"
+    },
+    {
+      "word": "restrict",
+      "ipa": "/rɪˈstrɪkt/",
+      "pos": "v.",
+      "meaning": "限制；约束",
+      "lesson_form": ""
+    },
+    {
+      "word": "condemn",
+      "ipa": "/kənˈdem/",
+      "pos": "v.",
+      "meaning": "谴责；指责",
+      "lesson_form": "condemned（过去分词）"
+    },
+    {
+      "word": "abuse",
+      "ipa": "/əˈbjuːz/",
+      "pos": "v.",
+      "meaning": "滥用",
+      "lesson_form": "abused（过去分词）"
+    },
+    {
+      "word": "attract",
+      "ipa": "/əˈtrækt/",
+      "pos": "v.",
+      "meaning": "吸引",
+      "lesson_form": ""
+    },
+    {
+      "word": "extremely",
+      "ipa": "/ɪkˈstriːmli/",
+      "pos": "adv.",
+      "meaning": "极其；非常",
+      "lesson_form": ""
+    },
+    {
+      "word": "doubtful",
+      "ipa": "/ˈdaʊtfl/",
+      "pos": "adj.",
+      "meaning": "难以确定的；令人怀疑的",
+      "lesson_form": ""
+    },
+    {
+      "word": "contention",
+      "ipa": "/kənˈtenʃn/",
+      "pos": "n.",
+      "meaning": "论点；主张",
+      "lesson_form": ""
+    },
+    {
+      "word": "sacred",
+      "ipa": "/ˈseɪkrɪd/",
+      "pos": "adj.",
+      "meaning": "神圣的；不可侵犯的",
+      "lesson_form": ""
+    },
+    {
+      "word": "individual",
+      "ipa": "/ˌɪndɪˈvɪdʒuəl/",
+      "pos": "n.",
+      "meaning": "个人；个体",
+      "lesson_form": "individuals（复数）"
+    },
+    {
+      "word": "exert",
+      "ipa": "/ɪɡˈzɜːt/",
+      "pos": "v.",
+      "meaning": "施加（影响、压力等）",
+      "lesson_form": ""
+    },
+    {
+      "word": "tremendous",
+      "ipa": "/trəˈmendəs/",
+      "pos": "adj.",
+      "meaning": "巨大的；极大的",
+      "lesson_form": ""
+    },
+    {
+      "word": "ordinary",
+      "ipa": "/ˈɔːdnri/",
+      "pos": "adj.",
+      "meaning": "普通的；平凡的",
+      "lesson_form": ""
+    },
+    {
+      "word": "overthrow",
+      "ipa": "/ˌəʊvəˈθrəʊ/",
+      "pos": "v.",
+      "meaning": "推翻",
+      "lesson_form": ""
+    },
+    {
+      "word": "acquire",
+      "ipa": "/əˈkwaɪə(r)/",
+      "pos": "v.",
+      "meaning": "获得；取得",
+      "lesson_form": "acquired（过去式/过去分词）"
+    },
+    {
+      "word": "fortune",
+      "ipa": "/ˈfɔːtʃuːn/",
+      "pos": "n.",
+      "meaning": "财富；财产",
+      "lesson_form": ""
+    },
+    {
+      "word": "dramatically",
+      "ipa": "/drəˈmætɪkli/",
+      "pos": "adv.",
+      "meaning": "显著地；戏剧性地",
+      "lesson_form": ""
+    },
+    {
+      "word": "illustrate",
+      "ipa": "/ˈɪləstreɪt/",
+      "pos": "v.",
+      "meaning": "说明；阐明",
+      "lesson_form": "illustrates（三单）"
+    },
+    {
+      "word": "press",
+      "ipa": "/pres/",
+      "pos": "n./v.",
+      "meaning": "新闻界；报刊；催促；一再要求",
+      "lesson_form": "pressing for interviews（现在分词）"
+    },
+    {
+      "word": "inhabitant",
+      "ipa": "/ɪnˈhæbɪtənt/",
+      "pos": "n.",
+      "meaning": "居民；住户",
+      "lesson_form": "inhabitants（复数）"
+    },
+    {
+      "word": "perpetual",
+      "ipa": "/pəˈpetʃuəl/",
+      "pos": "adj.",
+      "meaning": "长期的；无休止的",
+      "lesson_form": ""
+    },
+    {
+      "word": "poverty",
+      "ipa": "/ˈpɒvəti/",
+      "pos": "n.",
+      "meaning": "贫困；贫穷",
+      "lesson_form": ""
+    },
+    {
+      "word": "pressing",
+      "ipa": "/ˈpresɪŋ/",
+      "pos": "adj.",
+      "meaning": "紧迫的；迫切的",
+      "lesson_form": ""
+    },
+    {
+      "word": "economic",
+      "ipa": "/ˌiːkəˈnɒmɪk/",
+      "pos": "adj.",
+      "meaning": "经济的",
+      "lesson_form": ""
+    },
+    {
+      "word": "odds",
+      "ipa": "/ɒdz/",
+      "pos": "n. pl.",
+      "meaning": "困难；不利条件",
+      "lesson_form": "against economic odds（面对经济困境）"
+    },
+    {
+      "word": "obscurity",
+      "ipa": "/əbˈskjʊərəti/",
+      "pos": "n.",
+      "meaning": "默默无闻；无名",
+      "lesson_form": ""
+    },
+    {
+      "word": "quintuplet",
+      "ipa": "/ˈkwɪntjʊplət/",
+      "pos": "n.",
+      "meaning": "五胞胎中的一个",
+      "lesson_form": "quintuplets（复数）"
+    },
+    {
+      "word": "radically",
+      "ipa": "/ˈrædɪkli/",
+      "pos": "adv.",
+      "meaning": "彻底地；根本地",
+      "lesson_form": ""
+    },
+    {
+      "word": "swift",
+      "ipa": "/swɪft/",
+      "pos": "adj.",
+      "meaning": "迅速的；快速的",
+      "lesson_form": ""
+    },
+    {
+      "word": "sum",
+      "ipa": "/sʌm/",
+      "pos": "n.",
+      "meaning": "金额；款项",
+      "lesson_form": "sums（复数）"
+    },
+    {
+      "word": "exclusive",
+      "ipa": "/ɪkˈskluːsɪv/",
+      "pos": "adj.",
+      "meaning": "独占的；专有的",
+      "lesson_form": ""
+    },
+    {
+      "word": "pour",
+      "ipa": "/pɔː(r)/",
+      "pos": "v.",
+      "meaning": "涌入；纷至沓来",
+      "lesson_form": "poured in（过去式）"
+    },
+    {
+      "word": "manufacturer",
+      "ipa": "/ˌmænjuˈfæktʃərə(r)/",
+      "pos": "n.",
+      "meaning": "制造商；厂商",
+      "lesson_form": "manufacturers（复数）"
+    },
+    {
+      "word": "interview",
+      "ipa": "/ˈɪntəvjuː/",
+      "pos": "n.",
+      "meaning": "采访；访谈",
+      "lesson_form": "interviews（复数）"
+    },
+    {
+      "word": "lead",
+      "ipa": "/liːd/",
+      "pos": "v.",
+      "meaning": "过（某种生活）",
+      "lesson_form": "lead normal lives（过正常生活）"
+    },
+    {
+      "word": "victim",
+      "ipa": "/ˈvɪktɪm/",
+      "pos": "n.",
+      "meaning": "受害者；牺牲品",
+      "lesson_form": "victims（复数）"
+    },
+    {
+      "word": "commercialization",
+      "ipa": "/kəˌmɜːʃəlaɪˈzeɪʃn/",
+      "pos": "n.",
+      "meaning": "商业化",
+      "lesson_form": ""
+    },
+    {
+      "word": "commodity",
+      "ipa": "/kəˈmɒdəti/",
+      "pos": "n.",
+      "meaning": "商品；货物",
+      "lesson_form": ""
+    }
+  ],
+  "people": [],
+  "places": [
+    {
+      "name": "Aberdeen",
+      "ipa": "/ˌæbəˈdiːn/",
+      "zh": "阿伯丁（美国南达科他州城市）",
+      "lang": "en-GB",
+      "audio": ""
+    },
+    {
+      "name": "South Dakota",
+      "ipa": "/ˌsaʊθ dəˈkəʊtə/",
+      "zh": "南达科他州",
+      "lang": "en-GB",
+      "audio": ""
+    }
+  ]
+}
