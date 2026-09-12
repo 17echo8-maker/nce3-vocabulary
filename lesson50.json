@@ -1,0 +1,394 @@
+{
+  "lesson": 50,
+  "title": "New Year resolutions",
+  "titleZh": "新年的决心",
+  "words": [
+    {
+      "word": "resolution",
+      "ipa": "/ˌrezəˈluːʃən/",
+      "pos": "n.",
+      "meaning": "决心；决定",
+      "lesson_form": "resolutions（复数）"
+    },
+    {
+      "word": "mentally",
+      "ipa": "/ˈmentəli/",
+      "pos": "adv.",
+      "meaning": "在思想上；精神上",
+      "lesson_form": ""
+    },
+    {
+      "word": "compile",
+      "ipa": "/kəmˈpaɪl/",
+      "pos": "v.",
+      "meaning": "编制；汇编",
+      "lesson_form": ""
+    },
+    {
+      "word": "formidable",
+      "ipa": "/ˈfɔːmɪdəbəl/",
+      "pos": "adj.",
+      "meaning": "令人望而生畏的",
+      "lesson_form": ""
+    },
+    {
+      "word": "do",
+      "ipa": "/duː/",
+      "pos": "n.",
+      "meaning": "该做的事",
+      "lesson_form": "dos（复数）"
+    },
+    {
+      "word": "don't",
+      "ipa": "/dəʊnt/",
+      "pos": "n.",
+      "meaning": "不该做的事",
+      "lesson_form": "don'ts（复数）"
+    },
+    {
+      "word": "recur",
+      "ipa": "/rɪˈkɜː(r)/",
+      "pos": "v.",
+      "meaning": "再次出现",
+      "lesson_form": ""
+    },
+    {
+      "word": "monotonous",
+      "ipa": "/məˈnɒtənəs/",
+      "pos": "adj.",
+      "meaning": "单调乏味的",
+      "lesson_form": ""
+    },
+    {
+      "word": "regularity",
+      "ipa": "/ˌreɡjuˈlærəti/",
+      "pos": "n.",
+      "meaning": "规律性",
+      "lesson_form": ""
+    },
+    {
+      "word": "resolve",
+      "ipa": "/rɪˈzɒlv/",
+      "pos": "v.",
+      "meaning": "下决心",
+      "lesson_form": ""
+    },
+    {
+      "word": "teach",
+      "ipa": "/tiːtʃ/",
+      "pos": "v.",
+      "meaning": "使懂得；教会",
+      "lesson_form": "taught（过去分词）"
+    },
+    {
+      "word": "accomplishment",
+      "ipa": "/əˈkʌmplɪʃmənt/",
+      "pos": "n.",
+      "meaning": "成就；完成的事",
+      "lesson_form": "accomplishments（复数）"
+    },
+    {
+      "word": "attainment",
+      "ipa": "/əˈteɪnmənt/",
+      "pos": "n.",
+      "meaning": "达到；实现",
+      "lesson_form": ""
+    },
+    {
+      "word": "inveterate",
+      "ipa": "/ɪnˈvetərət/",
+      "pos": "adj.",
+      "meaning": "积习已深的",
+      "lesson_form": ""
+    },
+    {
+      "word": "frustration",
+      "ipa": "/frʌˈstreɪʃən/",
+      "pos": "n.",
+      "meaning": "挫败感",
+      "lesson_form": ""
+    },
+    {
+      "word": "effort",
+      "ipa": "/ˈefət/",
+      "pos": "n.",
+      "meaning": "努力",
+      "lesson_form": "efforts（复数）"
+    },
+    {
+      "word": "self-improvement",
+      "ipa": "/ˌself ɪmˈpruːvmənt/",
+      "pos": "n.",
+      "meaning": "自我改进",
+      "lesson_form": ""
+    },
+    {
+      "word": "scheme",
+      "ipa": "/skiːm/",
+      "pos": "n.",
+      "meaning": "计划；方案",
+      "lesson_form": "schemes（复数）"
+    },
+    {
+      "word": "ambitious",
+      "ipa": "/æmˈbɪʃəs/",
+      "pos": "adj.",
+      "meaning": "目标过高的",
+      "lesson_form": ""
+    },
+    {
+      "word": "fundamental",
+      "ipa": "/ˌfʌndəˈmentəl/",
+      "pos": "adj.",
+      "meaning": "根本的",
+      "lesson_form": ""
+    },
+    {
+      "word": "announce",
+      "ipa": "/əˈnaʊns/",
+      "pos": "v.",
+      "meaning": "宣布",
+      "lesson_form": "announcing（动名词）"
+    },
+    {
+      "word": "slip",
+      "ipa": "/slɪp/",
+      "pos": "v.",
+      "meaning": "退回；滑回",
+      "lesson_form": "slip back（故态复萌）"
+    },
+    {
+      "word": "aware",
+      "ipa": "/əˈweə(r)/",
+      "pos": "adj.",
+      "meaning": "意识到的",
+      "lesson_form": "aware of（意识到）"
+    },
+    {
+      "word": "pitfall",
+      "ipa": "/ˈpɪtfɔːl/",
+      "pos": "n.",
+      "meaning": "隐患；陷阱",
+      "lesson_form": "pitfalls（复数）"
+    },
+    {
+      "word": "attempt",
+      "ipa": "/əˈtempt/",
+      "pos": "v.",
+      "meaning": "试图",
+      "lesson_form": "attempted（过去式）"
+    },
+    {
+      "word": "modest",
+      "ipa": "/ˈmɒdɪst/",
+      "pos": "adj.",
+      "meaning": "不太高的；适度的",
+      "lesson_form": ""
+    },
+    {
+      "word": "ambition",
+      "ipa": "/æmˈbɪʃən/",
+      "pos": "n.",
+      "meaning": "目标；抱负",
+      "lesson_form": "ambitions（复数）"
+    },
+    {
+      "word": "assiduously",
+      "ipa": "/əˈsɪdjuəsli/",
+      "pos": "adv.",
+      "meaning": "勤勉地",
+      "lesson_form": ""
+    },
+    {
+      "word": "propose",
+      "ipa": "/prəˈpəʊz/",
+      "pos": "v.",
+      "meaning": "打算；计划",
+      "lesson_form": "proposed（过去式）"
+    },
+    {
+      "word": "self-discipline",
+      "ipa": "/ˌself ˈdɪsəplɪn/",
+      "pos": "n.",
+      "meaning": "自我约束",
+      "lesson_form": ""
+    },
+    {
+      "word": "considerable",
+      "ipa": "/kənˈsɪdərəbəl/",
+      "pos": "adj.",
+      "meaning": "相当大的",
+      "lesson_form": ""
+    },
+    {
+      "word": "nevertheless",
+      "ipa": "/ˌnevəðəˈles/",
+      "pos": "adv.",
+      "meaning": "不过；然而",
+      "lesson_form": ""
+    },
+    {
+      "word": "creep",
+      "ipa": "/kriːp/",
+      "pos": "v.",
+      "meaning": "蹑手蹑脚地走",
+      "lesson_form": ""
+    },
+    {
+      "word": "carpet",
+      "ipa": "/ˈkɑːpɪt/",
+      "pos": "n.",
+      "meaning": "地毯",
+      "lesson_form": ""
+    },
+    {
+      "word": "twist",
+      "ipa": "/twɪst/",
+      "pos": "v.",
+      "meaning": "扭动",
+      "lesson_form": "twisting（动名词）"
+    },
+    {
+      "word": "human frame",
+      "ipa": "/ˌhjuːmən ˈfreɪm/",
+      "pos": "n.",
+      "meaning": "人体；身躯",
+      "lesson_form": ""
+    },
+    {
+      "word": "exhausted",
+      "ipa": "/ɪɡˈzɔːstɪd/",
+      "pos": "adj.",
+      "meaning": "筋疲力尽的",
+      "lesson_form": ""
+    },
+    {
+      "word": "betray",
+      "ipa": "/bɪˈtreɪ/",
+      "pos": "v.",
+      "meaning": "暴露；泄露",
+      "lesson_form": "betrayed（过去式）"
+    },
+    {
+      "word": "troop",
+      "ipa": "/truːp/",
+      "pos": "v.",
+      "meaning": "成群结队地走",
+      "lesson_form": "trooped（过去式）"
+    },
+    {
+      "word": "performance",
+      "ipa": "/pəˈfɔːməns/",
+      "pos": "n.",
+      "meaning": "表演",
+      "lesson_form": ""
+    },
+    {
+      "word": "unsettling",
+      "ipa": "/ʌnˈsetəlɪŋ/",
+      "pos": "adj.",
+      "meaning": "令人不安的",
+      "lesson_form": ""
+    },
+    {
+      "word": "taunt",
+      "ipa": "/tɔːnt/",
+      "pos": "n.",
+      "meaning": "嘲弄",
+      "lesson_form": "taunts（复数）"
+    },
+    {
+      "word": "jibe",
+      "ipa": "/dʒaɪb/",
+      "pos": "n.",
+      "meaning": "讥讽",
+      "lesson_form": "jibes（复数）"
+    },
+    {
+      "word": "enthusiasm",
+      "ipa": "/ɪnˈθjuːziæzəm/",
+      "pos": "n.",
+      "meaning": "热情",
+      "lesson_form": ""
+    },
+    {
+      "word": "wane",
+      "ipa": "/weɪn/",
+      "pos": "v.",
+      "meaning": "衰退；减弱",
+      "lesson_form": "waned（过去式）"
+    },
+    {
+      "word": "gradually",
+      "ipa": "/ˈɡrædʒuəli/",
+      "pos": "adv.",
+      "meaning": "逐渐地",
+      "lesson_form": ""
+    },
+    {
+      "word": "diminish",
+      "ipa": "/dɪˈmɪnɪʃ/",
+      "pos": "v.",
+      "meaning": "减少",
+      "lesson_form": "diminished（过去式）"
+    },
+    {
+      "word": "argue",
+      "ipa": "/ˈɑːɡjuː/",
+      "pos": "v.",
+      "meaning": "辩称",
+      "lesson_form": "argued（过去式）"
+    },
+    {
+      "word": "exhaust",
+      "ipa": "/ɪɡˈzɔːst/",
+      "pos": "v.",
+      "meaning": "使疲惫",
+      "lesson_form": "exhausting（动名词）"
+    },
+    {
+      "word": "resist",
+      "ipa": "/rɪˈzɪst/",
+      "pos": "v.",
+      "meaning": "抵抗",
+      "lesson_form": "resisting（动名词）"
+    },
+    {
+      "word": "hypnotize",
+      "ipa": "/ˈhɪpnətaɪz/",
+      "pos": "v.",
+      "meaning": "使着迷",
+      "lesson_form": "hypnotizing（现在分词）"
+    },
+    {
+      "word": "glue",
+      "ipa": "/ɡluː/",
+      "pos": "v.",
+      "meaning": "使紧盯",
+      "lesson_form": "eyes glued to（目不转睛地看）"
+    },
+    {
+      "word": "undoing",
+      "ipa": "/ʌnˈduːɪŋ/",
+      "pos": "n.",
+      "meaning": "毁灭的原因",
+      "lesson_form": ""
+    },
+    {
+      "word": "doze",
+      "ipa": "/dəʊz/",
+      "pos": "v.",
+      "meaning": "打瞌睡",
+      "lesson_form": "dozing off（打盹）"
+    },
+    {
+      "word": "entitle",
+      "ipa": "/ɪnˈtaɪtəl/",
+      "pos": "v.",
+      "meaning": "给……题名",
+      "lesson_form": "entitled（过去分词）"
+    }
+  ],
+  "people": [],
+  "places": []
+}

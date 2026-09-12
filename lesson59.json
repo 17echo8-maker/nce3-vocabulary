@@ -1,0 +1,359 @@
+{
+  "lesson": 59,
+  "title": "Collecting",
+  "titleZh": "收藏",
+  "words": [
+    {
+      "word": "tend",
+      "ipa": "/tend/",
+      "pos": "v.",
+      "meaning": "往往；倾向于",
+      "lesson_form": "tend to（往往会）"
+    },
+    {
+      "word": "amass",
+      "ipa": "/əˈmæs/",
+      "pos": "v.",
+      "meaning": "积聚",
+      "lesson_form": ""
+    },
+    {
+      "word": "possession",
+      "ipa": "/pəˈzeʃən/",
+      "pos": "n.",
+      "meaning": "所有物",
+      "lesson_form": "possessions（复数）"
+    },
+    {
+      "word": "aware",
+      "ipa": "/əˈweə(r)/",
+      "pos": "adj.",
+      "meaning": "意识到的",
+      "lesson_form": ""
+    },
+    {
+      "word": "delightful",
+      "ipa": "/dɪˈlaɪtfəl/",
+      "pos": "adj.",
+      "meaning": "令人愉快的",
+      "lesson_form": ""
+    },
+    {
+      "word": "indiscriminate",
+      "ipa": "/ˌɪndɪˈskrɪmɪnət/",
+      "pos": "adj.",
+      "meaning": "不加选择的",
+      "lesson_form": ""
+    },
+    {
+      "word": "clutter",
+      "ipa": "/ˈklʌtə(r)/",
+      "pos": "n.",
+      "meaning": "杂乱的东西",
+      "lesson_form": ""
+    },
+    {
+      "word": "attic",
+      "ipa": "/ˈætɪk/",
+      "pos": "n.",
+      "meaning": "阁楼",
+      "lesson_form": "attics（复数）"
+    },
+    {
+      "word": "accumulate",
+      "ipa": "/əˈkjuːmjəleɪt/",
+      "pos": "v.",
+      "meaning": "积累",
+      "lesson_form": ""
+    },
+    {
+      "word": "belonging",
+      "ipa": "/bɪˈlɒŋɪŋ/",
+      "pos": "n.",
+      "meaning": "所有物",
+      "lesson_form": "belongings（复数）"
+    },
+    {
+      "word": "lack",
+      "ipa": "/læk/",
+      "pos": "n.",
+      "meaning": "缺乏",
+      "lesson_form": ""
+    },
+    {
+      "word": "essential",
+      "ipa": "/ɪˈsenʃəl/",
+      "pos": "adj.",
+      "meaning": "必不可少的",
+      "lesson_form": ""
+    },
+    {
+      "word": "sentiment",
+      "ipa": "/ˈsentɪmənt/",
+      "pos": "n.",
+      "meaning": "感情；情感",
+      "lesson_form": ""
+    },
+    {
+      "word": "association",
+      "ipa": "/əˌsəʊsiˈeɪʃən/",
+      "pos": "n.",
+      "meaning": "联想；联系",
+      "lesson_form": "associations（复数）"
+    },
+    {
+      "word": "acquire",
+      "ipa": "/əˈkwaɪə(r)/",
+      "pos": "v.",
+      "meaning": "获得",
+      "lesson_form": ""
+    },
+    {
+      "word": "deliberately",
+      "ipa": "/dɪˈlɪbərətli/",
+      "pos": "adv.",
+      "meaning": "有意地",
+      "lesson_form": ""
+    },
+    {
+      "word": "attempt",
+      "ipa": "/əˈtempt/",
+      "pos": "n.",
+      "meaning": "尝试",
+      "lesson_form": ""
+    },
+    {
+      "word": "avoid",
+      "ipa": "/əˈvɔɪd/",
+      "pos": "v.",
+      "meaning": "避免",
+      "lesson_form": ""
+    },
+    {
+      "word": "waste",
+      "ipa": "/weɪst/",
+      "pos": "n.",
+      "meaning": "浪费",
+      "lesson_form": ""
+    },
+    {
+      "word": "string",
+      "ipa": "/strɪŋ/",
+      "pos": "n.",
+      "meaning": "细绳",
+      "lesson_form": ""
+    },
+    {
+      "word": "requisite",
+      "ipa": "/ˈrekwɪzɪt/",
+      "pos": "n.",
+      "meaning": "必需品",
+      "lesson_form": "requisites（复数）"
+    },
+    {
+      "word": "mania",
+      "ipa": "/ˈmeɪniə/",
+      "pos": "n.",
+      "meaning": "狂热；癖好",
+      "lesson_form": ""
+    },
+    {
+      "word": "cut",
+      "ipa": "/kʌt/",
+      "pos": "v.",
+      "meaning": "剪下",
+      "lesson_form": "cuts（三单）"
+    },
+    {
+      "word": "sketch",
+      "ipa": "/sketʃ/",
+      "pos": "n.",
+      "meaning": "图样；草图",
+      "lesson_form": "sketches（复数）"
+    },
+    {
+      "word": "afford",
+      "ipa": "/əˈfɔːd/",
+      "pos": "v.",
+      "meaning": "买得起",
+      "lesson_form": ""
+    },
+    {
+      "word": "purchase",
+      "ipa": "/ˈpɜːtʃəs/",
+      "pos": "n.",
+      "meaning": "购买物",
+      "lesson_form": "purchases（复数）"
+    },
+    {
+      "word": "remote",
+      "ipa": "/rɪˈməʊt/",
+      "pos": "adj.",
+      "meaning": "微乎其微的",
+      "lesson_form": ""
+    },
+    {
+      "word": "sufficiently",
+      "ipa": "/səˈfɪʃəntli/",
+      "pos": "adv.",
+      "meaning": "足够地",
+      "lesson_form": ""
+    },
+    {
+      "word": "strong-minded",
+      "ipa": "/ˌstrɒŋ ˈmaɪndɪd/",
+      "pos": "adj.",
+      "meaning": "意志坚定的",
+      "lesson_form": ""
+    },
+    {
+      "word": "litter up",
+      "ipa": "/ˌlɪtə ˈʌp/",
+      "pos": "v.",
+      "meaning": "把……弄得杂乱",
+      "lesson_form": "litters up（三单）"
+    },
+    {
+      "word": "loose",
+      "ipa": "/luːs/",
+      "pos": "adj.",
+      "meaning": "零散的",
+      "lesson_form": ""
+    },
+    {
+      "word": "bit",
+      "ipa": "/bɪt/",
+      "pos": "n.",
+      "meaning": "小片",
+      "lesson_form": "bits（复数）"
+    },
+    {
+      "word": "relaxation",
+      "ipa": "/ˌriːlækˈseɪʃən/",
+      "pos": "n.",
+      "meaning": "放松；消遣",
+      "lesson_form": ""
+    },
+    {
+      "word": "leisure",
+      "ipa": "/ˈleʒə(r)/",
+      "pos": "n.",
+      "meaning": "闲暇",
+      "lesson_form": ""
+    },
+    {
+      "word": "treasure",
+      "ipa": "/ˈtreʒə(r)/",
+      "pos": "n.",
+      "meaning": "珍藏品",
+      "lesson_form": "treasures（复数）"
+    },
+    {
+      "word": "consist",
+      "ipa": "/kənˈsɪst/",
+      "pos": "v.",
+      "meaning": "由……组成",
+      "lesson_form": "consists of（由……组成）"
+    },
+    {
+      "word": "edition",
+      "ipa": "/ɪˈdɪʃən/",
+      "pos": "n.",
+      "meaning": "版本",
+      "lesson_form": "editions（复数）"
+    },
+    {
+      "word": "antique",
+      "ipa": "/ænˈtiːk/",
+      "pos": "adj.",
+      "meaning": "古董的",
+      "lesson_form": ""
+    },
+    {
+      "word": "verify",
+      "ipa": "/ˈverɪfaɪ/",
+      "pos": "v.",
+      "meaning": "核实",
+      "lesson_form": "verifying（动名词）"
+    },
+    {
+      "word": "educate",
+      "ipa": "/ˈedjukeɪt/",
+      "pos": "v.",
+      "meaning": "使增长知识",
+      "lesson_form": "educates（三单）"
+    },
+    {
+      "word": "compare notes",
+      "ipa": "/kəmˌpeə ˈnəʊts/",
+      "pos": "phr.",
+      "meaning": "交换意见",
+      "lesson_form": ""
+    },
+    {
+      "word": "specimen",
+      "ipa": "/ˈspesɪmən/",
+      "pos": "n.",
+      "meaning": "样品；标本",
+      "lesson_form": ""
+    },
+    {
+      "word": "confine",
+      "ipa": "/kənˈfaɪn/",
+      "pos": "v.",
+      "meaning": "限制",
+      "lesson_form": "confined（过去分词）"
+    },
+    {
+      "word": "authority",
+      "ipa": "/ɔːˈθɒrəti/",
+      "pos": "n.",
+      "meaning": "权威；专家",
+      "lesson_form": ""
+    },
+    {
+      "word": "informal",
+      "ipa": "/ɪnˈfɔːməl/",
+      "pos": "adj.",
+      "meaning": "非正式的",
+      "lesson_form": ""
+    },
+    {
+      "word": "audience",
+      "ipa": "/ˈɔːdiəns/",
+      "pos": "n.",
+      "meaning": "听众",
+      "lesson_form": "audiences（复数）"
+    },
+    {
+      "word": "occupy",
+      "ipa": "/ˈɒkjupaɪ/",
+      "pos": "v.",
+      "meaning": "占用",
+      "lesson_form": "occupying（动名词）"
+    },
+    {
+      "word": "spare",
+      "ipa": "/speə(r)/",
+      "pos": "adj.",
+      "meaning": "空闲的",
+      "lesson_form": ""
+    },
+    {
+      "word": "contented",
+      "ipa": "/kənˈtentɪd/",
+      "pos": "adj.",
+      "meaning": "心满意足的",
+      "lesson_form": ""
+    },
+    {
+      "word": "boredom",
+      "ipa": "/ˈbɔːdəm/",
+      "pos": "n.",
+      "meaning": "无聊",
+      "lesson_form": ""
+    }
+  ],
+  "people": [],
+  "places": []
+}

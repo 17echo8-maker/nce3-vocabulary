@@ -1,0 +1,250 @@
+{
+  "lesson": 55,
+  "title": "From the earth: Greetings",
+  "titleZh": "来自地球的问候",
+  "words": [
+    {
+      "word": "astronomy",
+      "ipa": "/əˈstrɒnəmi/",
+      "pos": "n.",
+      "meaning": "天文学",
+      "lesson_form": ""
+    },
+    {
+      "word": "detect",
+      "ipa": "/dɪˈtekt/",
+      "pos": "v.",
+      "meaning": "发现；探测",
+      "lesson_form": ""
+    },
+    {
+      "word": "galaxy",
+      "ipa": "/ˈɡæləksi/",
+      "pos": "n.",
+      "meaning": "星系",
+      "lesson_form": "galaxies（复数）"
+    },
+    {
+      "word": "achievement",
+      "ipa": "/əˈtʃiːvmənt/",
+      "pos": "n.",
+      "meaning": "成就",
+      "lesson_form": ""
+    },
+    {
+      "word": "relative terms",
+      "ipa": "/ˌrelətɪv ˈtɜːmz/",
+      "pos": "n.",
+      "meaning": "相对而言",
+      "lesson_form": ""
+    },
+    {
+      "word": "emit",
+      "ipa": "/iˈmɪt/",
+      "pos": "v.",
+      "meaning": "发出；放射",
+      "lesson_form": ""
+    },
+    {
+      "word": "infinitely",
+      "ipa": "/ˈɪnfɪnətli/",
+      "pos": "adv.",
+      "meaning": "极其；无限地",
+      "lesson_form": ""
+    },
+    {
+      "word": "difficult",
+      "ipa": "/ˈdɪfɪkəlt/",
+      "pos": "adj.",
+      "meaning": "困难的",
+      "lesson_form": ""
+    },
+    {
+      "word": "solar system",
+      "ipa": "/ˈsəʊlə ˌsɪstəm/",
+      "pos": "n.",
+      "meaning": "太阳系",
+      "lesson_form": ""
+    },
+    {
+      "word": "ideal",
+      "ipa": "/aɪˈdɪəl/",
+      "pos": "adj.",
+      "meaning": "理想的",
+      "lesson_form": ""
+    },
+    {
+      "word": "evolve",
+      "ipa": "/ɪˈvɒlv/",
+      "pos": "v.",
+      "meaning": "进化",
+      "lesson_form": ""
+    },
+    {
+      "word": "hot",
+      "ipa": "/hɒt/",
+      "pos": "adj.",
+      "meaning": "热的",
+      "lesson_form": "hotter（比较级）"
+    },
+    {
+      "word": "capable",
+      "ipa": "/ˈkeɪpəbəl/",
+      "pos": "adj.",
+      "meaning": "能够的",
+      "lesson_form": "capable of（能够）"
+    },
+    {
+      "word": "alternatively",
+      "ipa": "/ɔːlˈtɜːnətɪvli/",
+      "pos": "adv.",
+      "meaning": "或者；作为另一选择",
+      "lesson_form": ""
+    },
+    {
+      "word": "orbit",
+      "ipa": "/ˈɔːbɪt/",
+      "pos": "n.",
+      "meaning": "轨道",
+      "lesson_form": ""
+    },
+    {
+      "word": "existence",
+      "ipa": "/ɪɡˈzɪstəns/",
+      "pos": "n.",
+      "meaning": "存在",
+      "lesson_form": ""
+    },
+    {
+      "word": "presence",
+      "ipa": "/ˈprezəns/",
+      "pos": "n.",
+      "meaning": "存在",
+      "lesson_form": ""
+    },
+    {
+      "word": "astronomical",
+      "ipa": "/ˌæstrəˈnɒmɪkəl/",
+      "pos": "adj.",
+      "meaning": "天文学的",
+      "lesson_form": ""
+    },
+    {
+      "word": "atmosphere",
+      "ipa": "/ˈætməsfɪə(r)/",
+      "pos": "n.",
+      "meaning": "大气层",
+      "lesson_form": ""
+    },
+    {
+      "word": "generate",
+      "ipa": "/ˈdʒenəreɪt/",
+      "pos": "v.",
+      "meaning": "产生",
+      "lesson_form": "generated（过去分词）"
+    },
+    {
+      "word": "suitable",
+      "ipa": "/ˈsuːtəbəl/",
+      "pos": "adj.",
+      "meaning": "合适的",
+      "lesson_form": ""
+    },
+    {
+      "word": "dust particle",
+      "ipa": "/ˈdʌst ˌpɑːtɪkəl/",
+      "pos": "n.",
+      "meaning": "尘埃微粒",
+      "lesson_form": "dust particles（复数）"
+    },
+    {
+      "word": "blot out",
+      "ipa": "/ˌblɒt ˈaʊt/",
+      "pos": "v.",
+      "meaning": "遮住；挡住",
+      "lesson_form": "blotting out（动名词）"
+    },
+    {
+      "word": "analyse",
+      "ipa": "/ˈænəlaɪz/",
+      "pos": "v.",
+      "meaning": "分析",
+      "lesson_form": ""
+    },
+    {
+      "word": "bacterium",
+      "ipa": "/bækˈtɪəriəm/",
+      "pos": "n.",
+      "meaning": "细菌",
+      "lesson_form": "bacteria（复数）"
+    },
+    {
+      "word": "Earth-dweller",
+      "ipa": "/ˈɜːθ dwelə(r)/",
+      "pos": "n.",
+      "meaning": "地球居民",
+      "lesson_form": "Earth-dwellers（复数）"
+    },
+    {
+      "word": "cherish",
+      "ipa": "/ˈtʃerɪʃ/",
+      "pos": "v.",
+      "meaning": "珍视；怀有",
+      "lesson_form": ""
+    },
+    {
+      "word": "communicate",
+      "ipa": "/kəˈmjuːnɪkeɪt/",
+      "pos": "v.",
+      "meaning": "交流",
+      "lesson_form": ""
+    },
+    {
+      "word": "realm",
+      "ipa": "/relm/",
+      "pos": "n.",
+      "meaning": "领域；范围",
+      "lesson_form": "realms（复数）"
+    },
+    {
+      "word": "endeavour",
+      "ipa": "/ɪnˈdevə(r)/",
+      "pos": "n.",
+      "meaning": "努力；事业",
+      "lesson_form": ""
+    }
+  ],
+  "people": [
+    {
+      "name": "Daniel Goldin",
+      "ipa": "/ˌdæniəl ˈɡəʊldɪn/"
+    }
+  ],
+  "places": [
+    {
+      "name": "Milky Way",
+      "ipa": "/ˌmɪlki ˈweɪ/",
+      "meaning": "银河系"
+    },
+    {
+      "name": "Venus",
+      "ipa": "/ˈviːnəs/",
+      "meaning": "金星"
+    },
+    {
+      "name": "Mars",
+      "ipa": "/mɑːz/",
+      "meaning": "火星"
+    },
+    {
+      "name": "Earth",
+      "ipa": "/ɜːθ/",
+      "meaning": "地球"
+    },
+    {
+      "name": "Jupiter",
+      "ipa": "/ˈdʒuːpɪtə(r)/",
+      "meaning": "木星"
+    }
+  ]
+}

@@ -19,5 +19,82 @@
     "titleZh": "自己动手",
     "file": "lesson46.json",
     "wordCount": 63
+  },
+  {
+    "lesson": 50,
+    "title": "New Year resolutions",
+    "titleZh": "新年的决心",
+    "file": "lesson50.json",
+    "wordCount": 55
+  },
+  {
+    "lesson": 51,
+    "title": "Predicting the future",
+    "titleZh": "预测未来",
+    "file": "lesson51.json",
+    "wordCount": 29
+  },
+  {
+    "lesson": 52,
+    "title": "Mud is mud",
+    "titleZh": "实事求是",
+    "file": "lesson52.json",
+    "wordCount": 61
+  },
+  {
+    "lesson": 53,
+    "title": "In the public interest",
+    "titleZh": "为了公众的利益",
+    "file": "lesson53.json",
+    "wordCount": 60
+  },
+  {
+    "lesson": 54,
+    "title": "Instinct or cleverness?",
+    "titleZh": "是本能还是机智？",
+    "file": "lesson54.json",
+    "wordCount": 45
+  },
+  {
+    "lesson": 55,
+    "title": "From the earth: Greetings",
+    "titleZh": "来自地球的问候",
+    "file": "lesson55.json",
+    "wordCount": 30
+  },
+  {
+    "lesson": 56,
+    "title": "Our neighbour, the river",
+    "titleZh": "河流，我们的邻居",
+    "file": "lesson56.json",
+    "wordCount": 45
+  },
+  {
+    "lesson": 57,
+    "title": "Back in the old country",
+    "titleZh": "重返故里",
+    "file": "lesson57.json",
+    "wordCount": 36
+  },
+  {
+    "lesson": 58,
+    "title": "A spot of bother",
+    "titleZh": "一点儿小麻烦",
+    "file": "lesson58.json",
+    "wordCount": 51
+  },
+  {
+    "lesson": 59,
+    "title": "Collecting",
+    "titleZh": "收藏",
+    "file": "lesson59.json",
+    "wordCount": 50
+  },
+  {
+    "lesson": 60,
+    "title": "Too early and too late",
+    "titleZh": "太早和太晚",
+    "file": "lesson60.json",
+    "wordCount": 45
   }
 ]

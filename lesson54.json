@@ -1,0 +1,324 @@
+{
+  "lesson": 54,
+  "title": "Instinct or cleverness?",
+  "titleZh": "是本能还是机智？",
+  "words": [
+    {
+      "word": "creature",
+      "ipa": "/ˈkriːtʃə(r)/",
+      "pos": "n.",
+      "meaning": "生物；动物",
+      "lesson_form": "creatures（复数）"
+    },
+    {
+      "word": "wage war",
+      "ipa": "/ˌweɪdʒ ˈwɔː(r)/",
+      "pos": "phr.",
+      "meaning": "开战；斗争",
+      "lesson_form": ""
+    },
+    {
+      "word": "contaminate",
+      "ipa": "/kənˈtæmɪneɪt/",
+      "pos": "v.",
+      "meaning": "污染",
+      "lesson_form": ""
+    },
+    {
+      "word": "disease",
+      "ipa": "/dɪˈziːz/",
+      "pos": "n.",
+      "meaning": "疾病",
+      "lesson_form": "diseases（复数）"
+    },
+    {
+      "word": "devour",
+      "ipa": "/dɪˈvaʊə(r)/",
+      "pos": "v.",
+      "meaning": "吞食",
+      "lesson_form": ""
+    },
+    {
+      "word": "provocation",
+      "ipa": "/ˌprɒvəˈkeɪʃən/",
+      "pos": "n.",
+      "meaning": "挑衅；刺激",
+      "lesson_form": ""
+    },
+    {
+      "word": "dread",
+      "ipa": "/dred/",
+      "pos": "n.",
+      "meaning": "恐惧",
+      "lesson_form": ""
+    },
+    {
+      "word": "wasp",
+      "ipa": "/wɒsp/",
+      "pos": "n.",
+      "meaning": "黄蜂",
+      "lesson_form": "wasps（复数）"
+    },
+    {
+      "word": "moth",
+      "ipa": "/mɒθ/",
+      "pos": "n.",
+      "meaning": "飞蛾",
+      "lesson_form": "moths（复数）"
+    },
+    {
+      "word": "industrious",
+      "ipa": "/ɪnˈdʌstriəs/",
+      "pos": "adj.",
+      "meaning": "勤劳的",
+      "lesson_form": ""
+    },
+    {
+      "word": "revulsion",
+      "ipa": "/rɪˈvʌlʃən/",
+      "pos": "n.",
+      "meaning": "厌恶",
+      "lesson_form": ""
+    },
+    {
+      "word": "horde",
+      "ipa": "/hɔːd/",
+      "pos": "n.",
+      "meaning": "一大群",
+      "lesson_form": "hordes（复数）"
+    },
+    {
+      "word": "uncanny",
+      "ipa": "/ʌnˈkæni/",
+      "pos": "adj.",
+      "meaning": "不可思议的",
+      "lesson_form": ""
+    },
+    {
+      "word": "possess",
+      "ipa": "/pəˈzes/",
+      "pos": "v.",
+      "meaning": "具有",
+      "lesson_form": ""
+    },
+    {
+      "word": "horror",
+      "ipa": "/ˈhɒrə(r)/",
+      "pos": "n.",
+      "meaning": "恐惧",
+      "lesson_form": ""
+    },
+    {
+      "word": "unreasonable",
+      "ipa": "/ʌnˈriːzənəbəl/",
+      "pos": "adj.",
+      "meaning": "不合理的",
+      "lesson_form": ""
+    },
+    {
+      "word": "erase",
+      "ipa": "/ɪˈreɪz/",
+      "pos": "v.",
+      "meaning": "消除",
+      "lesson_form": ""
+    },
+    {
+      "word": "fascinating",
+      "ipa": "/ˈfæsɪneɪtɪŋ/",
+      "pos": "adj.",
+      "meaning": "迷人的",
+      "lesson_form": ""
+    },
+    {
+      "word": "mantis",
+      "ipa": "/ˈmæntɪs/",
+      "pos": "n.",
+      "meaning": "螳螂",
+      "lesson_form": ""
+    },
+    {
+      "word": "perfectly",
+      "ipa": "/ˈpɜːfɪktli/",
+      "pos": "adv.",
+      "meaning": "完全地",
+      "lesson_form": ""
+    },
+    {
+      "word": "entranced",
+      "ipa": "/ɪnˈtrɑːnst/",
+      "pos": "adj.",
+      "meaning": "着迷的",
+      "lesson_form": ""
+    },
+    {
+      "word": "unaware",
+      "ipa": "/ˌʌnəˈweə(r)/",
+      "pos": "adj.",
+      "meaning": "未察觉的",
+      "lesson_form": ""
+    },
+    {
+      "word": "presence",
+      "ipa": "/ˈprezəns/",
+      "pos": "n.",
+      "meaning": "存在；在场",
+      "lesson_form": ""
+    },
+    {
+      "word": "awe",
+      "ipa": "/ɔː/",
+      "pos": "n.",
+      "meaning": "敬畏",
+      "lesson_form": ""
+    },
+    {
+      "word": "pounce",
+      "ipa": "/paʊns/",
+      "pos": "v.",
+      "meaning": "猛扑",
+      "lesson_form": "pouncing（现在分词）"
+    },
+    {
+      "word": "triumphantly",
+      "ipa": "/traɪˈʌmfəntli/",
+      "pos": "adv.",
+      "meaning": "得意洋洋地",
+      "lesson_form": ""
+    },
+    {
+      "word": "enormous",
+      "ipa": "/ɪˈnɔːməs/",
+      "pos": "adj.",
+      "meaning": "巨大的",
+      "lesson_form": ""
+    },
+    {
+      "word": "sheltered",
+      "ipa": "/ˈʃeltəd/",
+      "pos": "adj.",
+      "meaning": "有遮蔽的",
+      "lesson_form": ""
+    },
+    {
+      "word": "survive",
+      "ipa": "/səˈvaɪv/",
+      "pos": "v.",
+      "meaning": "幸存；挺过",
+      "lesson_form": "survived（过去分词）"
+    },
+    {
+      "word": "occasionally",
+      "ipa": "/əˈkeɪʒənəli/",
+      "pos": "adv.",
+      "meaning": "偶尔",
+      "lesson_form": ""
+    },
+    {
+      "word": "luscious",
+      "ipa": "/ˈlʌʃəs/",
+      "pos": "adj.",
+      "meaning": "甘美多汁的",
+      "lesson_form": ""
+    },
+    {
+      "word": "wither",
+      "ipa": "/ˈwɪðə(r)/",
+      "pos": "v.",
+      "meaning": "枯萎",
+      "lesson_form": ""
+    },
+    {
+      "word": "aphid",
+      "ipa": "/ˈeɪfɪd/",
+      "pos": "n.",
+      "meaning": "蚜虫",
+      "lesson_form": "aphids（复数）"
+    },
+    {
+      "word": "underside",
+      "ipa": "/ˈʌndəsaɪd/",
+      "pos": "n.",
+      "meaning": "底面；下侧",
+      "lesson_form": ""
+    },
+    {
+      "word": "colony",
+      "ipa": "/ˈkɒləni/",
+      "pos": "n.",
+      "meaning": "群体",
+      "lesson_form": ""
+    },
+    {
+      "word": "obtain",
+      "ipa": "/əbˈteɪn/",
+      "pos": "v.",
+      "meaning": "获得",
+      "lesson_form": "obtained（过去式）"
+    },
+    {
+      "word": "scurry",
+      "ipa": "/ˈskʌri/",
+      "pos": "v.",
+      "meaning": "急匆匆地跑",
+      "lesson_form": "scurrying（现在分词）"
+    },
+    {
+      "word": "bewilderment",
+      "ipa": "/bɪˈwɪldəmənt/",
+      "pos": "n.",
+      "meaning": "困惑",
+      "lesson_form": ""
+    },
+    {
+      "word": "torch",
+      "ipa": "/tɔːtʃ/",
+      "pos": "n.",
+      "meaning": "手电筒",
+      "lesson_form": ""
+    },
+    {
+      "word": "swarm",
+      "ipa": "/swɔːm/",
+      "pos": "v.",
+      "meaning": "成群移动",
+      "lesson_form": "swarming（现在分词）"
+    },
+    {
+      "word": "despair",
+      "ipa": "/dɪˈspeə(r)/",
+      "pos": "n.",
+      "meaning": "绝望",
+      "lesson_form": ""
+    },
+    {
+      "word": "route",
+      "ipa": "/ruːt/",
+      "pos": "n.",
+      "meaning": "路线",
+      "lesson_form": ""
+    },
+    {
+      "word": "ingenuity",
+      "ipa": "/ˌɪndʒəˈnjuːəti/",
+      "pos": "n.",
+      "meaning": "机智；独创力",
+      "lesson_form": ""
+    },
+    {
+      "word": "thoroughly",
+      "ipa": "/ˈθʌrəli/",
+      "pos": "adv.",
+      "meaning": "彻底地",
+      "lesson_form": ""
+    },
+    {
+      "word": "unscientific",
+      "ipa": "/ˌʌnsaɪənˈtɪfɪk/",
+      "pos": "adj.",
+      "meaning": "不科学的",
+      "lesson_form": ""
+    }
+  ],
+  "people": [],
+  "places": []
+}

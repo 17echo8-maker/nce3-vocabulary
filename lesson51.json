@@ -1,0 +1,223 @@
+{
+  "lesson": 51,
+  "title": "Predicting the future",
+  "titleZh": "预测未来",
+  "words": [
+    {
+      "word": "predict",
+      "ipa": "/prɪˈdɪkt/",
+      "pos": "v.",
+      "meaning": "预测",
+      "lesson_form": "predicting（动名词）"
+    },
+    {
+      "word": "notoriously",
+      "ipa": "/nəʊˈtɔːriəsli/",
+      "pos": "adv.",
+      "meaning": "众所周知地（多指坏事）",
+      "lesson_form": ""
+    },
+    {
+      "word": "imagine",
+      "ipa": "/ɪˈmædʒɪn/",
+      "pos": "v.",
+      "meaning": "想象",
+      "lesson_form": "imagined（过去分词）"
+    },
+    {
+      "word": "organization",
+      "ipa": "/ˌɔːɡənaɪˈzeɪʃən/",
+      "pos": "n.",
+      "meaning": "组织；机构",
+      "lesson_form": "organizations（复数）"
+    },
+    {
+      "word": "so-called",
+      "ipa": "/ˌsəʊ ˈkɔːld/",
+      "pos": "adj.",
+      "meaning": "所谓的",
+      "lesson_form": ""
+    },
+    {
+      "word": "mainframe",
+      "ipa": "/ˈmeɪnfreɪm/",
+      "pos": "n.",
+      "meaning": "大型计算机",
+      "lesson_form": ""
+    },
+    {
+      "word": "occupy",
+      "ipa": "/ˈɒkjupaɪ/",
+      "pos": "v.",
+      "meaning": "占据",
+      "lesson_form": "occupying（现在分词）"
+    },
+    {
+      "word": "air-conditioned",
+      "ipa": "/ˈeə kəndɪʃənd/",
+      "pos": "adj.",
+      "meaning": "装有空调的",
+      "lesson_form": ""
+    },
+    {
+      "word": "technician",
+      "ipa": "/tekˈnɪʃən/",
+      "pos": "n.",
+      "meaning": "技术人员",
+      "lesson_form": "technicians（复数）"
+    },
+    {
+      "word": "Altair",
+      "ipa": "/ælˈteə(r)/",
+      "pos": "n.",
+      "meaning": "“阿尔泰尔”计算机",
+      "lesson_form": ""
+    },
+    {
+      "word": "humble",
+      "ipa": "/ˈhʌmbəl/",
+      "pos": "adj.",
+      "meaning": "不起眼的；简陋的",
+      "lesson_form": ""
+    },
+    {
+      "word": "user-friendly",
+      "ipa": "/ˌjuːzə ˈfrendli/",
+      "pos": "adj.",
+      "meaning": "便于用户使用的",
+      "lesson_form": ""
+    },
+    {
+      "word": "multimedia",
+      "ipa": "/ˌmʌltiˈmiːdiə/",
+      "pos": "adj.",
+      "meaning": "多媒体的",
+      "lesson_form": ""
+    },
+    {
+      "word": "remarkable",
+      "ipa": "/rɪˈmɑːkəbəl/",
+      "pos": "adj.",
+      "meaning": "非凡的；引人注目的",
+      "lesson_form": ""
+    },
+    {
+      "word": "dismiss",
+      "ipa": "/dɪsˈmɪs/",
+      "pos": "v.",
+      "meaning": "摒弃；不予考虑",
+      "lesson_form": "dismissed（过去式）"
+    },
+    {
+      "word": "foresee",
+      "ipa": "/fɔːˈsiː/",
+      "pos": "v.",
+      "meaning": "预见",
+      "lesson_form": "foresaw；foreseen（过去式；过去分词）"
+    },
+    {
+      "word": "capable",
+      "ipa": "/ˈkeɪpəbəl/",
+      "pos": "adj.",
+      "meaning": "有能力的",
+      "lesson_form": "capable of（能够）"
+    },
+    {
+      "word": "alternative",
+      "ipa": "/ɔːlˈtɜːnətɪv/",
+      "pos": "adj.",
+      "meaning": "可供选择的",
+      "lesson_form": ""
+    },
+    {
+      "word": "route",
+      "ipa": "/ruːt/",
+      "pos": "n.",
+      "meaning": "路线",
+      "lesson_form": "routes（复数）"
+    },
+    {
+      "word": "diagnose",
+      "ipa": "/ˈdaɪəɡnəʊz/",
+      "pos": "v.",
+      "meaning": "诊断",
+      "lesson_form": ""
+    },
+    {
+      "word": "relieve",
+      "ipa": "/rɪˈliːv/",
+      "pos": "v.",
+      "meaning": "减轻……的负担",
+      "lesson_form": ""
+    },
+    {
+      "word": "accountant",
+      "ipa": "/əˈkaʊntənt/",
+      "pos": "n.",
+      "meaning": "会计",
+      "lesson_form": "accountants（复数）"
+    },
+    {
+      "word": "dull",
+      "ipa": "/dʌl/",
+      "pos": "adj.",
+      "meaning": "枯燥的",
+      "lesson_form": ""
+    },
+    {
+      "word": "Internet",
+      "ipa": "/ˈɪntənet/",
+      "pos": "n.",
+      "meaning": "互联网",
+      "lesson_form": ""
+    },
+    {
+      "word": "communicate",
+      "ipa": "/kəˈmjuːnɪkeɪt/",
+      "pos": "v.",
+      "meaning": "交流；传递信息",
+      "lesson_form": ""
+    },
+    {
+      "word": "instantly",
+      "ipa": "/ˈɪnstəntli/",
+      "pos": "adv.",
+      "meaning": "立即；即时地",
+      "lesson_form": ""
+    },
+    {
+      "word": "nor",
+      "ipa": "/nɔː(r)/",
+      "pos": "conj.",
+      "meaning": "也不",
+      "lesson_form": ""
+    },
+    {
+      "word": "obtain",
+      "ipa": "/əbˈteɪn/",
+      "pos": "v.",
+      "meaning": "获得",
+      "lesson_form": ""
+    },
+    {
+      "word": "prediction",
+      "ipa": "/prɪˈdɪkʃən/",
+      "pos": "n.",
+      "meaning": "预测",
+      "lesson_form": "predictions（复数）"
+    }
+  ],
+  "people": [
+    {
+      "name": "Leon Bagrit",
+      "ipa": "/ˌliːɒn ˈbæɡrɪt/"
+    }
+  ],
+  "places": [
+    {
+      "name": "USA",
+      "ipa": "/ˌjuː es ˈeɪ/",
+      "meaning": "美国"
+    }
+  ]
+}

@@ -1,0 +1,329 @@
+{
+  "lesson": 56,
+  "title": "Our neighbour, the river",
+  "titleZh": "河流，我们的邻居",
+  "words": [
+    {
+      "word": "boundary",
+      "ipa": "/ˈbaʊndri/",
+      "pos": "n.",
+      "meaning": "边界",
+      "lesson_form": ""
+    },
+    {
+      "word": "pump",
+      "ipa": "/pʌmp/",
+      "pos": "v.",
+      "meaning": "抽水",
+      "lesson_form": ""
+    },
+    {
+      "word": "instinctively",
+      "ipa": "/ɪnˈstɪŋktɪvli/",
+      "pos": "adv.",
+      "meaning": "本能地",
+      "lesson_form": ""
+    },
+    {
+      "word": "beekeeper",
+      "ipa": "/ˈbiːkiːpə(r)/",
+      "pos": "n.",
+      "meaning": "养蜂人",
+      "lesson_form": "beekeepers（复数）"
+    },
+    {
+      "word": "misfortune",
+      "ipa": "/ˌmɪsˈfɔːtʃuːn/",
+      "pos": "n.",
+      "meaning": "不幸",
+      "lesson_form": ""
+    },
+    {
+      "word": "overtake",
+      "ipa": "/ˌəʊvəˈteɪk/",
+      "pos": "v.",
+      "meaning": "突然降临",
+      "lesson_form": ""
+    },
+    {
+      "word": "backwater",
+      "ipa": "/ˈbækwɔːtə(r)/",
+      "pos": "n.",
+      "meaning": "回水处；僻静水域",
+      "lesson_form": ""
+    },
+    {
+      "word": "predecessor",
+      "ipa": "/ˈpriːdɪsesə(r)/",
+      "pos": "n.",
+      "meaning": "前任；前辈",
+      "lesson_form": ""
+    },
+    {
+      "word": "meadow",
+      "ipa": "/ˈmedəʊ/",
+      "pos": "n.",
+      "meaning": "草地",
+      "lesson_form": "meadow；meadows（单复数）"
+    },
+    {
+      "word": "deep",
+      "ipa": "/diːp/",
+      "pos": "adj.",
+      "meaning": "深的",
+      "lesson_form": "deepest（最高级）"
+    },
+    {
+      "word": "heat wave",
+      "ipa": "/ˈhiːt weɪv/",
+      "pos": "n.",
+      "meaning": "热浪",
+      "lesson_form": ""
+    },
+    {
+      "word": "riverside",
+      "ipa": "/ˈrɪvəsaɪd/",
+      "pos": "n.",
+      "meaning": "河畔",
+      "lesson_form": ""
+    },
+    {
+      "word": "crown",
+      "ipa": "/kraʊn/",
+      "pos": "v.",
+      "meaning": "给……戴花冠",
+      "lesson_form": "crowning（现在分词）"
+    },
+    {
+      "word": "Midsummer Eve",
+      "ipa": "/ˌmɪdsʌmə ˈiːv/",
+      "pos": "n.",
+      "meaning": "仲夏夜",
+      "lesson_form": ""
+    },
+    {
+      "word": "harvest",
+      "ipa": "/ˈhɑːvɪst/",
+      "pos": "n.",
+      "meaning": "收获；收成",
+      "lesson_form": ""
+    },
+    {
+      "word": "holly",
+      "ipa": "/ˈhɒli/",
+      "pos": "n.",
+      "meaning": "冬青",
+      "lesson_form": ""
+    },
+    {
+      "word": "wreath",
+      "ipa": "/riːθ/",
+      "pos": "n.",
+      "meaning": "花环",
+      "lesson_form": ""
+    },
+    {
+      "word": "current",
+      "ipa": "/ˈkʌrənt/",
+      "pos": "n.",
+      "meaning": "水流",
+      "lesson_form": ""
+    },
+    {
+      "word": "rare occurrence",
+      "ipa": "/ˌreə əˈkʌrəns/",
+      "pos": "n.",
+      "meaning": "罕见事件",
+      "lesson_form": ""
+    },
+    {
+      "word": "climate",
+      "ipa": "/ˈklaɪmət/",
+      "pos": "n.",
+      "meaning": "气候",
+      "lesson_form": ""
+    },
+    {
+      "word": "extreme",
+      "ipa": "/ɪkˈstriːm/",
+      "pos": "n.",
+      "meaning": "极端情况",
+      "lesson_form": "extremes（复数）"
+    },
+    {
+      "word": "proportion",
+      "ipa": "/prəˈpɔːʃən/",
+      "pos": "n.",
+      "meaning": "比例",
+      "lesson_form": ""
+    },
+    {
+      "word": "favourably",
+      "ipa": "/ˈfeɪvərəbli/",
+      "pos": "adv.",
+      "meaning": "有利地",
+      "lesson_form": ""
+    },
+    {
+      "word": "site",
+      "ipa": "/saɪt/",
+      "pos": "v.",
+      "meaning": "使坐落于",
+      "lesson_form": "sited（过去分词）"
+    },
+    {
+      "word": "spell disaster",
+      "ipa": "/ˌspel dɪˈzɑːstə(r)/",
+      "pos": "phr.",
+      "meaning": "招致灾难",
+      "lesson_form": ""
+    },
+    {
+      "word": "cattle",
+      "ipa": "/ˈkætəl/",
+      "pos": "n.",
+      "meaning": "牛群",
+      "lesson_form": ""
+    },
+    {
+      "word": "stall",
+      "ipa": "/stɔːl/",
+      "pos": "n.",
+      "meaning": "牲畜棚",
+      "lesson_form": "stalls（复数）"
+    },
+    {
+      "word": "attic",
+      "ipa": "/ˈætɪk/",
+      "pos": "n.",
+      "meaning": "阁楼",
+      "lesson_form": ""
+    },
+    {
+      "word": "sweeping view",
+      "ipa": "/ˌswiːpɪŋ ˈvjuː/",
+      "pos": "n.",
+      "meaning": "开阔的视野",
+      "lesson_form": ""
+    },
+    {
+      "word": "critical juncture",
+      "ipa": "/ˌkrɪtɪkəl ˈdʒʌŋktʃə(r)/",
+      "pos": "n.",
+      "meaning": "关键时刻",
+      "lesson_form": ""
+    },
+    {
+      "word": "disaster",
+      "ipa": "/dɪˈzɑːstə(r)/",
+      "pos": "n.",
+      "meaning": "灾难",
+      "lesson_form": ""
+    },
+    {
+      "word": "float",
+      "ipa": "/fləʊt/",
+      "pos": "v.",
+      "meaning": "漂浮",
+      "lesson_form": "floating（现在分词）"
+    },
+    {
+      "word": "strength",
+      "ipa": "/streŋθ/",
+      "pos": "n.",
+      "meaning": "力量",
+      "lesson_form": ""
+    },
+    {
+      "word": "exhausted",
+      "ipa": "/ɪɡˈzɔːstɪd/",
+      "pos": "adj.",
+      "meaning": "筋疲力尽的",
+      "lesson_form": ""
+    },
+    {
+      "word": "raft",
+      "ipa": "/rɑːft/",
+      "pos": "n.",
+      "meaning": "木筏",
+      "lesson_form": ""
+    },
+    {
+      "word": "ark",
+      "ipa": "/ɑːk/",
+      "pos": "n.",
+      "meaning": "方舟",
+      "lesson_form": "Noah's ark（诺亚方舟）"
+    },
+    {
+      "word": "unduly",
+      "ipa": "/ˌʌnˈdjuːli/",
+      "pos": "adv.",
+      "meaning": "过度地",
+      "lesson_form": ""
+    },
+    {
+      "word": "flood",
+      "ipa": "/flʌd/",
+      "pos": "n.",
+      "meaning": "洪水",
+      "lesson_form": ""
+    },
+    {
+      "word": "foundation",
+      "ipa": "/faʊnˈdeɪʃən/",
+      "pos": "n.",
+      "meaning": "地基",
+      "lesson_form": "foundations（复数）"
+    },
+    {
+      "word": "stoutly",
+      "ipa": "/ˈstaʊtli/",
+      "pos": "adv.",
+      "meaning": "牢固地",
+      "lesson_form": ""
+    },
+    {
+      "word": "submerge",
+      "ipa": "/səbˈmɜːdʒ/",
+      "pos": "v.",
+      "meaning": "淹没",
+      "lesson_form": "submerged（过去分词）"
+    },
+    {
+      "word": "wade",
+      "ipa": "/weɪd/",
+      "pos": "v.",
+      "meaning": "蹚水",
+      "lesson_form": "waded（过去式）"
+    },
+    {
+      "word": "boathook",
+      "ipa": "/ˈbəʊthʊk/",
+      "pos": "n.",
+      "meaning": "撑篙；船钩",
+      "lesson_form": "boathooks（复数）"
+    },
+    {
+      "word": "grapple",
+      "ipa": "/ˈɡræpəl/",
+      "pos": "v.",
+      "meaning": "设法抓住",
+      "lesson_form": ""
+    },
+    {
+      "word": "miracle",
+      "ipa": "/ˈmɪrəkəl/",
+      "pos": "n.",
+      "meaning": "奇迹",
+      "lesson_form": ""
+    }
+  ],
+  "people": [
+    {
+      "name": "Noah",
+      "ipa": "/ˈnəʊə/"
+    }
+  ],
+  "places": []
+}

@@ -1,0 +1,440 @@
+{
+  "lesson": 53,
+  "title": "In the public interest",
+  "titleZh": "为了公众的利益",
+  "words": [
+    {
+      "word": "Scandinavian",
+      "ipa": "/ˌskændɪˈneɪviən/",
+      "pos": "adj.",
+      "meaning": "斯堪的纳维亚的",
+      "lesson_form": ""
+    },
+    {
+      "word": "admire",
+      "ipa": "/ədˈmaɪə(r)/",
+      "pos": "v.",
+      "meaning": "赞赏",
+      "lesson_form": "admired（过去分词）"
+    },
+    {
+      "word": "enlightened",
+      "ipa": "/ɪnˈlaɪtənd/",
+      "pos": "adj.",
+      "meaning": "开明的",
+      "lesson_form": ""
+    },
+    {
+      "word": "evolve",
+      "ipa": "/ɪˈvɒlv/",
+      "pos": "v.",
+      "meaning": "逐步形成",
+      "lesson_form": "evolved（过去式）"
+    },
+    {
+      "word": "individual",
+      "ipa": "/ˌɪndɪˈvɪdʒuəl/",
+      "pos": "adj.",
+      "meaning": "个人的",
+      "lesson_form": ""
+    },
+    {
+      "word": "high-handed",
+      "ipa": "/ˌhaɪ ˈhændɪd/",
+      "pos": "adj.",
+      "meaning": "专横的",
+      "lesson_form": ""
+    },
+    {
+      "word": "incompetent",
+      "ipa": "/ɪnˈkɒmpɪtənt/",
+      "pos": "adj.",
+      "meaning": "不称职的",
+      "lesson_form": ""
+    },
+    {
+      "word": "adopt",
+      "ipa": "/əˈdɒpt/",
+      "pos": "v.",
+      "meaning": "采用",
+      "lesson_form": "adopted（过去分词）"
+    },
+    {
+      "word": "civil servant",
+      "ipa": "/ˌsɪvəl ˈsɜːvənt/",
+      "pos": "n.",
+      "meaning": "公务员",
+      "lesson_form": "civil servants（复数）"
+    },
+    {
+      "word": "inspector",
+      "ipa": "/ɪnˈspektə(r)/",
+      "pos": "n.",
+      "meaning": "检查员",
+      "lesson_form": "inspectors（复数）"
+    },
+    {
+      "word": "tax-collector",
+      "ipa": "/ˈtæks kəlektə(r)/",
+      "pos": "n.",
+      "meaning": "税务员",
+      "lesson_form": "tax-collectors（复数）"
+    },
+    {
+      "word": "over-zealously",
+      "ipa": "/ˌəʊvə ˈzeləsli/",
+      "pos": "adv.",
+      "meaning": "过分热心地",
+      "lesson_form": ""
+    },
+    {
+      "word": "parliament",
+      "ipa": "/ˈpɑːləmənt/",
+      "pos": "n.",
+      "meaning": "议会",
+      "lesson_form": ""
+    },
+    {
+      "word": "scheme",
+      "ipa": "/skiːm/",
+      "pos": "n.",
+      "meaning": "方案",
+      "lesson_form": ""
+    },
+    {
+      "word": "safeguard",
+      "ipa": "/ˈseɪfɡɑːd/",
+      "pos": "v.",
+      "meaning": "保护",
+      "lesson_form": ""
+    },
+    {
+      "word": "parliamentary",
+      "ipa": "/ˌpɑːləˈmentəri/",
+      "pos": "adj.",
+      "meaning": "议会的",
+      "lesson_form": ""
+    },
+    {
+      "word": "committee",
+      "ipa": "/kəˈmɪti/",
+      "pos": "n.",
+      "meaning": "委员会",
+      "lesson_form": ""
+    },
+    {
+      "word": "represent",
+      "ipa": "/ˌreprɪˈzent/",
+      "pos": "v.",
+      "meaning": "代表",
+      "lesson_form": "representing（现在分词）"
+    },
+    {
+      "word": "appoint",
+      "ipa": "/əˈpɔɪnt/",
+      "pos": "v.",
+      "meaning": "任命",
+      "lesson_form": "appoints（三单）"
+    },
+    {
+      "word": "suitably",
+      "ipa": "/ˈsuːtəbli/",
+      "pos": "adv.",
+      "meaning": "适当地；合适地",
+      "lesson_form": ""
+    },
+    {
+      "word": "qualified",
+      "ipa": "/ˈkwɒlɪfaɪd/",
+      "pos": "adj.",
+      "meaning": "合格的",
+      "lesson_form": ""
+    },
+    {
+      "word": "investigate",
+      "ipa": "/ɪnˈvestɪɡeɪt/",
+      "pos": "v.",
+      "meaning": "调查",
+      "lesson_form": ""
+    },
+    {
+      "word": "grievance",
+      "ipa": "/ˈɡriːvəns/",
+      "pos": "n.",
+      "meaning": "冤情；不满",
+      "lesson_form": "grievances（复数）"
+    },
+    {
+      "word": "state",
+      "ipa": "/steɪt/",
+      "pos": "n.",
+      "meaning": "国家；政府",
+      "lesson_form": "the State（国家）"
+    },
+    {
+      "word": "Justiteombudsman",
+      "ipa": "/ˌjʌstɪtəʊmˈbʊdzmən/",
+      "pos": "n.",
+      "meaning": "瑞典司法监察专员",
+      "lesson_form": ""
+    },
+    {
+      "word": "Swede",
+      "ipa": "/swiːd/",
+      "pos": "n.",
+      "meaning": "瑞典人",
+      "lesson_form": "Swedes（复数）"
+    },
+    {
+      "word": "commonly",
+      "ipa": "/ˈkɒmənli/",
+      "pos": "adv.",
+      "meaning": "通常；一般地",
+      "lesson_form": ""
+    },
+    {
+      "word": "refer",
+      "ipa": "/rɪˈfɜː(r)/",
+      "pos": "v.",
+      "meaning": "称作；提及",
+      "lesson_form": "refer to（称为）"
+    },
+    {
+      "word": "ombudsman",
+      "ipa": "/ˈɒmbʊdzmən/",
+      "pos": "n.",
+      "meaning": "行政监察专员",
+      "lesson_form": ""
+    },
+    {
+      "word": "pressure",
+      "ipa": "/ˈpreʃə(r)/",
+      "pos": "n.",
+      "meaning": "压力",
+      "lesson_form": ""
+    },
+    {
+      "word": "complaint",
+      "ipa": "/kəmˈpleɪnt/",
+      "pos": "n.",
+      "meaning": "投诉；申诉",
+      "lesson_form": "complaints（复数）"
+    },
+    {
+      "word": "average",
+      "ipa": "/ˈævərɪdʒ/",
+      "pos": "n.",
+      "meaning": "平均数",
+      "lesson_form": ""
+    },
+    {
+      "word": "examine",
+      "ipa": "/ɪɡˈzæmɪn/",
+      "pos": "v.",
+      "meaning": "审查",
+      "lesson_form": "examines（三单）"
+    },
+    {
+      "word": "secretive",
+      "ipa": "/ˈsiːkrətɪv/",
+      "pos": "adj.",
+      "meaning": "守口如瓶的；隐秘的",
+      "lesson_form": ""
+    },
+    {
+      "word": "correspondence",
+      "ipa": "/ˌkɒrəˈspɒndəns/",
+      "pos": "n.",
+      "meaning": "信件；通信",
+      "lesson_form": ""
+    },
+    {
+      "word": "inspection",
+      "ipa": "/ɪnˈspekʃən/",
+      "pos": "n.",
+      "meaning": "查阅；检查",
+      "lesson_form": ""
+    },
+    {
+      "word": "justified",
+      "ipa": "/ˈdʒʌstɪfaɪd/",
+      "pos": "adj.",
+      "meaning": "有正当理由的",
+      "lesson_form": ""
+    },
+    {
+      "word": "behalf",
+      "ipa": "/bɪˈhɑːf/",
+      "pos": "n.",
+      "meaning": "代表；利益",
+      "lesson_form": "on his behalf（代表他）"
+    },
+    {
+      "word": "reprimand",
+      "ipa": "/ˈreprɪmɑːnd/",
+      "pos": "v.",
+      "meaning": "训斥",
+      "lesson_form": ""
+    },
+    {
+      "word": "alter",
+      "ipa": "/ˈɔːltə(r)/",
+      "pos": "v.",
+      "meaning": "修改",
+      "lesson_form": "altered（过去分词）"
+    },
+    {
+      "word": "typical",
+      "ipa": "/ˈtɪpɪkəl/",
+      "pos": "adj.",
+      "meaning": "典型的",
+      "lesson_form": ""
+    },
+    {
+      "word": "example",
+      "ipa": "/ɪɡˈzɑːmpəl/",
+      "pos": "n.",
+      "meaning": "例子",
+      "lesson_form": ""
+    },
+    {
+      "word": "village",
+      "ipa": "/ˈvɪlɪdʒ/",
+      "pos": "n.",
+      "meaning": "村庄",
+      "lesson_form": ""
+    },
+    {
+      "word": "ill-treat",
+      "ipa": "/ˌɪl ˈtriːt/",
+      "pos": "v.",
+      "meaning": "虐待；不公正对待",
+      "lesson_form": "ill-treated（过去分词）"
+    },
+    {
+      "word": "Chief of Police",
+      "ipa": "/ˌtʃiːf əv pəˈliːs/",
+      "pos": "n.",
+      "meaning": "警察局长",
+      "lesson_form": ""
+    },
+    {
+      "word": "district",
+      "ipa": "/ˈdɪstrɪkt/",
+      "pos": "n.",
+      "meaning": "地区；辖区",
+      "lesson_form": ""
+    },
+    {
+      "word": "record",
+      "ipa": "/ˈrekɔːd/",
+      "pos": "n.",
+      "meaning": "记录",
+      "lesson_form": ""
+    },
+    {
+      "word": "deny",
+      "ipa": "/dɪˈnaɪ/",
+      "pos": "v.",
+      "meaning": "否认",
+      "lesson_form": "denied（过去式）"
+    },
+    {
+      "word": "accusation",
+      "ipa": "/ˌækjuˈzeɪʃən/",
+      "pos": "n.",
+      "meaning": "指控",
+      "lesson_form": ""
+    },
+    {
+      "word": "ascertain",
+      "ipa": "/ˌæsəˈteɪn/",
+      "pos": "v.",
+      "meaning": "查明",
+      "lesson_form": "ascertained（过去式）"
+    },
+    {
+      "word": "deal",
+      "ipa": "/diːl/",
+      "pos": "v.",
+      "meaning": "对待",
+      "lesson_form": "dealt（过去式）"
+    },
+    {
+      "word": "occasion",
+      "ipa": "/əˈkeɪʒən/",
+      "pos": "n.",
+      "meaning": "场合；次数",
+      "lesson_form": "occasions（复数）"
+    },
+    {
+      "word": "prejudiced",
+      "ipa": "/ˈpredʒədɪst/",
+      "pos": "adj.",
+      "meaning": "有偏见的",
+      "lesson_form": ""
+    },
+    {
+      "word": "representative",
+      "ipa": "/ˌreprɪˈzentətɪv/",
+      "pos": "n.",
+      "meaning": "代表",
+      "lesson_form": "representatives（复数）"
+    },
+    {
+      "word": "severely",
+      "ipa": "/sɪˈvɪəli/",
+      "pos": "adv.",
+      "meaning": "严厉地",
+      "lesson_form": ""
+    },
+    {
+      "word": "inform",
+      "ipa": "/ɪnˈfɔːm/",
+      "pos": "v.",
+      "meaning": "告知",
+      "lesson_form": "informed（过去分词）"
+    },
+    {
+      "word": "lodge",
+      "ipa": "/lɒdʒ/",
+      "pos": "v.",
+      "meaning": "正式提出",
+      "lesson_form": "lodged（过去分词）"
+    },
+    {
+      "word": "prosecute",
+      "ipa": "/ˈprɒsɪkjuːt/",
+      "pos": "v.",
+      "meaning": "起诉",
+      "lesson_form": "prosecuted（过去分词）"
+    },
+    {
+      "word": "practice",
+      "ipa": "/ˈpræktɪs/",
+      "pos": "n.",
+      "meaning": "惯常做法",
+      "lesson_form": ""
+    },
+    {
+      "word": "unnoticed",
+      "ipa": "/ʌnˈnəʊtɪst/",
+      "pos": "adj.",
+      "meaning": "未被注意的",
+      "lesson_form": ""
+    }
+  ],
+  "people": [],
+  "places": [
+    {
+      "name": "Scandinavia",
+      "ipa": "/ˌskændɪˈneɪviə/",
+      "meaning": "斯堪的纳维亚"
+    },
+    {
+      "name": "Sweden",
+      "ipa": "/ˈswiːdən/",
+      "meaning": "瑞典"
+    }
+  ]
+}

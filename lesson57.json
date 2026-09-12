@@ -1,0 +1,261 @@
+{
+  "lesson": 57,
+  "title": "Back in the old country",
+  "titleZh": "重返故里",
+  "words": [
+    {
+      "word": "objective",
+      "ipa": "/əbˈdʒektɪv/",
+      "pos": "n.",
+      "meaning": "目的地；目标",
+      "lesson_form": ""
+    },
+    {
+      "word": "alien",
+      "ipa": "/ˈeɪliən/",
+      "pos": "adj.",
+      "meaning": "陌生的",
+      "lesson_form": ""
+    },
+    {
+      "word": "presence",
+      "ipa": "/ˈprezəns/",
+      "pos": "n.",
+      "meaning": "音容；存在",
+      "lesson_form": ""
+    },
+    {
+      "word": "continually",
+      "ipa": "/kənˈtɪnjuəli/",
+      "pos": "adv.",
+      "meaning": "不断地",
+      "lesson_form": ""
+    },
+    {
+      "word": "wound",
+      "ipa": "/wuːnd/",
+      "pos": "n.",
+      "meaning": "创伤",
+      "lesson_form": ""
+    },
+    {
+      "word": "emigrate",
+      "ipa": "/ˈemɪɡreɪt/",
+      "pos": "v.",
+      "meaning": "移居国外",
+      "lesson_form": ""
+    },
+    {
+      "word": "absorbed",
+      "ipa": "/əbˈzɔːbd/",
+      "pos": "adj.",
+      "meaning": "全神贯注的",
+      "lesson_form": "absorbed in（专心于）"
+    },
+    {
+      "word": "cease",
+      "ipa": "/siːs/",
+      "pos": "v.",
+      "meaning": "停止",
+      "lesson_form": "ceased（过去式）"
+    },
+    {
+      "word": "grieve",
+      "ipa": "/ɡriːv/",
+      "pos": "v.",
+      "meaning": "悲伤",
+      "lesson_form": ""
+    },
+    {
+      "word": "lack",
+      "ipa": "/læk/",
+      "pos": "v.",
+      "meaning": "缺少",
+      "lesson_form": "lacked（过去式）"
+    },
+    {
+      "word": "root",
+      "ipa": "/ruːt/",
+      "pos": "n.",
+      "meaning": "根；根基",
+      "lesson_form": "roots（复数）"
+    },
+    {
+      "word": "embed",
+      "ipa": "/ɪmˈbed/",
+      "pos": "v.",
+      "meaning": "使扎根",
+      "lesson_form": "embedded（过去分词）"
+    },
+    {
+      "word": "folk",
+      "ipa": "/fəʊk/",
+      "pos": "n.",
+      "meaning": "亲属；乡亲",
+      "lesson_form": ""
+    },
+    {
+      "word": "grave",
+      "ipa": "/ɡreɪv/",
+      "pos": "n.",
+      "meaning": "坟墓",
+      "lesson_form": ""
+    },
+    {
+      "word": "mortally",
+      "ipa": "/ˈmɔːtəli/",
+      "pos": "adv.",
+      "meaning": "致命地",
+      "lesson_form": ""
+    },
+    {
+      "word": "comprehensive",
+      "ipa": "/ˌkɒmprɪˈhensɪv/",
+      "pos": "adj.",
+      "meaning": "详尽的",
+      "lesson_form": ""
+    },
+    {
+      "word": "stage",
+      "ipa": "/steɪdʒ/",
+      "pos": "n.",
+      "meaning": "阶段；路程",
+      "lesson_form": ""
+    },
+    {
+      "word": "milestone",
+      "ipa": "/ˈmaɪlstəʊn/",
+      "pos": "n.",
+      "meaning": "里程碑",
+      "lesson_form": ""
+    },
+    {
+      "word": "territory",
+      "ipa": "/ˈterətri/",
+      "pos": "n.",
+      "meaning": "地域",
+      "lesson_form": ""
+    },
+    {
+      "word": "recognize",
+      "ipa": "/ˈrekəɡnaɪz/",
+      "pos": "v.",
+      "meaning": "认出",
+      "lesson_form": ""
+    },
+    {
+      "word": "familiar",
+      "ipa": "/fəˈmɪliə(r)/",
+      "pos": "adj.",
+      "meaning": "熟悉的",
+      "lesson_form": ""
+    },
+    {
+      "word": "milometer",
+      "ipa": "/maɪˈlɒmɪtə(r)/",
+      "pos": "n.",
+      "meaning": "里程表",
+      "lesson_form": ""
+    },
+    {
+      "word": "according to",
+      "ipa": "/əˈkɔːdɪŋ tuː/",
+      "pos": "prep.",
+      "meaning": "按照",
+      "lesson_form": ""
+    },
+    {
+      "word": "valley",
+      "ipa": "/ˈvæli/",
+      "pos": "n.",
+      "meaning": "山谷",
+      "lesson_form": ""
+    },
+    {
+      "word": "spire",
+      "ipa": "/ˈspaɪə(r)/",
+      "pos": "n.",
+      "meaning": "尖塔",
+      "lesson_form": ""
+    },
+    {
+      "word": "retrace",
+      "ipa": "/rɪˈtreɪs/",
+      "pos": "v.",
+      "meaning": "沿原路返回",
+      "lesson_form": ""
+    },
+    {
+      "word": "frequent",
+      "ipa": "/ˈfriːkwənt/",
+      "pos": "adj.",
+      "meaning": "频繁的",
+      "lesson_form": ""
+    },
+    {
+      "word": "stumble",
+      "ipa": "/ˈstʌmbəl/",
+      "pos": "v.",
+      "meaning": "偶然发现；误入",
+      "lesson_form": "stumbled（过去式）"
+    },
+    {
+      "word": "nightmare",
+      "ipa": "/ˈnaɪtmeə(r)/",
+      "pos": "n.",
+      "meaning": "噩梦",
+      "lesson_form": ""
+    },
+    {
+      "word": "fortunately",
+      "ipa": "/ˈfɔːtʃənətli/",
+      "pos": "adv.",
+      "meaning": "幸运地",
+      "lesson_form": ""
+    },
+    {
+      "word": "horizon",
+      "ipa": "/həˈraɪzən/",
+      "pos": "n.",
+      "meaning": "地平线",
+      "lesson_form": ""
+    },
+    {
+      "word": "horseback",
+      "ipa": "/ˈhɔːsbæk/",
+      "pos": "n.",
+      "meaning": "马背",
+      "lesson_form": "on horseback（骑马）"
+    },
+    {
+      "word": "direction",
+      "ipa": "/dəˈrekʃən/",
+      "pos": "n.",
+      "meaning": "方向",
+      "lesson_form": ""
+    },
+    {
+      "word": "submerge",
+      "ipa": "/səbˈmɜːdʒ/",
+      "pos": "v.",
+      "meaning": "淹没",
+      "lesson_form": "submerged（过去分词）"
+    },
+    {
+      "word": "man-made",
+      "ipa": "/ˌmæn ˈmeɪd/",
+      "pos": "adj.",
+      "meaning": "人造的",
+      "lesson_form": ""
+    },
+    {
+      "word": "reservoir",
+      "ipa": "/ˈrezəvwɑː(r)/",
+      "pos": "n.",
+      "meaning": "水库",
+      "lesson_form": ""
+    }
+  ],
+  "people": [],
+  "places": []
+}

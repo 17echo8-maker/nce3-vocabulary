@@ -1,0 +1,324 @@
+{
+  "lesson": 60,
+  "title": "Too early and too late",
+  "titleZh": "太早和太晚",
+  "words": [
+    {
+      "word": "punctuality",
+      "ipa": "/ˌpʌŋktʃuˈæləti/",
+      "pos": "n.",
+      "meaning": "守时",
+      "lesson_form": ""
+    },
+    {
+      "word": "civilized",
+      "ipa": "/ˈsɪvəlaɪzd/",
+      "pos": "adj.",
+      "meaning": "文明的",
+      "lesson_form": ""
+    },
+    {
+      "word": "chaos",
+      "ipa": "/ˈkeɪɒs/",
+      "pos": "n.",
+      "meaning": "混乱",
+      "lesson_form": ""
+    },
+    {
+      "word": "sparsely-populated",
+      "ipa": "/ˌspɑːsli ˈpɒpjuleɪtɪd/",
+      "pos": "adj.",
+      "meaning": "人口稀少的",
+      "lesson_form": ""
+    },
+    {
+      "word": "rural community",
+      "ipa": "/ˌrʊərəl kəˈmjuːnəti/",
+      "pos": "n.",
+      "meaning": "乡村社区",
+      "lesson_form": ""
+    },
+    {
+      "word": "disregard",
+      "ipa": "/ˌdɪsrɪˈɡɑːd/",
+      "pos": "v.",
+      "meaning": "不顾；忽视",
+      "lesson_form": ""
+    },
+    {
+      "word": "tolerance",
+      "ipa": "/ˈtɒlərəns/",
+      "pos": "n.",
+      "meaning": "宽容；容忍",
+      "lesson_form": ""
+    },
+    {
+      "word": "unpunctuality",
+      "ipa": "/ˌʌnpʌŋktʃuˈæləti/",
+      "pos": "n.",
+      "meaning": "不守时",
+      "lesson_form": ""
+    },
+    {
+      "word": "intellectual",
+      "ipa": "/ˌɪntəˈlektʃuəl/",
+      "pos": "n.",
+      "meaning": "知识分子",
+      "lesson_form": ""
+    },
+    {
+      "word": "abstruse",
+      "ipa": "/əbˈstruːs/",
+      "pos": "adj.",
+      "meaning": "深奥的",
+      "lesson_form": ""
+    },
+    {
+      "word": "coordinate",
+      "ipa": "/kəʊˈɔːdɪneɪt/",
+      "pos": "v.",
+      "meaning": "协调",
+      "lesson_form": "coordinated（过去分词）"
+    },
+    {
+      "word": "therefore",
+      "ipa": "/ˈðeəfɔː(r)/",
+      "pos": "adv.",
+      "meaning": "因此",
+      "lesson_form": ""
+    },
+    {
+      "word": "forgive",
+      "ipa": "/fəˈɡɪv/",
+      "pos": "v.",
+      "meaning": "原谅",
+      "lesson_form": "forgiven（过去分词）"
+    },
+    {
+      "word": "reproach",
+      "ipa": "/rɪˈprəʊtʃ/",
+      "pos": "v.",
+      "meaning": "责备",
+      "lesson_form": "reproached（过去分词）"
+    },
+    {
+      "word": "energetic",
+      "ipa": "/ˌenəˈdʒetɪk/",
+      "pos": "adj.",
+      "meaning": "精力充沛的",
+      "lesson_form": ""
+    },
+    {
+      "word": "appointment",
+      "ipa": "/əˈpɔɪntmənt/",
+      "pos": "n.",
+      "meaning": "约会；约定",
+      "lesson_form": ""
+    },
+    {
+      "word": "occur",
+      "ipa": "/əˈkɜː(r)/",
+      "pos": "v.",
+      "meaning": "发生",
+      "lesson_form": ""
+    },
+    {
+      "word": "puncture",
+      "ipa": "/ˈpʌŋktʃə(r)/",
+      "pos": "v.",
+      "meaning": "刺破",
+      "lesson_form": "punctured（过去分词）"
+    },
+    {
+      "word": "tyre",
+      "ipa": "/ˈtaɪə(r)/",
+      "pos": "n.",
+      "meaning": "轮胎",
+      "lesson_form": "tyres（复数）"
+    },
+    {
+      "word": "diversion",
+      "ipa": "/daɪˈvɜːʃən/",
+      "pos": "n.",
+      "meaning": "绕行路线",
+      "lesson_form": "diversions（复数）"
+    },
+    {
+      "word": "descent",
+      "ipa": "/dɪˈsent/",
+      "pos": "n.",
+      "meaning": "降临；下降",
+      "lesson_form": ""
+    },
+    {
+      "word": "industrious",
+      "ipa": "/ɪnˈdʌstriəs/",
+      "pos": "adj.",
+      "meaning": "勤勉的",
+      "lesson_form": ""
+    },
+    {
+      "word": "over-punctual",
+      "ipa": "/ˌəʊvə ˈpʌŋktʃuəl/",
+      "pos": "adj.",
+      "meaning": "过分守时的",
+      "lesson_form": ""
+    },
+    {
+      "word": "nuisance",
+      "ipa": "/ˈnjuːsəns/",
+      "pos": "n.",
+      "meaning": "讨厌的人；麻烦",
+      "lesson_form": ""
+    },
+    {
+      "word": "irritating",
+      "ipa": "/ˈɪrɪteɪtɪŋ/",
+      "pos": "adj.",
+      "meaning": "令人恼火的",
+      "lesson_form": ""
+    },
+    {
+      "word": "comfortably",
+      "ipa": "/ˈkʌmftəbli/",
+      "pos": "adv.",
+      "meaning": "从容地；留有余地地",
+      "lesson_form": ""
+    },
+    {
+      "word": "fraction",
+      "ipa": "/ˈfrækʃən/",
+      "pos": "n.",
+      "meaning": "极小部分",
+      "lesson_form": ""
+    },
+    {
+      "word": "minute",
+      "ipa": "/ˈmɪnɪt/",
+      "pos": "n.",
+      "meaning": "分钟",
+      "lesson_form": ""
+    },
+    {
+      "word": "frustration",
+      "ipa": "/frʌˈstreɪʃən/",
+      "pos": "n.",
+      "meaning": "挫败感",
+      "lesson_form": ""
+    },
+    {
+      "word": "unable",
+      "ipa": "/ʌnˈeɪbəl/",
+      "pos": "adj.",
+      "meaning": "不能的",
+      "lesson_form": ""
+    },
+    {
+      "word": "situation",
+      "ipa": "/ˌsɪtʃuˈeɪʃən/",
+      "pos": "n.",
+      "meaning": "情形",
+      "lesson_form": ""
+    },
+    {
+      "word": "befall",
+      "ipa": "/bɪˈfɔːl/",
+      "pos": "v.",
+      "meaning": "降临到",
+      "lesson_form": "befell（过去式）"
+    },
+    {
+      "word": "due",
+      "ipa": "/djuː/",
+      "pos": "adj.",
+      "meaning": "预定到达的",
+      "lesson_form": ""
+    },
+    {
+      "word": "impress upon",
+      "ipa": "/ɪmˈpres əˈpɒn/",
+      "pos": "v.",
+      "meaning": "使铭记",
+      "lesson_form": "impressed upon（过去式）"
+    },
+    {
+      "word": "unforgivable",
+      "ipa": "/ˌʌnfəˈɡɪvəbəl/",
+      "pos": "adj.",
+      "meaning": "不可原谅的",
+      "lesson_form": ""
+    },
+    {
+      "word": "horror",
+      "ipa": "/ˈhɒrə(r)/",
+      "pos": "n.",
+      "meaning": "惊恐",
+      "lesson_form": ""
+    },
+    {
+      "word": "agree",
+      "ipa": "/əˈɡriː/",
+      "pos": "v.",
+      "meaning": "同意；确认",
+      "lesson_form": "agreed（过去式）"
+    },
+    {
+      "word": "mail",
+      "ipa": "/meɪl/",
+      "pos": "n.",
+      "meaning": "邮件",
+      "lesson_form": ""
+    },
+    {
+      "word": "timetable",
+      "ipa": "/ˈtaɪmteɪbəl/",
+      "pos": "n.",
+      "meaning": "时刻表",
+      "lesson_form": ""
+    },
+    {
+      "word": "mistake",
+      "ipa": "/mɪˈsteɪk/",
+      "pos": "n.",
+      "meaning": "错误",
+      "lesson_form": ""
+    },
+    {
+      "word": "flourish",
+      "ipa": "/ˈflʌrɪʃ/",
+      "pos": "n.",
+      "meaning": "夸张的动作",
+      "lesson_form": ""
+    },
+    {
+      "word": "microscopic",
+      "ipa": "/ˌmaɪkrəˈskɒpɪk/",
+      "pos": "adj.",
+      "meaning": "极小的",
+      "lesson_form": ""
+    },
+    {
+      "word": "indicate",
+      "ipa": "/ˈɪndɪkeɪt/",
+      "pos": "v.",
+      "meaning": "表明",
+      "lesson_form": "indicated（过去式）"
+    },
+    {
+      "word": "adamant",
+      "ipa": "/ˈædəmənt/",
+      "pos": "adj.",
+      "meaning": "坚决的",
+      "lesson_form": ""
+    },
+    {
+      "word": "destination",
+      "ipa": "/ˌdestɪˈneɪʃən/",
+      "pos": "n.",
+      "meaning": "目的地",
+      "lesson_form": ""
+    }
+  ],
+  "people": [],
+  "places": []
+}

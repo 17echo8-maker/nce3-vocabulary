@@ -1,0 +1,366 @@
+{
+  "lesson": 58,
+  "title": "A spot of bother",
+  "titleZh": "一点儿小麻烦",
+  "words": [
+    {
+      "word": "flat",
+      "ipa": "/flæt/",
+      "pos": "n.",
+      "meaning": "公寓",
+      "lesson_form": "flats（复数）"
+    },
+    {
+      "word": "shopping",
+      "ipa": "/ˈʃɒpɪŋ/",
+      "pos": "n.",
+      "meaning": "购物",
+      "lesson_form": ""
+    },
+    {
+      "word": "tire",
+      "ipa": "/ˈtaɪə(r)/",
+      "pos": "v.",
+      "meaning": "使疲劳",
+      "lesson_form": "tired（过去分词）"
+    },
+    {
+      "word": "basket",
+      "ipa": "/ˈbɑːskɪt/",
+      "pos": "n.",
+      "meaning": "篮子",
+      "lesson_form": ""
+    },
+    {
+      "word": "heavy",
+      "ipa": "/ˈhevi/",
+      "pos": "adj.",
+      "meaning": "沉重的",
+      "lesson_form": "heavier（比较级）"
+    },
+    {
+      "word": "step",
+      "ipa": "/step/",
+      "pos": "n.",
+      "meaning": "一步",
+      "lesson_form": ""
+    },
+    {
+      "word": "lift",
+      "ipa": "/lɪft/",
+      "pos": "n.",
+      "meaning": "电梯",
+      "lesson_form": ""
+    },
+    {
+      "word": "thought",
+      "ipa": "/θɔːt/",
+      "pos": "n.",
+      "meaning": "心思；想法",
+      "lesson_form": "thoughts（复数）"
+    },
+    {
+      "word": "lunch",
+      "ipa": "/lʌntʃ/",
+      "pos": "n.",
+      "meaning": "午饭",
+      "lesson_form": ""
+    },
+    {
+      "word": "rest",
+      "ipa": "/rest/",
+      "pos": "n.",
+      "meaning": "休息",
+      "lesson_form": ""
+    },
+    {
+      "word": "floor",
+      "ipa": "/flɔː(r)/",
+      "pos": "n.",
+      "meaning": "楼层",
+      "lesson_form": ""
+    },
+    {
+      "word": "discovery",
+      "ipa": "/dɪˈskʌvəri/",
+      "pos": "n.",
+      "meaning": "发现",
+      "lesson_form": ""
+    },
+    {
+      "word": "reprimand",
+      "ipa": "/ˈreprɪmɑːnd/",
+      "pos": "v.",
+      "meaning": "训斥",
+      "lesson_form": ""
+    },
+    {
+      "word": "monstrous",
+      "ipa": "/ˈmɒnstrəs/",
+      "pos": "adj.",
+      "meaning": "骇人的；极其严重的",
+      "lesson_form": ""
+    },
+    {
+      "word": "negligence",
+      "ipa": "/ˈneɡlɪdʒəns/",
+      "pos": "n.",
+      "meaning": "疏忽",
+      "lesson_form": ""
+    },
+    {
+      "word": "lock",
+      "ipa": "/lɒk/",
+      "pos": "n.",
+      "meaning": "锁",
+      "lesson_form": "locks（复数）"
+    },
+    {
+      "word": "confusion",
+      "ipa": "/kənˈfjuːʒən/",
+      "pos": "n.",
+      "meaning": "混乱",
+      "lesson_form": ""
+    },
+    {
+      "word": "entry",
+      "ipa": "/ˈentri/",
+      "pos": "n.",
+      "meaning": "进入",
+      "lesson_form": ""
+    },
+    {
+      "word": "absence",
+      "ipa": "/ˈæbsəns/",
+      "pos": "n.",
+      "meaning": "不在；缺席",
+      "lesson_form": ""
+    },
+    {
+      "word": "impulse",
+      "ipa": "/ˈɪmpʌls/",
+      "pos": "n.",
+      "meaning": "冲动",
+      "lesson_form": ""
+    },
+    {
+      "word": "prudent",
+      "ipa": "/ˈpruːdənt/",
+      "pos": "adj.",
+      "meaning": "谨慎的",
+      "lesson_form": ""
+    },
+    {
+      "word": "fetch",
+      "ipa": "/fetʃ/",
+      "pos": "v.",
+      "meaning": "去请；取来",
+      "lesson_form": ""
+    },
+    {
+      "word": "porter",
+      "ipa": "/ˈpɔːtə(r)/",
+      "pos": "n.",
+      "meaning": "看门人；搬运工",
+      "lesson_form": ""
+    },
+    {
+      "word": "basement",
+      "ipa": "/ˈbeɪsmənt/",
+      "pos": "n.",
+      "meaning": "地下室",
+      "lesson_form": ""
+    },
+    {
+      "word": "tremble",
+      "ipa": "/ˈtrembəl/",
+      "pos": "v.",
+      "meaning": "发抖",
+      "lesson_form": ""
+    },
+    {
+      "word": "composure",
+      "ipa": "/kəmˈpəʊʒə(r)/",
+      "pos": "n.",
+      "meaning": "镇定",
+      "lesson_form": ""
+    },
+    {
+      "word": "regain",
+      "ipa": "/rɪˈɡeɪn/",
+      "pos": "v.",
+      "meaning": "恢复",
+      "lesson_form": "regained（过去分词）"
+    },
+    {
+      "word": "assistance",
+      "ipa": "/əˈsɪstəns/",
+      "pos": "n.",
+      "meaning": "帮助",
+      "lesson_form": ""
+    },
+    {
+      "word": "intruder",
+      "ipa": "/ɪnˈtruːdə(r)/",
+      "pos": "n.",
+      "meaning": "入侵者",
+      "lesson_form": "intruders（复数）"
+    },
+    {
+      "word": "lurk",
+      "ipa": "/lɜːk/",
+      "pos": "v.",
+      "meaning": "潜藏",
+      "lesson_form": "lurking（现在分词）"
+    },
+    {
+      "word": "hinder",
+      "ipa": "/ˈhɪndə(r)/",
+      "pos": "v.",
+      "meaning": "妨碍",
+      "lesson_form": ""
+    },
+    {
+      "word": "fingerprint",
+      "ipa": "/ˈfɪŋɡəprɪnt/",
+      "pos": "n.",
+      "meaning": "指纹",
+      "lesson_form": "fingerprints（复数）"
+    },
+    {
+      "word": "chaos",
+      "ipa": "/ˈkeɪɒs/",
+      "pos": "n.",
+      "meaning": "一片混乱",
+      "lesson_form": ""
+    },
+    {
+      "word": "inconceivable",
+      "ipa": "/ˌɪnkənˈsiːvəbəl/",
+      "pos": "adj.",
+      "meaning": "难以想象的",
+      "lesson_form": ""
+    },
+    {
+      "word": "veritable",
+      "ipa": "/ˈverɪtəbəl/",
+      "pos": "adj.",
+      "meaning": "十足的；名副其实的",
+      "lesson_form": ""
+    },
+    {
+      "word": "magpie",
+      "ipa": "/ˈmæɡpaɪ/",
+      "pos": "n.",
+      "meaning": "喜鹊；爱收藏东西的人",
+      "lesson_form": ""
+    },
+    {
+      "word": "hoarding",
+      "ipa": "/ˈhɔːdɪŋ/",
+      "pos": "n.",
+      "meaning": "贮藏癖",
+      "lesson_form": ""
+    },
+    {
+      "word": "possess",
+      "ipa": "/pəˈzes/",
+      "pos": "v.",
+      "meaning": "拥有",
+      "lesson_form": "possessed（过去式）"
+    },
+    {
+      "word": "toss out",
+      "ipa": "/ˌtɒs ˈaʊt/",
+      "pos": "v.",
+      "meaning": "扔得到处都是",
+      "lesson_form": "tossed out（过去分词）"
+    },
+    {
+      "word": "discard",
+      "ipa": "/dɪˈskɑːd/",
+      "pos": "v.",
+      "meaning": "丢弃",
+      "lesson_form": "discarded（过去分词）"
+    },
+    {
+      "word": "inspector",
+      "ipa": "/ɪnˈspektə(r)/",
+      "pos": "n.",
+      "meaning": "巡官；检查员",
+      "lesson_form": ""
+    },
+    {
+      "word": "constable",
+      "ipa": "/ˈkʌnstəbəl/",
+      "pos": "n.",
+      "meaning": "警员",
+      "lesson_form": ""
+    },
+    {
+      "word": "ransack",
+      "ipa": "/ˈrænsæk/",
+      "pos": "v.",
+      "meaning": "洗劫；彻底搜寻",
+      "lesson_form": "ransacked（过去分词）"
+    },
+    {
+      "word": "check",
+      "ipa": "/tʃek/",
+      "pos": "v.",
+      "meaning": "检查",
+      "lesson_form": "checked（过去式）"
+    },
+    {
+      "word": "thereby",
+      "ipa": "/ˌðeəˈbaɪ/",
+      "pos": "adv.",
+      "meaning": "从而；因此",
+      "lesson_form": ""
+    },
+    {
+      "word": "burglar",
+      "ipa": "/ˈbɜːɡlə(r)/",
+      "pos": "n.",
+      "meaning": "窃贼",
+      "lesson_form": "burglars（复数）"
+    },
+    {
+      "word": "skeleton key",
+      "ipa": "/ˈskelɪtən kiː/",
+      "pos": "n.",
+      "meaning": "万能钥匙",
+      "lesson_form": "skeleton keys（复数）"
+    },
+    {
+      "word": "trace",
+      "ipa": "/treɪs/",
+      "pos": "n.",
+      "meaning": "痕迹",
+      "lesson_form": ""
+    },
+    {
+      "word": "bundle",
+      "ipa": "/ˈbʌndəl/",
+      "pos": "n.",
+      "meaning": "包裹",
+      "lesson_form": ""
+    },
+    {
+      "word": "contain",
+      "ipa": "/kənˈteɪn/",
+      "pos": "v.",
+      "meaning": "装有",
+      "lesson_form": "contained（过去式）"
+    },
+    {
+      "word": "disturb",
+      "ipa": "/dɪˈstɜːb/",
+      "pos": "v.",
+      "meaning": "惊扰",
+      "lesson_form": "disturbed（过去分词）"
+    }
+  ],
+  "people": [],
+  "places": []
+}

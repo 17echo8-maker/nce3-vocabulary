@@ -1,0 +1,447 @@
+{
+  "lesson": 52,
+  "title": "Mud is mud",
+  "titleZh": "实事求是",
+  "words": [
+    {
+      "word": "curiously-shaped",
+      "ipa": "/ˈkjʊəriəsli ʃeɪpt/",
+      "pos": "adj.",
+      "meaning": "形状奇特的",
+      "lesson_form": ""
+    },
+    {
+      "word": "permanent",
+      "ipa": "/ˈpɜːmənənt/",
+      "pos": "adj.",
+      "meaning": "永久的",
+      "lesson_form": ""
+    },
+    {
+      "word": "despite",
+      "ipa": "/dɪˈspaɪt/",
+      "pos": "prep.",
+      "meaning": "尽管",
+      "lesson_form": ""
+    },
+    {
+      "word": "tint",
+      "ipa": "/tɪnt/",
+      "pos": "v.",
+      "meaning": "给……略微着色",
+      "lesson_form": "tinted（过去分词）"
+    },
+    {
+      "word": "delicate",
+      "ipa": "/ˈdelɪkət/",
+      "pos": "adj.",
+      "meaning": "柔和的；淡雅的",
+      "lesson_form": ""
+    },
+    {
+      "word": "observant",
+      "ipa": "/əbˈzɜːvənt/",
+      "pos": "adj.",
+      "meaning": "善于观察的",
+      "lesson_form": ""
+    },
+    {
+      "word": "greyish",
+      "ipa": "/ˈɡreɪɪʃ/",
+      "pos": "adj.",
+      "meaning": "浅灰色的",
+      "lesson_form": ""
+    },
+    {
+      "word": "substance",
+      "ipa": "/ˈsʌbstəns/",
+      "pos": "n.",
+      "meaning": "物质",
+      "lesson_form": ""
+    },
+    {
+      "word": "contain",
+      "ipa": "/kənˈteɪn/",
+      "pos": "v.",
+      "meaning": "装有；包含",
+      "lesson_form": "contained（过去式）"
+    },
+    {
+      "word": "perfume",
+      "ipa": "/ˈpɜːfjuːm/",
+      "pos": "v.",
+      "meaning": "使有香味",
+      "lesson_form": "perfumed（过去分词）"
+    },
+    {
+      "word": "rub",
+      "ipa": "/rʌb/",
+      "pos": "v.",
+      "meaning": "擦；揉",
+      "lesson_form": ""
+    },
+    {
+      "word": "brief",
+      "ipa": "/briːf/",
+      "pos": "adj.",
+      "meaning": "短暂的",
+      "lesson_form": ""
+    },
+    {
+      "word": "experiment",
+      "ipa": "/ɪkˈsperɪmənt/",
+      "pos": "n.",
+      "meaning": "试验",
+      "lesson_form": ""
+    },
+    {
+      "word": "dispel",
+      "ipa": "/dɪˈspel/",
+      "pos": "v.",
+      "meaning": "消除",
+      "lesson_form": ""
+    },
+    {
+      "word": "possession",
+      "ipa": "/pəˈzeʃən/",
+      "pos": "n.",
+      "meaning": "拥有；所有",
+      "lesson_form": ""
+    },
+    {
+      "word": "outlandish",
+      "ipa": "/aʊtˈlændɪʃ/",
+      "pos": "adj.",
+      "meaning": "稀奇古怪的",
+      "lesson_form": ""
+    },
+    {
+      "word": "relate",
+      "ipa": "/rɪˈleɪt/",
+      "pos": "v.",
+      "meaning": "讲述",
+      "lesson_form": "relating（动名词）"
+    },
+    {
+      "word": "furthermore",
+      "ipa": "/ˌfɜːðəˈmɔː(r)/",
+      "pos": "adv.",
+      "meaning": "而且；此外",
+      "lesson_form": ""
+    },
+    {
+      "word": "acquisition",
+      "ipa": "/ˌækwɪˈzɪʃən/",
+      "pos": "n.",
+      "meaning": "获得；购得物",
+      "lesson_form": ""
+    },
+    {
+      "word": "cure",
+      "ipa": "/kjʊə(r)/",
+      "pos": "v.",
+      "meaning": "治愈；纠正",
+      "lesson_form": "cured（过去式）"
+    },
+    {
+      "word": "consider",
+      "ipa": "/kənˈsɪdə(r)/",
+      "pos": "v.",
+      "meaning": "认为",
+      "lesson_form": "considered（过去式）"
+    },
+    {
+      "word": "outrageous",
+      "ipa": "/aʊtˈreɪdʒəs/",
+      "pos": "adj.",
+      "meaning": "骇人的；无理的",
+      "lesson_form": ""
+    },
+    {
+      "word": "invent",
+      "ipa": "/ɪnˈvent/",
+      "pos": "v.",
+      "meaning": "编造；发明",
+      "lesson_form": ""
+    },
+    {
+      "word": "fanciful",
+      "ipa": "/ˈfænsɪfəl/",
+      "pos": "adj.",
+      "meaning": "想象出来的；离奇的",
+      "lesson_form": ""
+    },
+    {
+      "word": "on the spot",
+      "ipa": "/ˌɒn ðə ˈspɒt/",
+      "pos": "phr.",
+      "meaning": "当场",
+      "lesson_form": ""
+    },
+    {
+      "word": "insoluble",
+      "ipa": "/ɪnˈsɒljəbəl/",
+      "pos": "adj.",
+      "meaning": "不能溶解的",
+      "lesson_form": ""
+    },
+    {
+      "word": "considerably",
+      "ipa": "/kənˈsɪdərəbli/",
+      "pos": "adv.",
+      "meaning": "相当地",
+      "lesson_form": ""
+    },
+    {
+      "word": "imaginary",
+      "ipa": "/ɪˈmædʒɪnəri/",
+      "pos": "adj.",
+      "meaning": "想象中的；虚构的",
+      "lesson_form": ""
+    },
+    {
+      "word": "temporarily",
+      "ipa": "/ˈtempərərəli/",
+      "pos": "adv.",
+      "meaning": "暂时地",
+      "lesson_form": ""
+    },
+    {
+      "word": "stock",
+      "ipa": "/stɒk/",
+      "pos": "n.",
+      "meaning": "库存",
+      "lesson_form": "out of stock（缺货）"
+    },
+    {
+      "word": "faithfully",
+      "ipa": "/ˈfeɪθfəli/",
+      "pos": "adv.",
+      "meaning": "信守承诺地",
+      "lesson_form": ""
+    },
+    {
+      "word": "performance",
+      "ipa": "/pəˈfɔːməns/",
+      "pos": "n.",
+      "meaning": "表演；把戏",
+      "lesson_form": "performances（复数）"
+    },
+    {
+      "word": "prompt",
+      "ipa": "/prɒmpt/",
+      "pos": "v.",
+      "meaning": "敦促；提示",
+      "lesson_form": "prompted（过去分词）"
+    },
+    {
+      "word": "precious",
+      "ipa": "/ˈpreʃəs/",
+      "pos": "adj.",
+      "meaning": "珍贵的",
+      "lesson_form": ""
+    },
+    {
+      "word": "exclusive",
+      "ipa": "/ɪkˈskluːsɪv/",
+      "pos": "adj.",
+      "meaning": "高档的；专有的",
+      "lesson_form": ""
+    },
+    {
+      "word": "stress",
+      "ipa": "/stres/",
+      "pos": "v.",
+      "meaning": "重读；强调",
+      "lesson_form": "stressing（现在分词）"
+    },
+    {
+      "word": "syllable",
+      "ipa": "/ˈsɪləbəl/",
+      "pos": "n.",
+      "meaning": "音节",
+      "lesson_form": ""
+    },
+    {
+      "word": "bewilderment",
+      "ipa": "/bɪˈwɪldəmənt/",
+      "pos": "n.",
+      "meaning": "困惑",
+      "lesson_form": ""
+    },
+    {
+      "word": "amber-like",
+      "ipa": "/ˈæmbə laɪk/",
+      "pos": "adj.",
+      "meaning": "琥珀似的",
+      "lesson_form": ""
+    },
+    {
+      "word": "freckle",
+      "ipa": "/ˈfrekəl/",
+      "pos": "n.",
+      "meaning": "雀斑",
+      "lesson_form": "freckles（复数）"
+    },
+    {
+      "word": "explanation",
+      "ipa": "/ˌekspləˈneɪʃən/",
+      "pos": "n.",
+      "meaning": "解释",
+      "lesson_form": ""
+    },
+    {
+      "word": "evidently",
+      "ipa": "/ˈevɪdəntli/",
+      "pos": "adv.",
+      "meaning": "显然",
+      "lesson_form": ""
+    },
+    {
+      "word": "convey",
+      "ipa": "/kənˈveɪ/",
+      "pos": "v.",
+      "meaning": "传达",
+      "lesson_form": "conveyed（过去式）"
+    },
+    {
+      "word": "weird",
+      "ipa": "/wɪəd/",
+      "pos": "adj.",
+      "meaning": "怪异的",
+      "lesson_form": ""
+    },
+    {
+      "word": "concoction",
+      "ipa": "/kənˈkɒkʃən/",
+      "pos": "n.",
+      "meaning": "调制品；混合物",
+      "lesson_form": "concoctions（复数）"
+    },
+    {
+      "word": "mildly",
+      "ipa": "/ˈmaɪldli/",
+      "pos": "adv.",
+      "meaning": "轻微地",
+      "lesson_form": ""
+    },
+    {
+      "word": "annoyed",
+      "ipa": "/əˈnɔɪd/",
+      "pos": "adj.",
+      "meaning": "恼火的",
+      "lesson_form": ""
+    },
+    {
+      "word": "intoxicate",
+      "ipa": "/ɪnˈtɒksɪkeɪt/",
+      "pos": "v.",
+      "meaning": "使陶醉；冲昏头脑",
+      "lesson_form": "intoxicated（过去分词）"
+    },
+    {
+      "word": "astonishment",
+      "ipa": "/əˈstɒnɪʃmənt/",
+      "pos": "n.",
+      "meaning": "惊讶",
+      "lesson_form": ""
+    },
+    {
+      "word": "fetch",
+      "ipa": "/fetʃ/",
+      "pos": "v.",
+      "meaning": "取来",
+      "lesson_form": "fetched（过去式）"
+    },
+    {
+      "word": "inspect",
+      "ipa": "/ɪnˈspekt/",
+      "pos": "v.",
+      "meaning": "查看；检查",
+      "lesson_form": ""
+    },
+    {
+      "word": "admit",
+      "ipa": "/ədˈmɪt/",
+      "pos": "v.",
+      "meaning": "承认",
+      "lesson_form": ""
+    },
+    {
+      "word": "defeat",
+      "ipa": "/dɪˈfiːt/",
+      "pos": "n.",
+      "meaning": "失败",
+      "lesson_form": ""
+    },
+    {
+      "word": "discreetly",
+      "ipa": "/dɪˈskriːtli/",
+      "pos": "adv.",
+      "meaning": "谨慎地；不引人注意地",
+      "lesson_form": ""
+    },
+    {
+      "word": "mere",
+      "ipa": "/mɪə(r)/",
+      "pos": "adj.",
+      "meaning": "仅仅的",
+      "lesson_form": ""
+    },
+    {
+      "word": "hasty",
+      "ipa": "/ˈheɪsti/",
+      "pos": "adj.",
+      "meaning": "匆忙的",
+      "lesson_form": ""
+    },
+    {
+      "word": "retreat",
+      "ipa": "/rɪˈtriːt/",
+      "pos": "n.",
+      "meaning": "撤退；离开",
+      "lesson_form": ""
+    },
+    {
+      "word": "clutch",
+      "ipa": "/klʌtʃ/",
+      "pos": "v.",
+      "meaning": "紧抱",
+      "lesson_form": "clutching（现在分词）"
+    },
+    {
+      "word": "adorn",
+      "ipa": "/əˈdɔːn/",
+      "pos": "v.",
+      "meaning": "装饰",
+      "lesson_form": "adorns（三单）"
+    },
+    {
+      "word": "bookcase",
+      "ipa": "/ˈbʊkkeɪs/",
+      "pos": "n.",
+      "meaning": "书架",
+      "lesson_form": ""
+    },
+    {
+      "word": "rare",
+      "ipa": "/reə(r)/",
+      "pos": "adj.",
+      "meaning": "稀有的",
+      "lesson_form": ""
+    }
+  ],
+  "people": [
+    {
+      "name": "Harry",
+      "ipa": "/ˈhæri/"
+    }
+  ],
+  "places": [
+    {
+      "name": "London",
+      "ipa": "/ˈlʌndən/",
+      "meaning": "伦敦"
+    }
+  ]
+}
