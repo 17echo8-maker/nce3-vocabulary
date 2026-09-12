@@ -7,13 +7,6 @@
     "wordCount": 54
   },
   {
-    "lesson": 43,
-    "title": "Fully insured",
-    "titleZh": "全保险",
-    "file": "lesson43.json",
-    "wordCount": 37
-  },
-  {
     "lesson": 44,
     "title": "Speed and comfort",
     "titleZh": "又快捷又舒适",
@@ -21,31 +14,10 @@
     "wordCount": 44
   },
   {
-    "lesson": 45,
-    "title": "The power of the press",
-    "titleZh": "新闻报道的威力",
-    "file": "lesson45.json",
-    "wordCount": 39
-  },
-  {
-    "lesson": 47,
-    "title": "Too high a price?",
-    "titleZh": "代价太高？",
-    "file": "lesson47.json",
-    "wordCount": 53
-  },
-  {
-    "lesson": 48,
-    "title": "The silent village",
-    "titleZh": "沉默的村庄",
-    "file": "lesson48.json",
-    "wordCount": 41
-  },
-  {
-    "lesson": 49,
-    "title": "The ideal servant",
-    "titleZh": "理想的仆人",
-    "file": "lesson49.json",
-    "wordCount": 61
+    "lesson": 46,
+    "title": "Do it yourself",
+    "titleZh": "自己动手",
+    "file": "lesson46.json",
+    "wordCount": 63
   }
 ]
