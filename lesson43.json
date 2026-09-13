@@ -14,14 +14,14 @@
       "word": "insure",
       "ipa": "/ɪnˈʃʊə(r)/",
       "pos": "v.",
-      "meaning": "给……保险；投保",
-      "lesson_form": "Insuring（动名词）；insured（过去式）"
+      "meaning": "为……投保",
+      "lesson_form": "insured（过去式）"
     },
     {
-      "word": "private",
-      "ipa": "/ˈpraɪvət/",
-      "pos": "adj.",
-      "meaning": "私人的；私有的",
+      "word": "property",
+      "ipa": "/ˈprɒpəti/",
+      "pos": "n.",
+      "meaning": "财产",
       "lesson_form": ""
     },
     {
@@ -35,14 +35,14 @@
       "word": "fete",
       "ipa": "/feɪt/",
       "pos": "n.",
-      "meaning": "游园会；露天庆祝活动",
+      "meaning": "露天游园会",
       "lesson_form": ""
     },
     {
       "word": "equally",
       "ipa": "/ˈiːkwəli/",
       "pos": "adv.",
-      "meaning": "同样地；同样也",
+      "meaning": "同样地",
       "lesson_form": ""
     },
     {
@@ -56,35 +56,35 @@
       "word": "claim",
       "ipa": "/kleɪm/",
       "pos": "n.",
-      "meaning": "索赔；索赔要求",
+      "meaning": "索赔要求",
       "lesson_form": ""
     },
     {
       "word": "salvage",
       "ipa": "/ˈsælvɪdʒ/",
       "pos": "v.",
-      "meaning": "打捞；抢救",
+      "meaning": "打捞",
       "lesson_form": "salvaging（动名词）"
     },
     {
       "word": "sunken",
       "ipa": "/ˈsʌŋkən/",
       "pos": "adj.",
-      "meaning": "沉没的；沉入水中的",
+      "meaning": "沉没的",
       "lesson_form": ""
     },
     {
       "word": "authority",
       "ipa": "/ɔːˈθɒrəti/",
       "pos": "n.",
-      "meaning": "当局；地方政府机构",
+      "meaning": "当局；官方机构",
       "lesson_form": ""
     },
     {
       "word": "unique",
       "ipa": "/juˈniːk/",
       "pos": "adj.",
-      "meaning": "独一无二的；罕见的",
+      "meaning": "独一无二的",
       "lesson_form": ""
     },
     {
@@ -105,21 +105,14 @@
       "word": "enormous",
       "ipa": "/ɪˈnɔːməs/",
       "pos": "adj.",
-      "meaning": "巨大的；庞大的",
+      "meaning": "巨大的",
       "lesson_form": ""
-    },
-    {
-      "word": "bake",
-      "ipa": "/beɪk/",
-      "pos": "v.",
-      "meaning": "烘烤；烤制",
-      "lesson_form": "baked（过去分词）"
     },
     {
       "word": "annual",
       "ipa": "/ˈænjuəl/",
       "pos": "adj.",
-      "meaning": "一年一度的；每年的",
+      "meaning": "一年一度的",
       "lesson_form": ""
     },
     {
@@ -133,14 +126,7 @@
       "word": "canal",
       "ipa": "/kəˈnæl/",
       "pos": "n.",
-      "meaning": "运河；水道",
-      "lesson_form": ""
-    },
-    {
-      "word": "trip",
-      "ipa": "/trɪp/",
-      "pos": "n.",
-      "meaning": "行程；旅程",
+      "meaning": "运河",
       "lesson_form": ""
     },
     {
@@ -161,14 +147,14 @@
       "word": "capsize",
       "ipa": "/kæpˈsaɪz/",
       "pos": "v.",
-      "meaning": "倾覆；翻船",
+      "meaning": "翻沉；倾覆",
       "lesson_form": "capsized（过去式）"
     },
     {
-      "word": "garage",
-      "ipa": "/ˈɡærɑːʒ/",
+      "word": "recovery",
+      "ipa": "/rɪˈkʌvəri/",
       "pos": "n.",
-      "meaning": "汽车修理厂；车库",
+      "meaning": "救援；抢救",
       "lesson_form": ""
     },
     {
@@ -176,60 +162,60 @@
       "ipa": "/ˈʃɪvə(r)/",
       "pos": "v.",
       "meaning": "发抖；颤抖",
-      "lesson_form": "Shivering（现在分词）"
+      "lesson_form": "shivering（现在分词）"
     },
     {
       "word": "haul",
       "ipa": "/hɔːl/",
       "pos": "v.",
-      "meaning": "拖；拉；拖出",
-      "lesson_form": "hauling（现在分词）"
+      "meaning": "拖；拉",
+      "lesson_form": "hauling（动名词）"
     },
     {
       "word": "hawser",
       "ipa": "/ˈhɔːzə(r)/",
       "pos": "n.",
-      "meaning": "粗缆绳；缆索",
+      "meaning": "粗缆绳",
       "lesson_form": "hawsers（复数）"
     },
     {
       "word": "eventually",
       "ipa": "/ɪˈventʃuəli/",
       "pos": "adv.",
-      "meaning": "终于；最终",
+      "meaning": "最终；终于",
       "lesson_form": ""
     },
     {
       "word": "winch",
       "ipa": "/wɪntʃ/",
       "pos": "n.",
-      "meaning": "绞车；卷扬机",
+      "meaning": "绞车",
       "lesson_form": ""
     },
     {
       "word": "agonizing",
       "ipa": "/ˈæɡənaɪzɪŋ/",
       "pos": "adj.",
-      "meaning": "令人焦虑难熬的；痛苦的",
+      "meaning": "令人焦虑难熬的",
       "lesson_form": ""
     },
     {
       "word": "precariously",
       "ipa": "/prɪˈkeəriəsli/",
       "pos": "adv.",
-      "meaning": "危险地；不稳地",
+      "meaning": "摇摇欲坠地；不稳地",
       "lesson_form": ""
     },
     {
       "word": "oblige",
       "ipa": "/əˈblaɪdʒ/",
       "pos": "v.",
-      "meaning": "迫使；使不得不",
+      "meaning": "迫使",
       "lesson_form": "obliged（过去分词）"
     },
     {
       "word": "fasten",
-      "ipa": "/ˈfɑːsn/",
+      "ipa": "/ˈfɑːsən/",
       "pos": "v.",
       "meaning": "系牢；固定",
       "lesson_form": ""
@@ -238,7 +224,7 @@
       "word": "vertically",
       "ipa": "/ˈvɜːtɪkli/",
       "pos": "adv.",
-      "meaning": "垂直地；竖直地",
+      "meaning": "垂直地",
       "lesson_form": ""
     },
     {
